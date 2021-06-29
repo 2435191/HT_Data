@@ -1,10 +1,10 @@
 import json
 import re
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass, field, fields, astuple
-from typing import Dict, List, NamedTuple, Optional, Union, Tuple
-
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import astuple, dataclass, field, fields
+from typing import Dict, List, NamedTuple, Optional, Tuple, Union
+
 import pandas
 import requests
 from bs4 import BeautifulSoup
@@ -12,6 +12,7 @@ from inflection import underscore  # camelCase to snake_case
 
 
 def list_default(): return field(default_factory=list)
+
 
 @dataclass
 class Address():
@@ -38,9 +39,6 @@ class Doctor():
 
 class AsoprsBasicData:
     DIRECTORY_URL = "https://www.asoprs.org/ui-directory-search/v2/search-directory-paged/"
-
-    def __init__(self):
-        pass
 
     @classmethod
     def get_asoprs_lst(cls,
@@ -93,14 +91,12 @@ class AsoprsBasicData:
 
         return data
 
+
 class AsoprsAdvancedData:
     GET_JSON = re.compile('attributesView\s*:\s*(\{.+\})')
 
-    def __init__(self, workers: int, sleep_time: int = 10):
-        self.tpe = ThreadPoolExecutor(max_workers=workers)
-        self.sleep_time = sleep_time
-
-    def get_detailed_asoprs_data(self, df: pandas.DataFrame) -> pandas.DataFrame:
+    @classmethod
+    def get_detailed_asoprs_data(cls, df: pandas.DataFrame, workers: int, sleep_time: float) -> pandas.DataFrame:
         df = df.copy()
         df.index = df.index.astype(int)
 
@@ -109,17 +105,18 @@ class AsoprsAdvancedData:
             df[c] = 0
             df[c] = df[c].astype(object)
 
+        tpe = ThreadPoolExecutor(max_workers=workers)
 
-        futs_to_idxs = {self.tpe.submit(self._worker_get_detailed, i): i for i in df.index}
-
+        futs_to_idxs = {tpe.submit(
+            cls._worker_get_detailed, i, sleep_time): i for i in df.index}
 
         for fut in as_completed(futs_to_idxs):
             res = fut.result()
             idx = futs_to_idxs[fut]
 
             try:
-                #for col, val in zip(target_cols, res):
-                    #df.at[idx, col] = val
+                # for col, val in zip(target_cols, res):
+                #df.at[idx, col] = val
                 df.loc[[idx], target_cols] = res
             except Exception as e:
                 print(e)
@@ -130,33 +127,29 @@ class AsoprsAdvancedData:
                 print(res)
                 raise e
             print(idx, 'done')
-        
 
         return df
 
-    def _worker_get_detailed(self, idx: str) -> Tuple[str]:
+    @classmethod
+    def _worker_get_detailed(cls, idx: str, sleep_time: float) -> Tuple[str]:
         print(idx)
         url = f'https://www.asoprs.org/index.php?option=com_community&view=profile&userid={idx}'
 
         resp = requests.get(url)
         status = resp.status_code
-        while status in [429, 443]: # rate limit
-            time.sleep(self.sleep_time)
+        while status in [429, 443]:  # rate limit
+            time.sleep(sleep_time)
             resp = requests.get(url)
             status = resp.status_code
 
-
-
-            
-        match = self.GET_JSON.search(resp.text)
+        match = cls.GET_JSON.search(resp.text)
         assert match, f"failed to find json: {resp.text}"
         json_ = json.loads(match.group(1))
-        doctor = self._parse_detailed_json(json_)
+        doctor = cls._parse_detailed_json(json_)
         return astuple(doctor)
 
-
-
-    def _parse_detailed_json(self, json_: Dict) -> Doctor:
+    @classmethod
+    def _parse_detailed_json(cls, json_: Dict) -> Doctor:
         tup = Doctor()
         tup.other_attrs = json_['customAttributes']
 
@@ -188,17 +181,11 @@ class AsoprsAdvancedData:
 
         return tup
 
-    
-
 
 if __name__ == '__main__':
     FILEPATH = 'data/all_ASOPRS.csv'
-    # AsoprsInterface.get_asoprs_lst().to_csv(FILEPATH)
 
     df = pandas.read_csv(FILEPATH, index_col='idx')
 
-    
-    new_frame = AsoprsAdvancedData(20, 5).get_detailed_asoprs_data(df)
+    new_frame = AsoprsAdvancedData().get_detailed_asoprs_data(df, 20, 5)
     new_frame.to_csv('full_data.csv')
-    
-    # AsoprsInterface.get_detailed_asoprs_data(df).to_csv(FILEPATH)
