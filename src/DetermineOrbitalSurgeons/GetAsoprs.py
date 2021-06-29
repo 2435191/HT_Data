@@ -183,9 +183,7 @@ class AsoprsAdvancedData:
 
 
 if __name__ == '__main__':
-    FILEPATH = 'data/all_ASOPRS.csv'
-
-    df = pandas.read_csv(FILEPATH, index_col='idx')
-
-    new_frame = AsoprsAdvancedData().get_detailed_asoprs_data(df, 20, 5)
-    new_frame.to_csv('full_data.csv')
+    df = AsoprsAdvancedData.get_detailed_asoprs_data(
+        AsoprsBasicData.get_asoprs_lst(), 20, 5
+    )
+    df.to_csv('src/DetermineOrbitalSurgeons/all_ASOPRS.csv')
