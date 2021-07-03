@@ -1,8 +1,10 @@
 import json
 import re
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import astuple, dataclass, field, fields
+from dataclasses import astuple, fields
+from pathlib import Path
 from typing import Dict, List, NamedTuple, Optional, Tuple, Union
 
 import pandas
@@ -10,31 +12,9 @@ import requests
 from bs4 import BeautifulSoup
 from inflection import underscore  # camelCase to snake_case
 
+sys.path.append('../') # FIXME
 
-def list_default(): return field(default_factory=list)
-
-
-@dataclass
-class Address():
-    line1: Optional[str] = None
-    line2: Optional[str] = None
-    city: Optional[str] = None
-    state: Optional[str] = None
-    zip_: Optional[str] = None
-
-
-@dataclass
-class Doctor():
-    prefix: Optional[str] = None
-    first_name: Optional[str] = None
-    middle_name: Optional[str] = None
-    middle_initial: Optional[str] = None
-    last_name: Optional[str] = None
-    suffix: Optional[str] = None
-    orgs: List[str] = list_default()
-    phones: List[str] = list_default()
-    addresses: List[Address] = list_default()
-    other_attrs: List[Dict] = list_default()
+from custom_dclasses import Doctor, Address
 
 
 class AsoprsBasicData:

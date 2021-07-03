@@ -1,0 +1,1 @@
+tshark -x -i en0 -o ssl.keylog_file:/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/DetermineTEDSpecialists/__TMP_SSL_KEY.log -Y "tcp.port==443 && tcp.len>0" -T json -e _ws.> "/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/DetermineTEDSpecialists/test2.json"
