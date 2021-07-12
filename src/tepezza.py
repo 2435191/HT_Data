@@ -9,11 +9,11 @@ import signal
 import subprocess
 import sys
 import time
+from math import sqrt
 from pathlib import Path
 from random import randint
 from statistics import median
-from math import sqrt
-from typing import List, Callable, Iterable
+from typing import Callable, Iterable, List
 
 import clipboard
 import dpkt
@@ -22,13 +22,6 @@ import pandas
 from matplotlib import pyplot as plt
 from shapely.ops import nearest_points
 
-sys.path.append('../')  # FIXME
-
-PATH_TO_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-TSHARK = '/Applications/Wireshark.app/Contents/MacOS/tshark'
-TMP_CHROME_PROFILE = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/GetAllDoctors/DetermineTEDSpecialists/__TMP_CHROME_PROFILE'
-TMP_CHROME_SSL_LOG = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/GetAllDoctors/DetermineTEDSpecialists/__TMP_SSL_KEY.log'
-
 
 class Colors:  # TODO: use actual package
     OK = '\033[94m'
@@ -36,6 +29,7 @@ class Colors:  # TODO: use actual package
     FAIL = '\033[91m'
     ENDC = '\033[0m'
     UNDERLINE = '\033[4m'
+
 
 class TepezzaInterface:
     """Partially automate data return from tepezza.com.
@@ -48,7 +42,12 @@ class TepezzaInterface:
     :return: A `TepezzaInterface` instance. Call the `startup` method for functionality.
     :rtype: TepezzaInterface
     """
-    URL = 'https://www.tepezza.com/ted-specialist-finder'
+    TSHARK = '/Applications/Wireshark.app/Contents/MacOS/tshark'
+    PATH_TO_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+    TMP_CHROME_PROFILE = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/__TMP_CHROME_PROFILE'
+    TMP_CHROME_SSL_LOG = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/__TMP_SSL_KEY.log'
+    SHAPEFILES = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/tepezza_shapefiles'
+
     CRS = "+proj=aeqd +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m no_defs"  # ESRI:102016
     TSHARK_CMD = f'{TSHARK} -l -x -i en0 -o ssl.keylog_file:{TMP_CHROME_SSL_LOG} -Y json -T ek'
     RE_JSON_RAW = re.compile('"json_raw": "([a-f0-9]+)"')
@@ -68,38 +67,34 @@ class TepezzaInterface:
         # shapefile from
         # https://www2.census.gov/geo/tiger/TIGER2019/ZCTA5/tl_2019_us_zcta510.zip,
         # converted to CRS
-        self._shp = gpd.read_file(
-            # 1000 random zipcodes for testing
-            '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/GetAllDoctors/DetermineTEDSpecialists/shapefiles/zipcodes',
-        )
+        self._shp = gpd.read_file(os.path.join(self.SHAPEFILES, 'zipcodes'))
         self._shp.set_index('ZCTA5CE10', inplace=True)
 
         print("Reading dissolved shapefile...")
         self._incomplete = gpd.read_file(
-            '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/GetAllDoctors/DetermineTEDSpecialists/shapefiles/dissolved')
+            os.path.join(self.SHAPEFILES, 'dissolved'))
         self._incomplete.to_crs(crs=self.CRS, inplace=True)  # FIXME
 
         print("Reading representative multipoint shapefile...")
         self._repr_multipoint = gpd.read_file(
-            '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/GetAllDoctors/DetermineTEDSpecialists/shapefiles/representative_pts_multipoint'
-        ).geometry[0]
-
+            os.path.join(self.SHAPEFILES), 'representative_points_multipoint')\
+            .geometry[0]
 
     def _load_chrome(self) -> None:
         """Open new Chrome window in a subprocess,
         so as to have decryption keys go into
         `TMP_CHROME_SSL_LOG`.
         """
-        Path(TMP_CHROME_SSL_LOG).touch(exist_ok=True)
-        os.environ['SSLKEYLOGFILE'] = TMP_CHROME_SSL_LOG
+        Path(self.TMP_CHROME_SSL_LOG).touch(exist_ok=True)
+        os.environ['SSLKEYLOGFILE'] = self.TMP_CHROME_SSL_LOG
 
         self.chrome_subp = subprocess.Popen(
-            [PATH_TO_CHROME,
+            [self.PATH_TO_CHROME,
              # https://ivanderevianko.com/2020/04/disable-logging-in-selenium-chromedriver
              '--output=/dev/null',
              '--log-level=3',
              '--disable-logging',
-             f"--user-data-dir={TMP_CHROME_PROFILE}"],
+             f"--user-data-dir={self.TMP_CHROME_PROFILE}"],
             stdout=subprocess.DEVNULL)
         print(
             f"New Chrome profile launched; {Colors.FAIL}Do not proceed to Tepezza{Colors.ENDC}.")
@@ -130,10 +125,10 @@ class TepezzaInterface:
         except AttributeError:
             pass
 
-        if os.path.exists(TMP_CHROME_PROFILE):
-            shutil.rmtree(TMP_CHROME_PROFILE)
-        if os.path.exists(TMP_CHROME_SSL_LOG):
-            os.remove(TMP_CHROME_SSL_LOG)
+        if os.path.exists(self.TMP_CHROME_PROFILE):
+            shutil.rmtree(self.TMP_CHROME_PROFILE)
+        if os.path.exists(self.TMP_CHROME_SSL_LOG):
+            os.remove(self.TMP_CHROME_SSL_LOG)
 
         print(f"{Colors.OK}Cleanup complete.{Colors.ENDC}")
 
@@ -144,7 +139,7 @@ class TepezzaInterface:
             ) == 'y':
                 break
         counter = 0
-        s = b'' # build up `s` from packets that have missing/cutoff JSON
+        s = b''  # build up `s` from packets that have missing/cutoff JSON
         while True:
             try:
                 in_ = bytes(self.network_subp.stdout.readline(), 'utf-8')
@@ -178,15 +173,16 @@ class TepezzaInterface:
                 with open(f'error_{counter}.json', 'wb+') as f:
                     f.write(in_)
                 print(counter, str(e)[:min(1000, len(str(e)))], type(e))
-            except AttributeError: # i in d['data'] will be str if no data, so pop raises
+            # i in d['data'] will be str if no data, so pop raises
+            except AttributeError:
                 print('empty')
                 return []
 
-    def get_data(self, 
-        starting_zip: str, 
-        radius_func: Callable[[Iterable[float]], float], 
-        filepath: str, 
-        no_data_radius: int = 0) -> pandas.DataFrame:   
+    def get_data(self,
+                 starting_zip: str,
+                 radius_func: Callable[[Iterable[float]], float],
+                 filepath: str,
+                 no_data_radius: int = 0) -> pandas.DataFrame:
         """Begin zipcode data loop.
 
         :param starting_zip: Initial zip code to scan
@@ -203,18 +199,17 @@ class TepezzaInterface:
         :rtype: pandas.DataFrame
         """
 
-
         df = pandas.DataFrame(
             columns=['Distance', 'VEEVA_ID', 'FIRST_NAME', 'LAST_NAME', 'MIDDLE_NAME', 'ADDRESS_LINE1',
                      'ADDRESS_LINE2', 'CITY', 'STATE', 'ZIP', 'PRIMARY_DEGREE', 'AMA_SPECIALITY', 'PHONE',
                      'MOBILE', 'EMAIL', 'Latitude', 'Longitude', 'Attributes', 'PhysicianAttributes'
                      ]
         )
-        
+
         target_zip_name = starting_zip
         initial_area = self._incomplete.area.iloc[0]
 
-        while not self._incomplete.is_empty.all(): # FIXME: end condition
+        while not self._incomplete.is_empty.all():  # FIXME: end condition
             print(
                 f"Look up zipcode {Colors.YELLOW}{Colors.UNDERLINE}{target_zip_name}{Colors.ENDC}.")
             clipboard.copy(target_zip_name)
@@ -228,9 +223,8 @@ class TepezzaInterface:
 
             target_zip_obj = self._shp.at[target_zip_name, 'geometry']
 
-
             if data:
-                radius_mi = radius_func( (i['Distance'] for i in data) )
+                radius_mi = radius_func((i['Distance'] for i in data))
                 radius_meters = radius_mi * 5280 * 12 * 2.54 / 100
                 complete = target_zip_obj.representative_point().buffer(radius_meters)
             elif no_data_radius:
@@ -239,7 +233,7 @@ class TepezzaInterface:
                 complete = target_zip_obj.representative_point().buffer(radius_meters)
             else:
                 complete = target_zip_obj
-            
+
             complete_gdf = gpd.GeoDataFrame(
                 {'geometry': complete}, index=[0], crs=self.CRS)
 
@@ -279,7 +273,6 @@ if __name__ == '__main__':
         with TepezzaInterface() as ti:
             ti.startup()
             ti.get_data('60609', rfunc, 'full_data.csv', 36000, 50)
-            
-            
+
     except KeyboardInterrupt:
         pass
