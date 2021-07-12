@@ -55,6 +55,8 @@ class TepezzaInterface:
         self.__exit__()
 
     def startup(self) -> None:
+        """Load the relevant shapefiles and start the Chrome and tshark subprocesses.
+        """
         self._load_shps()
         self._load_chrome()
 
@@ -134,10 +136,6 @@ class TepezzaInterface:
         print(f"{Colors.OK}Cleanup complete.{Colors.ENDC}")
 
     def _watch_network(self) -> 'JSON':
-        """
-        Get network data after zipcode data request is made.
-        """
-
         while True:
             if input(
                 f"Once zipcode has been searched, press {Colors.YELLOW}\"y\"{Colors.ENDC} to continue. "
@@ -189,8 +187,27 @@ class TepezzaInterface:
         radius_func: Callable[[Iterable[float]], float], 
         filepath: str, 
         timeout: int = 60, 
-        no_data_radius: int = 0) -> pandas.DataFrame:
-        
+        no_data_radius: int = 0) -> pandas.DataFrame:   
+        """Begin zipcode data loop.
+
+        :param starting_zip: Initial zip code to scan
+        :type starting_zip: str
+        :param radius_func: transform list of radii to some aggregate (median, greatest, etc.)
+        :type radius_func: Callable[[Iterable[float]], float]
+        :param filepath: where output DataFrame is saved
+        :type filepath: str
+        :param timeout: Deprecated, defaults to 60.
+        :type timeout: int, optional
+        :param no_data_radius:
+            If no data are returned, assume there are no doctors within this mile radius.
+            If <= 0, only assume no doctors within the scanned zipcode, defaults to 0.
+        :type no_data_radius: int, optional
+        :raises Timeout: Deprecated.
+        :return: output DataFrame, also saved to `filepath`.
+        :rtype: pandas.DataFrame
+        """
+
+
         df = pandas.DataFrame(
             columns=['Distance', 'VEEVA_ID', 'FIRST_NAME', 'LAST_NAME', 'MIDDLE_NAME', 'ADDRESS_LINE1',
                      'ADDRESS_LINE2', 'CITY', 'STATE', 'ZIP', 'PRIMARY_DEGREE', 'AMA_SPECIALITY', 'PHONE',
@@ -290,5 +307,7 @@ if __name__ == '__main__':
         with TepezzaInterface() as ti:
             ti.startup()
             ti.get_data('60609', rfunc, 'full_data.csv', 36000, 50)
+            
+            
     except KeyboardInterrupt:
         pass
