@@ -37,8 +37,17 @@ class Colors:  # TODO: use actual package
     ENDC = '\033[0m'
     UNDERLINE = '\033[4m'
 
-
 class TepezzaInterface:
+    """Partially automate data return from tepezza.com.
+    This interface allows a user to efficiently scrape data,
+    even though the website uses reCaptcha. It does this by
+    monitoring network traffic through tshark while the user
+    looks up zipcodes that an iterative algorithm generates (so
+    as to cover the United States efficiently).
+
+    :return: A `TepezzaInterface` instance. Call the `startup` method for functionality.
+    :rtype: TepezzaInterface
+    """
     URL = 'https://www.tepezza.com/ted-specialist-finder'
     CRS = "+proj=aeqd +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m no_defs"  # ESRI:102016
     TSHARK_CMD = f'{TSHARK} -l -x -i en0 -o ssl.keylog_file:{TMP_CHROME_SSL_LOG} -Y json -T ek'
@@ -76,10 +85,11 @@ class TepezzaInterface:
         ).geometry[0]
 
 
-
-        # FIXME
-
     def _load_chrome(self) -> None:
+        """Open new Chrome window in a subprocess,
+        so as to have decryption keys go into
+        `TMP_CHROME_SSL_LOG`.
+        """
         Path(TMP_CHROME_SSL_LOG).touch(exist_ok=True)
         os.environ['SSLKEYLOGFILE'] = TMP_CHROME_SSL_LOG
 
@@ -121,7 +131,6 @@ class TepezzaInterface:
             pass
 
         if os.path.exists(TMP_CHROME_PROFILE):
-            print('chrome profile exists')
             shutil.rmtree(TMP_CHROME_PROFILE)
         if os.path.exists(TMP_CHROME_SSL_LOG):
             os.remove(TMP_CHROME_SSL_LOG)
@@ -135,7 +144,7 @@ class TepezzaInterface:
             ) == 'y':
                 break
         counter = 0
-        s = b''
+        s = b'' # build up `s` from packets that have missing/cutoff JSON
         while True:
             try:
                 in_ = bytes(self.network_subp.stdout.readline(), 'utf-8')
@@ -148,8 +157,6 @@ class TepezzaInterface:
             except (json.JSONDecodeError, json.decoder.JSONDecodeError) as e:  # overflowed
                 print(counter, str(e)[:min(1000, len(str(e)))], type(e))
                 s += in_
-                with open(f'error_{counter}.json', 'wb+') as f:
-                    f.write(s)
                 try:
                     pkt = json.loads(s)
                 except (json.JSONDecodeError, json.decoder.JSONDecodeError):
@@ -171,7 +178,7 @@ class TepezzaInterface:
                 with open(f'error_{counter}.json', 'wb+') as f:
                     f.write(in_)
                 print(counter, str(e)[:min(1000, len(str(e)))], type(e))
-            except AttributeError:
+            except AttributeError: # i in d['data'] will be str if no data, so pop raises
                 print('empty')
                 return []
 
@@ -206,10 +213,8 @@ class TepezzaInterface:
         
         target_zip_name = starting_zip
         initial_area = self._incomplete.area.iloc[0]
-        completed_zips = set()
 
-        while not self._incomplete.is_empty.all():
-
+        while not self._incomplete.is_empty.all(): # FIXME: end condition
             print(
                 f"Look up zipcode {Colors.YELLOW}{Colors.UNDERLINE}{target_zip_name}{Colors.ENDC}.")
             clipboard.copy(target_zip_name)
@@ -259,8 +264,6 @@ class TepezzaInterface:
             )[1]
             zipcode_index_idx = self._shp.sindex.query(nearest_repr_pt)[0]
             target_zip_name = self._shp.index[zipcode_index_idx]
-
-            completed_zips.add(target_zip_name)
 
             print(
                 f"New points generated; {Colors.OK}cycle complete{Colors.ENDC}.\n")
