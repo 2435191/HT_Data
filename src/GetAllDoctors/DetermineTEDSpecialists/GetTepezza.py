@@ -38,13 +38,6 @@ class Colors:  # TODO: use actual package
     UNDERLINE = '\033[4m'
 
 
-class Timeout(Exception):
-    MESSAGE = f"""\n{Colors.FAIL}Timed out.{Colors.ENDC} Retry last cycle {Colors.YELLOW}(y){Colors.ENDC} \
-or continue with empty data {Colors.YELLOW}(n){Colors.ENDC}?
-Latter option assumes current zipcode (`no_data_radius <= 0`) or surrounding \
-`no_data_radius` miles {Colors.YELLOW}has zero doctors{Colors.ENDC}. """
-
-
 class TepezzaInterface:
     URL = 'https://www.tepezza.com/ted-specialist-finder'
     CRS = "+proj=aeqd +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m no_defs"  # ESRI:102016
@@ -186,7 +179,6 @@ class TepezzaInterface:
         starting_zip: str, 
         radius_func: Callable[[Iterable[float]], float], 
         filepath: str, 
-        timeout: int = 60, 
         no_data_radius: int = 0) -> pandas.DataFrame:   
         """Begin zipcode data loop.
 
@@ -196,13 +188,10 @@ class TepezzaInterface:
         :type radius_func: Callable[[Iterable[float]], float]
         :param filepath: where output DataFrame is saved
         :type filepath: str
-        :param timeout: Deprecated, defaults to 60.
-        :type timeout: int, optional
         :param no_data_radius:
             If no data are returned, assume there are no doctors within this mile radius.
             If <= 0, only assume no doctors within the scanned zipcode, defaults to 0.
         :type no_data_radius: int, optional
-        :raises Timeout: Deprecated.
         :return: output DataFrame, also saved to `filepath`.
         :rtype: pandas.DataFrame
         """
@@ -225,27 +214,7 @@ class TepezzaInterface:
                 f"Look up zipcode {Colors.YELLOW}{Colors.UNDERLINE}{target_zip_name}{Colors.ENDC}.")
             clipboard.copy(target_zip_name)
 
-            def handler(sig, frame): raise Timeout()
-            signal.signal(signal.SIGALRM, handler)
-            signal.alarm(timeout)
-            try:
-                data = self._watch_network()
-            except Timeout:
-                data = []
-                retry = None
-                while True:
-                    in_ = input(Timeout.MESSAGE)
-                    print(in_)
-                    if in_ == 'y':
-                        retry = True
-                        break
-                    elif in_ == 'n':
-                        retry = False
-                        break
-                print('\n')
-                if retry:
-                    # back to start of loop like nothing ever happened
-                    continue
+            data = self._watch_network()
 
             if data is not []:
                 df = df.append(data)
@@ -254,17 +223,18 @@ class TepezzaInterface:
 
             target_zip_obj = self._shp.at[target_zip_name, 'geometry']
 
-            if data != [] or no_data_radius > 0:
-                if data == []:
-                    radius_mi = no_data_radius
-                else:
 
-                    radius_mi = radius_func( (i['Distance'] for i in data) )
-
+            if data:
+                radius_mi = radius_func( (i['Distance'] for i in data) )
+                radius_meters = radius_mi * 5280 * 12 * 2.54 / 100
+                complete = target_zip_obj.representative_point().buffer(radius_meters)
+            elif no_data_radius:
+                radius_mi = no_data_radius
                 radius_meters = radius_mi * 5280 * 12 * 2.54 / 100
                 complete = target_zip_obj.representative_point().buffer(radius_meters)
             else:
                 complete = target_zip_obj
+            
             complete_gdf = gpd.GeoDataFrame(
                 {'geometry': complete}, index=[0], crs=self.CRS)
 
@@ -274,7 +244,6 @@ class TepezzaInterface:
                 self._incomplete, complete_gdf, how='difference')
 
             self._incomplete.plot()
-            # complete_gdf.plot()
             plt.show()
 
             print("Overlay operation complete.")
