@@ -1,3 +1,5 @@
+# TODO: use pydantic
+
 from typing import Optional, List, Dict
 from dataclasses import dataclass, field
 
