@@ -8,6 +8,8 @@ zipcodes.dbf
 zipcodes.prj
 zipcodes.shx
 
+.vscode
+
 .DS_Store
 # Byte-compiled / optimized / DLL files
 __pycache__/
