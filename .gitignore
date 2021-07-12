@@ -2,6 +2,12 @@ test*.csv
 test*.json
 __TMP*
 
+zipcodes.shp
+zipcodes.cpg
+zipcodes.dbf
+zipcodes.prj
+zipcodes.shx
+
 .DS_Store
 # Byte-compiled / optimized / DLL files
 __pycache__/
