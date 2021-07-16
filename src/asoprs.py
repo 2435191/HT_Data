@@ -19,6 +19,7 @@ from custom_dclasses import Doctor, Address
 
 class AsoprsBasicData:
     DIRECTORY_URL = "https://www.asoprs.org/ui-directory-search/v2/search-directory-paged/"
+    SEARCH_ID = '88a8ebb7-93f5-4cd1-8ecf-c748e32bac33' # TODO: make dynamics
 
     @classmethod
     def get_asoprs_lst(cls,
@@ -58,7 +59,7 @@ class AsoprsBasicData:
 
         if internal_url is None:
             internal_url = "http://service-router.prod01.memberclicks.io/search-results/v2/results/" + \
-                f"c9ab7fd9-ec40-439d-8ca6-824da56455eb?pageSize={page_size}&pageNumber=1"
+                f"{cls.SEARCH_ID}?pageSize={page_size}&pageNumber=1"
 
         payload = {
             "url": internal_url
@@ -99,13 +100,14 @@ class AsoprsAdvancedData:
                 #df.at[idx, col] = val
                 df.loc[[idx], target_cols] = res
             except Exception as e:
-                print(e)
+                print('EXCEPTION')
+                #print(e)
                 print(idx)
                 print(type(idx))
-                print(target_cols)
-                print(len(target_cols), len(res))
-                print(res)
-                raise e
+                #print(target_cols)
+                #print(len(target_cols), len(res))
+                #raise e
+                print('EXCEPTION')
             print(idx, 'done')
 
         return df
@@ -115,15 +117,29 @@ class AsoprsAdvancedData:
         print(idx)
         url = f'https://www.asoprs.org/index.php?option=com_community&view=profile&userid={idx}'
 
-        resp = requests.get(url)
-        status = resp.status_code
-        while status in [429, 443]:  # rate limit
-            time.sleep(sleep_time)
-            resp = requests.get(url)
+        while True:  # rate limit
+            print('getting request')
+            try:
+                resp = requests.get(url)
+            except:
+                print('failed', resp)
+                time.sleep(sleep_time)
+                continue
+
             status = resp.status_code
+            if status in [429, 443]:
+                print('failed')
+                time.sleep(sleep_time)
+                
+                continue
+            print('success')
+            break
 
         match = cls.GET_JSON.search(resp.text)
-        assert match, f"failed to find json: {resp.text}"
+        if not match:
+            with open(f'error_{idx}.html', 'w+') as f:
+                f.write(resp.text)
+            assert match
         json_ = json.loads(match.group(1))
         doctor = cls._parse_detailed_json(json_)
         return astuple(doctor)
@@ -164,6 +180,6 @@ class AsoprsAdvancedData:
 
 if __name__ == '__main__':
     df = AsoprsAdvancedData.get_detailed_asoprs_data(
-        AsoprsBasicData.get_asoprs_lst(), 20, 5
+        pandas.read_csv('data/basic_asoprs.csv', index_col='idx'), 20, 5
     )
-    df.to_csv('src/DetermineOrbitalSurgeons/all_ASOPRS.csv')
+    df.to_csv('data/asoprs.csv')
