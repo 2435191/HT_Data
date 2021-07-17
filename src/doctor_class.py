@@ -5,7 +5,7 @@ from pydantic import (
 )
 
 from typing import (
-    List, Dict, Optional, Type
+    List, Dict, Optional, Type, Any
 )
     
 class Address(BaseModel):
@@ -19,13 +19,13 @@ class DoctorInfo(BaseModel):
     phones:    List[str] = []
     websites:  List[str] = []
     languages: List[str] = []
-    misc:      Dict[str, str] = {}
+    misc:      Dict[str, Any] = {}
 
     class Config:
         anystr_strip_whitespace = True
 
 class Title(BaseModel):
-    prefix:      str
+    prefix:      Optional[str] = None
     first_name:  str
     middle_name: Optional[List[str]] = []
     last_name:   List[str]
@@ -35,6 +35,8 @@ class Title(BaseModel):
 
     @validator('prefix')
     def assert_prefix_is_valid(cls, prefix_str: str) -> str:
+        if prefix_str is None:
+            return None
         if prefix_str not in cls._VALID_PREFIXES:
             raise ValidationError('must be one of Title._VALID_PREFIXES')
         return prefix_str
@@ -45,6 +47,14 @@ class Doctor(BaseModel):
     info:                   Optional[DoctorInfo] = None
     areas_of_concentration: List[str] = []
     board_cert:             Optional[str] = None
+    source:                 Optional[str] = None
+
+    @classmethod
+    def to_empty_DataFrame(cls) -> pandas.DataFrame:
+        fields = recursively_get_all_fields(cls)
+        df = pandas.DataFrame(columns=fields)
+        return df
+
 
     def to_DataFrame(self) -> pandas.DataFrame:
         fields = recursively_get_all_fields(self.__class__)
@@ -57,9 +67,12 @@ def recursively_get_all_fields(model_cls: Type[BaseModel]) -> List[str]:
 
     def _recurse(model_cls: Type[BaseModel]) -> None:
         for info in model_cls.__fields__.values():
-            if issubclass(info.type_, BaseModel):
-                _recurse(info.type_)
-            else:
+            try:
+                if issubclass(info.type_, BaseModel):
+                    _recurse(info.type_)
+                else:
+                    fields.append(info.name)
+            except TypeError:
                 fields.append(info.name)
     _recurse(model_cls)
     return fields

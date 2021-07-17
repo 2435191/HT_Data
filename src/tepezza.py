@@ -13,14 +13,17 @@ from math import sqrt
 from pathlib import Path
 from random import randint
 from statistics import median
-from typing import Callable, Iterable, List
+from typing import Callable, Iterable, List, Optional
 
 import clipboard
 import dpkt
 import geopandas as gpd
 import pandas
 from matplotlib import pyplot as plt
+from pydantic import Field, root_validator, validator
 from shapely.ops import nearest_points
+
+from doctor_class import Address, Doctor, DoctorInfo, Title
 
 
 class Colors:  # TODO: use actual package
@@ -29,6 +32,73 @@ class Colors:  # TODO: use actual package
     FAIL = '\033[91m'
     ENDC = '\033[0m'
     UNDERLINE = '\033[4m'
+
+
+
+
+class TepezzaTitle(Title):
+    @root_validator(pre=True)
+    def init(cls, values):
+        print(values)
+        out = values.copy()
+        for k, v in values.items():
+            out[k.lower()] = v
+            del out[k]
+
+        for field_name in ['middle_name', 'last_name']:
+            out[field_name] = [out[field_name]] if out[field_name] else []
+        return out
+
+
+class TepezzaAddress(Address):
+    line1: Optional[str] = Field(None, alias='address_line1')
+    line2: Optional[str] = Field(None, alias='address_line2')
+
+    @root_validator(pre=True)
+    def init(cls, values):
+        out = values.copy()
+        for k, v in values.items():
+            out[k.lower()] = v
+            del out[k]
+        return out
+
+
+class TepezzaDoctorInfo(DoctorInfo):
+    @root_validator(pre=True)
+    def init(cls, values):
+        out = {}
+        out['phones'] = [values['PHONE'], values['MOBILE']]
+
+        del values['PHONE']
+        del values['MOBILE']
+        out['misc'] = values
+
+        return out
+
+
+class TepezzaDoctor(Doctor):
+    source:                 str = 'tepezza'
+    title:                  TepezzaTitle
+    info:                   Optional[TepezzaDoctorInfo] = None
+    address:                Optional[TepezzaAddress] = None
+    areas_of_concentration: List[str] = []
+    board_cert:             Optional[str] = None
+
+    @root_validator(pre=True)
+    def init(cls, values):
+        d = {'areas_of_concentration': [values['AMA_SPECIALITY']]}
+        title_fields   = ['FIRST_NAME', 'MIDDLE_NAME', 'LAST_NAME']
+        address_fields = ['ADDRESS_LINE1', 'ADDRESS_LINE2', 'CITY', 'STATE', 'ZIP']
+        d['title'] = {
+            k: v for k, v in values.items() if k in title_fields
+        }
+        d['address'] = {
+            k: v for k, v in values.items() if k in address_fields
+        }
+        d['info'] = {
+            k: v for k, v in values.items() if k not in address_fields + title_fields
+        }
+        return d
 
 
 class TepezzaInterface:
@@ -72,15 +142,16 @@ class TepezzaInterface:
 
         print("Reading dissolved shapefile...")
         self._incomplete = gpd.read_file(
-            os.path.join(self.SHAPEFILES, 'dissolved'))
+            os.path.join(self.SHAPEFILES, 'dissolved/'))
         self._incomplete.to_crs(crs=self.CRS, inplace=True)  # FIXME
 
         print("Reading representative multipoint shapefile...")
         self._repr_multipoint = gpd.read_file(
-            os.path.join(self.SHAPEFILES), 'representative_points_multipoint')\
+            os.path.join(self.SHAPEFILES, 'representative_pts_multipoint/'))\
             .geometry[0]
 
     def _load_chrome(self) -> None:
+        print(self.TMP_CHROME_PROFILE, self.TMP_CHROME_SSL_LOG)
         """Open new Chrome window in a subprocess,
         so as to have decryption keys go into
         `TMP_CHROME_SSL_LOG`.
@@ -99,17 +170,20 @@ class TepezzaInterface:
         print(
             f"New Chrome profile launched; {Colors.FAIL}Do not proceed to Tepezza{Colors.ENDC}.")
 
-        print(f"{Colors.OK}Initialization complete.\n{Colors.ENDC}")
+        print(f"{Colors.OK}Initialization complete.{Colors.ENDC}")
 
         while True:
             in_ = input(
-                f"Is Chrome loaded? Ready to begin? Press {Colors.YELLOW}\"y\"{Colors.ENDC} to continue, then {Colors.YELLOW}proceed to Tepezza{Colors.ENDC}.")
+                f"Is Chrome loaded? Ready to begin? Press {Colors.YELLOW}\"y\"{Colors.ENDC}.")
             if in_ == "y":
                 break
 
         self.network_subp = subprocess.Popen(
             shlex.split(self.TSHARK_CMD), stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=1, universal_newlines=True)
         os.set_blocking(self.network_subp.stdout.fileno(), False)
+        
+        # BUG: proceeding too quickly will break things. Add a busy wait from self.network_subp.stderr to fix this
+        print(f"{Colors.YELLOW}Proceed to Tepezza.{Colors.ENDC}")
 
     def __enter__(self):
         return self
@@ -199,12 +273,7 @@ class TepezzaInterface:
         :rtype: pandas.DataFrame
         """
 
-        df = pandas.DataFrame(
-            columns=['Distance', 'VEEVA_ID', 'FIRST_NAME', 'LAST_NAME', 'MIDDLE_NAME', 'ADDRESS_LINE1',
-                     'ADDRESS_LINE2', 'CITY', 'STATE', 'ZIP', 'PRIMARY_DEGREE', 'AMA_SPECIALITY', 'PHONE',
-                     'MOBILE', 'EMAIL', 'Latitude', 'Longitude', 'Attributes', 'PhysicianAttributes'
-                     ]
-        )
+        df = TepezzaDoctor.to_empty_DataFrame()
 
         target_zip_name = starting_zip
         initial_area = self._incomplete.area.iloc[0]
@@ -215,9 +284,11 @@ class TepezzaInterface:
             clipboard.copy(target_zip_name)
 
             data = self._watch_network()
+            model = [TepezzaDoctor(**d) for d in data]
 
-            if data is not []:
-                df = df.append(data)
+            if model is not []:
+                for m in model:
+                    df = df.append(m.to_DataFrame())
                 df.to_csv(filepath)
             print(f"Data received and saved.")
 
@@ -267,12 +338,14 @@ class TepezzaInterface:
 
 if __name__ == '__main__':
     def rfunc(radii: Iterable[float]) -> float:
-        return sqrt(median(radii))
+        return median(radii)
 
     try:
         with TepezzaInterface() as ti:
             ti.startup()
-            ti.get_data('60609', rfunc, 'full_data.csv', 36000, 50)
+            ti.get_data('60609', rfunc, 'data/tepezza.csv', 50)
 
     except KeyboardInterrupt:
         pass
+    
+

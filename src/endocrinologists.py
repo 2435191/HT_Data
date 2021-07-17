@@ -21,6 +21,7 @@ class EndocrinologistInfo(DoctorInfo):
 
 class Endocrinologist(Doctor):
     info: Optional[EndocrinologistInfo] = None
+    source: str = 'endocrinologists'
         
 
 
@@ -105,7 +106,7 @@ class _EndocrinologistImpl:
 
 if __name__ == '__main__':
     
-    df = pandas.DataFrame(columns=recursively_get_all_fields(Endocrinologist))
+    df = Endocrinologist.to_empty_DataFrame()
     print(df)
     r = requests.get(_EndocrinologistImpl.URL)
     base_soup = BeautifulSoup(r.text, features='lxml')
