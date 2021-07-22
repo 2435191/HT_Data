@@ -1,87 +1,120 @@
 import re
-from typing import Dict, List, Optional, Type
+from typing import Any, Dict, List, Optional, Type, Union
 
 import pandas
 import requests
 from bs4 import BeautifulSoup
-from pydantic import (BaseModel, Field, ValidationError, root_validator,
-                      validator)
 
-from doctor_class import (Doctor, DoctorInfo, Title, flatten,
-                          recursively_get_all_fields)
+class RE_CONSTANTS:
+    _TITLE_CHARS = r'[A-Za-z]'
+    _FIRST_NAME_CHARS = r'[A-Za-z\-\.\']'
+    _MIDDLE_NAME_CHARS = r'[A-Za-z\-\.\' ]'
+    _MIDDLE_NAME_LOOKAHEAD_CHARS = r'[A-Z]'
+    _LAST_NAME_CHARS = r'[A-Za-z\-\' ]'
+    _DEGREE_LIST_CHARS = r'[A-Za-z\-,\. \(\)\'/]'
 
+    _TITLE_RE_STRING = fr'^({_TITLE_CHARS}+\.)? *({_FIRST_NAME_CHARS}*) +'+\
+        fr'((?:{_MIDDLE_NAME_CHARS})+ (?={_MIDDLE_NAME_LOOKAHEAD_CHARS}))?'+\
+        fr'({_LAST_NAME_CHARS}+) *(?:, ?({_DEGREE_LIST_CHARS}+))?$'
+    TITLE_REGEX = re.compile(_TITLE_RE_STRING)
 
-class EndocrinologistInfo(DoctorInfo):
-    @validator('languages', pre=True)
-    def lang_val(cls, lang_str):
-        if isinstance(lang_str, list):
-            return lang_str
-        return lang_str.replace(', ', ',').split(',')
-
-
-class Endocrinologist(Doctor):
-    info: Optional[EndocrinologistInfo] = None
-    source: str = 'endocrinologists'
-        
+    _LOCATION_RE_STRING = r'([a-zA-Z ]+)\,+ ([A-Z]{2}) ([\d\-]+)'
+    LOCATION_REGEX = re.compile(_LOCATION_RE_STRING)
 
 
-class _EndocrinologistImpl:
+class EndocrinologistApi:
     URL = 'https://www.hormone.org/find-an-endocrinologist/find-an-endocrinologist-results?specialty=Thyroid&country=UNITED+STATES&page=0'
-    # https://regex101.com/r/gZVDIk/1
-    TITLE_REGEX = re.compile(
-        r'^(.+\.) *([A-Za-z]+?) +(?:((?:(?:[A-Z] )+[A-Z](?= ))|(?:[A-Za-z\-]+)) )?([A-Za-z\- ]+) *(?:, ?([A-Za-z\-,\. ]+))?$'
-    )
+    
 
-    def __init__(self, soup: BeautifulSoup):
+    
+    FIELD_GROUPS = ['title', 'info', 'areas_of_concentration', 'board_cert', 'address']
+    
+
+    def get_dict(self, soup: BeautifulSoup) -> Dict[str, Any]:
         self.d = {}
-
         self.soup = soup
 
-        for field, info in Endocrinologist.__fields__.items():
+        for field in self.FIELD_GROUPS:
+            func = getattr(self, f'_get_{field}', lambda: NotImplemented)
             try:
-                func = getattr(self, f'_get_{field}')
                 res = func()
-                self.d[field] = res
             except Exception as e:
-                #print(field, e)
-                if info.required:
-                    pass
-                    # raise e
+                print(field, e)
+                res = None
 
+            if isinstance(res, dict):
+                self.d.update(res)
+            else:
+                self.d[field] = res
 
-    def _get_title(self) -> Title:
+        for k, v in self.d.items():
+            if isinstance(v, list):
+                for i, val in enumerate(v):
+                    v[i] = getattr(val, 'strip', lambda: val)()
+                self.d[k] = v
+            else:
+                self.d[k] = getattr(v, 'strip', lambda: v)()
+            
+            
+
+        return self.d
+
+    def _get_title(self) -> Dict[str, Union[str, List[str]]]:
         raw_text = self.soup.find(
             class_='endocrinologist-list-item__title').get_text()
-        fields = self.TITLE_REGEX.search(raw_text).groups()
+        match = RE_CONSTANTS.TITLE_REGEX.search(raw_text)
+        assert match, raw_text
+        fields = match.groups()
         prefix, first, middle, last, degrees = fields
 
         middle = middle.strip().split(' ') if middle else []  # TODO: make validators
         last = last.strip().split(' ') if last else []
         degrees = degrees.replace(' ', '').split(',') if degrees else []
 
-        return Title(**{
+        return {
+            'full_name': raw_text,
             'prefix': prefix,
             'first_name': first,
             'middle_name': middle,
             'last_name': last,
             'degrees': degrees
-        })
+        }
 
-    def _get_info(self) -> DoctorInfo:
+    def _get_info(self) -> Dict[str, str]:
         contact = self.soup.find(class_='endocrinologist-list-item__contact')
+        d = {}
 
-        d = {'misc': {}}
         for elem in contact.find_all('p'):
             k = elem.find('strong').get_text()
             v = elem.get_text().strip(k)
             k = k.strip(':').lower()
 
-            if k in DoctorInfo.__fields__ and k != 'misc':
-                d[k] = v
-            else:
-                d['misc'][k] = v
+            if k == 'languages':
+                v = v.split(', ')
+            
 
-        return DoctorInfo(**d)
+            d[k] = v
+
+        return d
+
+    def _get_address(self) -> Dict[str, str]:
+        elem = self.soup.find(
+            class_='endocrinologist-list-item__info')
+        source = elem.prettify()
+
+        match = RE_CONSTANTS.LOCATION_REGEX.search(source)
+        assert match, elem
+        fields = match.groups()
+        city, state, zip_ = fields
+
+        return {
+            'address_and_occupation': NotImplemented,
+            'city': city,
+            'state': state,
+            'zipcode': zip_
+        }
+
+
 
     def _get_areas_of_concentration(self) -> List[str]:
         concentrations_elem = None
@@ -105,22 +138,13 @@ class _EndocrinologistImpl:
 
 
 if __name__ == '__main__':
-    
-    df = Endocrinologist.to_empty_DataFrame()
-    print(df)
-    r = requests.get(_EndocrinologistImpl.URL)
+
+    df = pandas.DataFrame(columns=['full_name', 'prefix', 'first_name', 'middle_name', 'last_name', 'title', 'zipcode'])
+    r = requests.get(EndocrinologistApi.URL)
     base_soup = BeautifulSoup(r.text, features='lxml')
     for soup in base_soup.find_all(class_='endocrinologist-list-item'):
-        try:
-            d = _EndocrinologistImpl(soup).d
-            end = Endocrinologist(**d)
-        except ValidationError:
-            print('ERROR')
-            continue
-        df = df.append(end.to_DataFrame(), ignore_index=True)
-        print(len(df))
-
-    df.to_csv('data/endocrinologists.csv')
-    
-
-
+        api = EndocrinologistApi()
+        d = api.get_dict(soup)
+        
+        df = df.append(d, ignore_index=True)
+        df.to_csv('data/_endocrinologists_raw.csv')
