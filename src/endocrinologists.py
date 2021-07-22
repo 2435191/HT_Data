@@ -139,7 +139,7 @@ class EndocrinologistApi:
 
 if __name__ == '__main__':
 
-    df = pandas.DataFrame(columns=['full_name', 'prefix', 'first_name', 'middle_name', 'last_name', 'title', 'zipcode'])
+    df = pandas.DataFrame(columns=['full_name', 'prefix', 'first_name', 'middle_name', 'last_name', 'degrees', 'zipcode'])
     r = requests.get(EndocrinologistApi.URL)
     base_soup = BeautifulSoup(r.text, features='lxml')
     for soup in base_soup.find_all(class_='endocrinologist-list-item'):
