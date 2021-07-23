@@ -5,6 +5,7 @@ import pandas
 import requests
 from bs4 import BeautifulSoup
 
+
 class RE_CONSTANTS:
     _TITLE_CHARS = r'[A-Za-z]'
     _FIRST_NAME_CHARS = r'[A-Za-z\-\.\']'
@@ -13,8 +14,8 @@ class RE_CONSTANTS:
     _LAST_NAME_CHARS = r'[A-Za-z\-\' ]'
     _DEGREE_LIST_CHARS = r'[A-Za-z\-,\. \(\)\'/]'
 
-    _TITLE_RE_STRING = fr'^({_TITLE_CHARS}+\.)? *({_FIRST_NAME_CHARS}*) +'+\
-        fr'((?:{_MIDDLE_NAME_CHARS})+ (?={_MIDDLE_NAME_LOOKAHEAD_CHARS}))?'+\
+    _TITLE_RE_STRING = fr'^({_TITLE_CHARS}+\.)? *({_FIRST_NAME_CHARS}*) +' +\
+        fr'((?:{_MIDDLE_NAME_CHARS})+ (?={_MIDDLE_NAME_LOOKAHEAD_CHARS}))?' +\
         fr'({_LAST_NAME_CHARS}+) *(?:, ?({_DEGREE_LIST_CHARS}+))?$'
     TITLE_REGEX = re.compile(_TITLE_RE_STRING)
 
@@ -24,11 +25,9 @@ class RE_CONSTANTS:
 
 class EndocrinologistApi:
     URL = 'https://www.hormone.org/find-an-endocrinologist/find-an-endocrinologist-results?specialty=Thyroid&country=UNITED+STATES&page=0'
-    
 
-    
-    FIELD_GROUPS = ['title', 'info', 'areas_of_concentration', 'board_cert', 'address']
-    
+    FIELD_GROUPS = ['title', 'info',
+                    'areas_of_concentration', 'board_cert', 'address']
 
     def get_dict(self, soup: BeautifulSoup) -> Dict[str, Any]:
         self.d = {}
@@ -54,8 +53,6 @@ class EndocrinologistApi:
                 self.d[k] = v
             else:
                 self.d[k] = getattr(v, 'strip', lambda: v)()
-            
-            
 
         return self.d
 
@@ -91,7 +88,6 @@ class EndocrinologistApi:
 
             if k == 'languages':
                 v = v.split(', ')
-            
 
             d[k] = v
 
@@ -113,8 +109,6 @@ class EndocrinologistApi:
             'state': state,
             'zipcode': zip_
         }
-
-
 
     def _get_areas_of_concentration(self) -> List[str]:
         concentrations_elem = None
@@ -139,12 +133,13 @@ class EndocrinologistApi:
 
 if __name__ == '__main__':
 
-    df = pandas.DataFrame(columns=['full_name', 'prefix', 'first_name', 'middle_name', 'last_name', 'degrees', 'zipcode'])
+    df = pandas.DataFrame(columns=[
+                          'full_name', 'prefix', 'first_name', 'middle_name', 'last_name', 'degrees', 'zipcode'])
     r = requests.get(EndocrinologistApi.URL)
     base_soup = BeautifulSoup(r.text, features='lxml')
     for soup in base_soup.find_all(class_='endocrinologist-list-item'):
         api = EndocrinologistApi()
         d = api.get_dict(soup)
-        
+
         df = df.append(d, ignore_index=True)
         df.to_csv('data/_endocrinologists_raw.csv')
