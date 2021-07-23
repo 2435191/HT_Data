@@ -19,7 +19,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
-logger = logging.getLogger(__name__)
 
 class _CustomWaitForAllData:
     def __init__(self, locator, expected_number_of_elements):
@@ -65,6 +64,8 @@ class AsoprsBasicDataApi:
         )
         Select(select_elem).select_by_visible_text('United States')
 
+        logger.debug("selected country")
+
         success = False
         for elem in driver.find_elements_by_class_name('gen-button'):
             if elem.text.lower() == 'search':
@@ -76,20 +77,24 @@ class AsoprsBasicDataApi:
             EC.element_to_be_clickable((By.ID, 'per-page-select'))
         )
         Select(paging_dropdown).select_by_index(2)
+        logger.debug("selected paging value")
 
         WebDriverWait(driver, 10).until(
             _CustomWaitForAllData(
                 (By.CSS_SELECTOR, ".search-profile.ng-scope"), 15)
         )  # wait for all data to load
 
+        logger.debug("all data loaded")
+
         num_pages = int(driver.find_element_by_id('total-pages').text)
         prev = []
 
-        for i in range(num_pages):
+        for _ in range(num_pages):
             profiles = WebDriverWait(driver, 10).until(
                 _CustomWaitForChange(
                     (By.CSS_SELECTOR, ".search-profile.ng-scope"), prev)
             )
+            logger.debug("new data loaded")
             for elem in profiles:
                 name = elem.find_element_by_css_selector(
                     '.ds-contact-name .ng-scope').text
@@ -97,9 +102,12 @@ class AsoprsBasicDataApi:
                     '.ds-avatar > img').get_attribute('src')  # contains profile link
 
                 all_asoprs.loc[len(all_asoprs), :] = [name, img_url]
+                logger.debug(f"name: {name}, img_url: {img_url}")
 
             prev = profiles
             driver.find_element_by_id('next').click()
+
+            logger.debug('button clicked')
 
         return all_asoprs
 
@@ -154,7 +162,7 @@ class AsoprsAdvancedDataApi:
 
             status = resp.status_code
             if status in [429, 443]:
-                logger.error(f"sleeping because of status: {status} trying to access {url}")
+                logger.warning(f"sleeping because of status: {status} trying to access {url}")
                 time.sleep(sleep_time)
                 continue
             break
@@ -164,7 +172,8 @@ class AsoprsAdvancedDataApi:
         match = cls.GET_JSON.search(resp.text)
         d = json.loads(match.group(1))
 
-        logger.debug(f"d: {d} trying to access {url}")
+        
+        logger.info(f"network success, got dict d: {d} trying to access {url}")
 
         attrs = d['builtInAttributes'] + d['customAttributes']
 
@@ -189,9 +198,12 @@ class AsoprsAdvancedDataApi:
 
         return formatted_attrs
 
+logging.basicConfig()
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 if __name__ == '__main__':
-    #basic_df = AsoprsBasicDataApi.get_asoprs_lst()
+    # basic_df = AsoprsBasicDataApi.get_asoprs_lst()
     # basic_df.to_csv('data/_basic_asoprs_raw.csv')
 
     basic_df = pandas.read_csv('data/_basic_asoprs_raw.csv', index_col=0)
