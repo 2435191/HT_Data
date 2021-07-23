@@ -114,7 +114,7 @@ class AsoprsBasicDataApi:
 
 class AsoprsAdvancedDataApi:
     GET_JSON = re.compile('attributesView\s*:\s*(\{.+\})')
-    EXCLUDED_LABELS = ['label', 'type', 'typeLabelId']
+    EXCLUDED_LABELS = ['label', 'type', 'typeLabelId', 'attributeId', 'displayType', 'maxLength']
 
     @classmethod
     def get_detailed_asoprs_data(cls, df: pandas.DataFrame, id_column_name: str, workers: int, sleep_time: float) -> pandas.DataFrame:
