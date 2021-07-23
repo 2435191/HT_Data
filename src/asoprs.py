@@ -1,185 +1,203 @@
 import json
+import logging
 import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import astuple, fields
 from pathlib import Path
-from typing import Dict, List, NamedTuple, Optional, Tuple, Union
+from typing import Any, Dict, List, NamedTuple, Optional, Tuple, Union
 
-import pandas
 import requests
+import pandas
 from bs4 import BeautifulSoup
-from inflection import underscore  # camelCase to snake_case
+from inflection import underscore # camelCase to snake_case
+from selenium import webdriver
+from selenium.common.exceptions import WebDriverException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select, WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
 
-sys.path.append('../') # FIXME
+logger = logging.getLogger(__name__)
 
-from custom_dclasses import Doctor, Address
+class _CustomWaitForAllData:
+    def __init__(self, locator, expected_number_of_elements):
+        self.locator = locator
+        self.expected = expected_number_of_elements
+
+    def __call__(self, driver):
+        # Finding the referenced element
+        elements = driver.find_elements(*self.locator)
+        if len(elements) >= self.expected:
+            return elements
+        return False
 
 
-class AsoprsBasicData:
-    DIRECTORY_URL = "https://www.asoprs.org/ui-directory-search/v2/search-directory-paged/"
-    SEARCH_ID = '88a8ebb7-93f5-4cd1-8ecf-c748e32bac33' # TODO: make dynamics
+class _CustomWaitForChange:
+    def __init__(self, locator, prev):
+        self.locator = locator
+        self.prev = prev
 
+    def __call__(self, driver):
+        try:
+            elements = EC.presence_of_all_elements_located(
+                self.locator)(driver)
+        except WebDriverException:
+            return False
+
+        if elements != self.prev:
+            return elements
+        return False
+
+
+class AsoprsBasicDataApi:
     @classmethod
-    def get_asoprs_lst(cls,
-                       page_size: int = 15,
-                       addl_payload: Dict[str, str] = {}
-                       ) -> pandas.DataFrame:
+    def get_asoprs_lst(cls) -> pandas.DataFrame:
+        all_asoprs = pandas.DataFrame(columns=["name", "photo_url"])
 
-        all_asoprs = pandas.DataFrame(columns=["idx", "name", "photo_url"]) \
-            .set_index("idx")
+        driver = webdriver.Chrome(ChromeDriverManager().install())
+        driver.get(
+            'https://www.asoprs.org/index.php?option=com_mcdirectorysearch&view=search&id=12029#/')
 
-        s = requests.Session()
-        s.cookies.set("serviceID", "8304", domain="www.asoprs.org")
+        select_elem = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "6-field"))
+        )
+        Select(select_elem).select_by_visible_text('United States')
 
-        internal_url = None
-        while True:
-            data = cls._get_asoprs_list_internal(
-                s, page_size, addl_payload, internal_url)
+        success = False
+        for elem in driver.find_elements_by_class_name('gen-button'):
+            if elem.text.lower() == 'search':
+                elem.click()
+                success = True
+        assert success, "couldn't find button"
 
-            for surgeon in data['results']:
-                all_asoprs.loc[surgeon['id'], :] = (
-                    surgeon['title'], surgeon['avatar_url'])
+        paging_dropdown = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, 'per-page-select'))
+        )
+        Select(paging_dropdown).select_by_index(2)
 
-            if data['current_page'] == data['total_page_count']:
-                break
+        WebDriverWait(driver, 10).until(
+            _CustomWaitForAllData(
+                (By.CSS_SELECTOR, ".search-profile.ng-scope"), 15)
+        )  # wait for all data to load
 
-            internal_url = data['next_page_url']
+        num_pages = int(driver.find_element_by_id('total-pages').text)
+        prev = []
+
+        for i in range(num_pages):
+            profiles = WebDriverWait(driver, 10).until(
+                _CustomWaitForChange(
+                    (By.CSS_SELECTOR, ".search-profile.ng-scope"), prev)
+            )
+            for elem in profiles:
+                name = elem.find_element_by_css_selector(
+                    '.ds-contact-name .ng-scope').text
+                img_url = elem.find_element_by_css_selector(
+                    '.ds-avatar > img').get_attribute('src')  # contains profile link
+
+                all_asoprs.loc[len(all_asoprs), :] = [name, img_url]
+
+            prev = profiles
+            driver.find_element_by_id('next').click()
 
         return all_asoprs
 
-    @classmethod
-    def _get_asoprs_list_internal(cls,
-                                  s: requests.Session,
-                                  page_size: int,
-                                  addl_payload: Dict[str, str],
-                                  internal_url: Optional[str] = None,
-                                  ) -> "JSON_response":
 
-        if internal_url is None:
-            internal_url = "http://service-router.prod01.memberclicks.io/search-results/v2/results/" + \
-                f"{cls.SEARCH_ID}?pageSize={page_size}&pageNumber=1"
-
-        payload = {
-            "url": internal_url
-        }
-        payload.update(addl_payload)
-
-        # few enough post calls where async/multithreading isn't necessary
-        resp: requests.Response = s.post(cls.DIRECTORY_URL, payload)
-        data: "JSON_response" = json.loads(resp.text)
-
-        return data
-
-
-class AsoprsAdvancedData:
+class AsoprsAdvancedDataApi:
     GET_JSON = re.compile('attributesView\s*:\s*(\{.+\})')
+    EXCLUDED_LABELS = ['label', 'type', 'typeLabelId']
 
     @classmethod
-    def get_detailed_asoprs_data(cls, df: pandas.DataFrame, workers: int, sleep_time: float) -> pandas.DataFrame:
+    def get_detailed_asoprs_data(cls, df: pandas.DataFrame, id_column_name: str, workers: int, sleep_time: float) -> pandas.DataFrame:
         df = df.copy()
-        df.index = df.index.astype(int)
-
-        target_cols = [f.name for f in fields(Doctor)]
-        for c in target_cols:
-            df[c] = 0
-            df[c] = df[c].astype(object)
-
+        df[id_column_name] = df[id_column_name].astype(int)
+        df.index = df[id_column_name
+        ]
         tpe = ThreadPoolExecutor(max_workers=workers)
 
         futs_to_idxs = {tpe.submit(
             cls._worker_get_detailed, i, sleep_time): i for i in df.index}
 
+        i = 0
         for fut in as_completed(futs_to_idxs):
             res = fut.result()
+            
             idx = futs_to_idxs[fut]
 
-            try:
-                # for col, val in zip(target_cols, res):
-                #df.at[idx, col] = val
-                df.loc[[idx], target_cols] = res
-            except Exception as e:
-                print('EXCEPTION')
-                #print(e)
-                print(idx)
-                print(type(idx))
-                #print(target_cols)
-                #print(len(target_cols), len(res))
-                #raise e
-                print('EXCEPTION')
-            print(idx, 'done')
+            logger.debug(f"result recieved: {res} for {idx}")
+
+            for k, v in res.items():
+                df.at[idx, k] = v
+            df.to_csv('data/_advanced_asoprs_raw.csv')
+                
+            i += 1
+
+            logger.info(f"Done with {i}/{len(df)}")
 
         return df
 
     @classmethod
-    def _worker_get_detailed(cls, idx: str, sleep_time: float) -> Tuple[str]:
-        print(idx)
+    def _worker_get_detailed(cls, idx: str, sleep_time: float) -> Dict[str, Any]:
         url = f'https://www.asoprs.org/index.php?option=com_community&view=profile&userid={idx}'
 
+        logger.info(f"Getting url: {url}")
+
         while True:  # rate limit
-            print('getting request')
+            resp = None
             try:
                 resp = requests.get(url)
-            except:
-                print('failed', resp)
+            except Exception as e:
+                logger.error(f"sleeping because exception trying to access {url}")
                 time.sleep(sleep_time)
                 continue
 
             status = resp.status_code
             if status in [429, 443]:
-                print('failed')
+                logger.error(f"sleeping because of status: {status} trying to access {url}")
                 time.sleep(sleep_time)
-                
                 continue
-            print('success')
             break
+        
+        logger.debug(f"resp.text: {resp.text} trying to access {url}")
 
         match = cls.GET_JSON.search(resp.text)
-        if not match:
-            with open(f'error_{idx}.html', 'w+') as f:
-                f.write(resp.text)
-            assert match
-        json_ = json.loads(match.group(1))
-        doctor = cls._parse_detailed_json(json_)
-        return astuple(doctor)
+        d = json.loads(match.group(1))
 
-    @classmethod
-    def _parse_detailed_json(cls, json_: Dict) -> Doctor:
-        tup = Doctor()
-        tup.other_attrs = json_['customAttributes']
+        logger.debug(f"d: {d} trying to access {url}")
 
-        for attr in json_['builtInAttributes']:
+        attrs = d['builtInAttributes'] + d['customAttributes']
 
-            label = attr['label']
+        logger.debug(f"attrs: {attrs} trying to access {url}")
 
-            normal_attr_flag = False
+        formatted_attrs = {}
 
-            if label == 'Full Name':
-                for name in ['prefix', 'firstName', 'middleName', 'middleInitial', 'lastName', 'suffix']:
-                    tup.__setattr__(underscore(name), attr[name])
-                normal_attr_flag = True
-            if label == 'Organization':
-                tup.name = attr['name']
-                normal_attr_flag = True
-            if 'phone' in label.lower():
-                tup.phones.append(attr['phone'])
-                normal_attr_flag = True
-            if 'address' in label.lower():
-                tup.addresses.append(
-                    Address(*[attr[i]
-                            for i in ['line1', 'line2', 'city', 'state', 'zip']])
-                )
-                normal_attr_flag = True
+        for item_dict in attrs:
+            label = item_dict['label']
+            for k, v in item_dict.items():
 
-            if not normal_attr_flag:
-                tup.other_attrs.append(attr)
+                if k in cls.EXCLUDED_LABELS:
+                    continue
 
-        return tup
+                formatted_attrs_key = f"{label}_{k}"
+                i = 1
+                while formatted_attrs_key in formatted_attrs:
+                    formatted_attrs_key = f"{label}_{k}_{i}"
+                    i += 1
+                formatted_attrs[formatted_attrs_key] = v
+
+
+        return formatted_attrs
 
 
 if __name__ == '__main__':
-    df = AsoprsAdvancedData.get_detailed_asoprs_data(
-        pandas.read_csv('data/basic_asoprs.csv', index_col='idx'), 20, 5
-    )
-    df.to_csv('data/asoprs.csv')
+    #basic_df = AsoprsBasicDataApi.get_asoprs_lst()
+    # basic_df.to_csv('data/_basic_asoprs_raw.csv')
+
+    basic_df = pandas.read_csv('data/_basic_asoprs_raw.csv', index_col=0)
+    ids = basic_df['photo_url'].apply(lambda s: s.split('/')[-2])
+    basic_df['idx'] = ids
+
+    advanced_df = AsoprsAdvancedDataApi.get_detailed_asoprs_data(basic_df, 'idx', 5, 10)
+    
+    advanced_df.to_csv('data/_advanced_asoprs_raw.csv')
