@@ -49,6 +49,10 @@ class Doctor(BaseModel):
     board_cert:             Optional[str] = None
     source:                 Optional[str] = None
 
+
+    class Config:
+        extra = 'ignore'
+
     @classmethod
     def to_empty_DataFrame(cls) -> pandas.DataFrame:
         fields = recursively_get_all_fields(cls)
