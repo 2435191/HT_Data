@@ -84,5 +84,5 @@ def get_doctor_data(name: str, url: str) -> Tuple[bool, Dict[str, str]]:
 if __name__ == '__main__':
     BasicItedsApi().get_urls_lst().to_csv(BasicItedsApi.BASIC_CSV_PATH)
     df = pandas.read_csv(BasicItedsApi.BASIC_CSV_PATH)
-    df['success'] = df.apply(lambda row: get_doctor_data(row['name'], row['url'] + 'profile/')[0], axis=1)
-    df.to_csv('test.csv')
+    df['has_interesting_data'] = df.apply(lambda row: get_doctor_data(row['name'], row['url'] + 'profile/')[0], axis=1)
+    df.to_csv('data/_iteds_raw.csv')
