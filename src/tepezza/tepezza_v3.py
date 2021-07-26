@@ -50,10 +50,10 @@ class AutomatedTepezzaApi:
     """
     TSHARK = '/Applications/Wireshark.app/Contents/MacOS/tshark'
     PATH_TO_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-    PATH_TO_ZIPCODES = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/data/__ZIPCODES.csv'
-    TMP_CHROME_PROFILE = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/tepezza/__TMP_CHROME_PROFILE'
-    TMP_CHROME_SSL_LOG = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/tepezza/__TMP_SSL_KEY.log'
-    TMP_GATHERED_DATA_LOG = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/tepezza/__TMP_DATA_GATHERED.json'
+    PATH_TO_ZIPCODES = 'data/__ZIPCODES.csv'
+    TMP_CHROME_PROFILE = 'src/tepezza/__TMP_CHROME_PROFILE'
+    TMP_CHROME_SSL_LOG = 'src/tepezza/__TMP_SSL_KEY.log'
+    TMP_GATHERED_DATA_LOG = 'src/tepezza/__TMP_DATA_GATHERED.json'
 
     TSHARK_CMD = f'{TSHARK} -l -x -i en0 -o ssl.keylog_file:{TMP_CHROME_SSL_LOG} -Y json -T ek'
     RE_JSON_RAW = re.compile('"json_raw": "([a-f0-9]+)"')
