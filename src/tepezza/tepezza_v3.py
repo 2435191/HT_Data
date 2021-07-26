@@ -176,6 +176,10 @@ class AutomatedTepezzaApi:
                 assert d['success'], 'success'
                 assert 'data' in d, 'data'
 
+                if isinstance(d['data'], dict) and d['data'].get('message') == 'Unable to connect to server':
+                    logger.debug("returning empty data")
+                    return []
+
                 assert isinstance(d['data'], list), 'data not list'
                 assert all( ('PhysicianAttributes' in i for i in d['data']) ), 'not doctor data'
                 
@@ -187,11 +191,7 @@ class AutomatedTepezzaApi:
                 #with open(f'error_{counter}.json', 'wb+') as f:
                     #f.write(in_)
                 logger.debug(e, exc_info=True)
-
-            # i in d['data'] will be str if no data, so pop raises
-            except AttributeError as e:
-                logger.debug("returning empty data")
-                return []
+                
 
     def get_data(self, every: int, filepath: str, start_from: Optional[str] = None) -> pandas.DataFrame:
         """[summary]
@@ -206,6 +206,7 @@ class AutomatedTepezzaApi:
         :rtype: pandas.DataFrame
         """
 
+        
 
         if start_from is None:
             df = pandas.DataFrame(columns=['ZIPCODE'])
@@ -213,10 +214,11 @@ class AutomatedTepezzaApi:
             idx = 0
         else:
             df = pandas.read_csv(filepath, dtype='str', index_col=0)
+            assert df['ZIPCODE'].isin([start_from]).any(), 'must have start zipcode already in .csv file'
             prev = None # TODO: make prev = previous dataframe relevant bits for corner case error checking
-            idx  = df[df['ZIPCODE']==start_from].index.min() // 50 * 5
+            idx  = self.zips[self.zips == start_from].index.min()
         
-        print(idx)
+        
 
         self.logger = logging.getLogger("get data")
         self.watch_network_logger = logging.getLogger("watch network")
@@ -224,21 +226,21 @@ class AutomatedTepezzaApi:
         self.thk.start()
 
         
-        
         while idx < len(self.zips):
 
             target_zip = self.zips.iloc[idx]
-            
+            clipboard.copy(target_zip)
 
             self.logger.info(f"{Colors.YELLOW}Target zip: {target_zip}{Colors.ENDC}")
-
             self.logger.info("Optionally use cmd e; otherwise manually paste/enter/delete (easier on captcha).")
+            
             self.thk.zipcode = target_zip
-            clipboard.copy(target_zip) 
-
+            self.thk.enabled = True
+            
             res = self._watch_network(self.watch_network_logger)
+            self.thk.enabled = False
 
-            if prev == res:
+            if prev == res and prev != []:
                 # try again
                 prev = None
 
@@ -257,8 +259,11 @@ class AutomatedTepezzaApi:
 
             prev = copy.deepcopy(res)
 
+            if res == []:
+                res = [{}] * 50
             for i in res:
                 i['ZIPCODE'] = target_zip
+
             with open(f'test_{idx}.json', 'w+') as f:
                 json.dump(res, f, indent=2)
 
@@ -284,7 +289,7 @@ if __name__ == '__main__':
     try:
         with AutomatedTepezzaApi() as api:
             api.startup()
-            api.get_data(5, 'data/_tepezza_raw_AUTO2.csv', '01041')
+            api.get_data(5, 'data/_tepezza_raw_AUTO2.csv', '05853')
 
     except KeyboardInterrupt:
         pass
