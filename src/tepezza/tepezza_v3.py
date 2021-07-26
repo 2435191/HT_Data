@@ -193,33 +193,38 @@ class AutomatedTepezzaApi:
                 logger.debug("returning empty data")
                 return []
 
-    def get_data(self, every: int, filepath: str, start_from: int = 0) -> pandas.DataFrame:
-        """Begin zipcode data loop.
+    def get_data(self, every: int, filepath: str, start_from: Optional[str] = None) -> pandas.DataFrame:
+        """[summary]
 
-        :param starting_zip: Initial zip code to scan
-        :type starting_zip: str
-        :param radius_func: transform list of radii to some aggregate (median, greatest, etc.)
-        :type radius_func: Callable[[Iterable[float]], float]
-        :param filepath: where output DataFrame is saved
+        :param every: [description]
+        :type every: int
+        :param filepath: [description]
         :type filepath: str
-        :return: output DataFrame, also saved to `filepath`.
+        :param start_from: what zipcode should the program should start from (must be in existing csv if not None), defaults to None
+        :type start_from: Optional[str], optional
+        :return: [description]
         :rtype: pandas.DataFrame
         """
 
 
-
-        if start_from == 0:
-            df = pandas.DataFrame()
+        if start_from is None:
+            df = pandas.DataFrame(columns=['ZIPCODE'])
+            prev = None
+            idx = 0
         else:
-            df = pandas.read_csv(filepath)
+            df = pandas.read_csv(filepath, dtype='str', index_col=0)
+            prev = None # TODO: make prev = previous dataframe relevant bits for corner case error checking
+            idx  = df[df['ZIPCODE']==start_from].index.min() // 50 * 5
+        
+        print(idx)
 
         self.logger = logging.getLogger("get data")
         self.watch_network_logger = logging.getLogger("watch network")
 
         self.thk.start()
 
-        prev = None
-        idx = start_from
+        
+        
         while idx < len(self.zips):
 
             target_zip = self.zips.iloc[idx]
@@ -234,7 +239,14 @@ class AutomatedTepezzaApi:
             res = self._watch_network(self.watch_network_logger)
 
             if prev == res:
-                idx -= every
+                # try again
+                prev = None
+
+                zip_to_drop = self.zips.iloc[idx]
+                df_to_drop = df[df['ZIPCODE'] == zip_to_drop]
+                df.drop(df_to_drop.index, inplace=True)
+                df.to_csv(filepath)
+
                 self.logger.warning(f"Data match previous. Returning to idx = {idx}.")
                 continue
 
@@ -245,15 +257,16 @@ class AutomatedTepezzaApi:
 
             prev = copy.deepcopy(res)
 
-            
             for i in res:
                 i['ZIPCODE'] = target_zip
             with open(f'test_{idx}.json', 'w+') as f:
                 json.dump(res, f, indent=2)
 
             self.logger.debug(res)
-            self.logger.info(f"Done with {idx + every} / {len(self.zips)}")
-            df = df.append(res)
+
+            pct_done = round( (idx + every) / len(self.zips) * 100, 3)
+            self.logger.info(f"Done with {idx + every} / {len(self.zips)} ({pct_done}%)")
+            df = df.append(res, ignore_index=True)
             df.to_csv(filepath)
 
             idx += every
@@ -271,7 +284,7 @@ if __name__ == '__main__':
     try:
         with AutomatedTepezzaApi() as api:
             api.startup()
-            api.get_data(5, 'data/_tepezza_raw_AUTO2.csv')
+            api.get_data(5, 'data/_tepezza_raw_AUTO2.csv', '01041')
 
     except KeyboardInterrupt:
         pass
