@@ -1,3 +1,4 @@
+import copy
 import json
 import logging
 import os
@@ -50,16 +51,16 @@ class AutomatedTepezzaApi:
     TSHARK = '/Applications/Wireshark.app/Contents/MacOS/tshark'
     PATH_TO_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
     PATH_TO_ZIPCODES = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/data/__ZIPCODES.csv'
-    TMP_CHROME_PROFILE = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/__TMP_CHROME_PROFILE'
-    TMP_CHROME_SSL_LOG = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/__TMP_SSL_KEY.log'
-    TMP_GATHERED_DATA_LOG = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/__TMP_DATA_GATHERED.json'
+    TMP_CHROME_PROFILE = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/tepezza/__TMP_CHROME_PROFILE'
+    TMP_CHROME_SSL_LOG = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/tepezza/__TMP_SSL_KEY.log'
+    TMP_GATHERED_DATA_LOG = '/Users/eab06/Desktop/WJB/PythonProjects/HT_Data/src/tepezza/__TMP_DATA_GATHERED.json'
 
     TSHARK_CMD = f'{TSHARK} -l -x -i en0 -o ssl.keylog_file:{TMP_CHROME_SSL_LOG} -Y json -T ek'
     RE_JSON_RAW = re.compile('"json_raw": "([a-f0-9]+)"')
 
     # TODO: add disable hook to hotkey
     def __init__(self):
-        # self.thk = TepezzaHotkey()
+        self.thk = TepezzaHotkey()
         self.__exit__()
 
     def startup(self) -> None:
@@ -214,30 +215,41 @@ class AutomatedTepezzaApi:
 
         self.logger = logging.getLogger("get data")
         self.watch_network_logger = logging.getLogger("watch network")
-        
+
+        self.thk.start()
+
         prev = None
         idx = start_from
         while idx < len(self.zips):
 
             target_zip = self.zips.iloc[idx]
-            self.thk.zipcode = target_zip
+            
 
             self.logger.info(f"{Colors.YELLOW}Target zip: {target_zip}{Colors.ENDC}")
-            clipboard.copy(target_zip)
-            """
-            TYPE STUFF HERE
-            """
+
+            self.logger.info("Optionally use cmd e; otherwise manually paste/enter/delete (easier on captcha).")
+            self.thk.zipcode = target_zip
+            clipboard.copy(target_zip) 
 
             res = self._watch_network(self.watch_network_logger)
-            if prev == res: # FIXME
+
+            if prev == res:
                 idx -= every
                 self.logger.warning(f"Data match previous. Returning to idx = {idx}.")
                 continue
 
-            with open(f'test_{idx}.json', 'w+') as f:
+            with open('test_prev.json', 'w+') as f:
+                json.dump(prev, f, indent=2)
+            with open('test_res.json', 'w+') as f:
                 json.dump(res, f, indent=2)
+
+            prev = copy.deepcopy(res)
+
+            
             for i in res:
                 i['ZIPCODE'] = target_zip
+            with open(f'test_{idx}.json', 'w+') as f:
+                json.dump(res, f, indent=2)
 
             self.logger.debug(res)
             self.logger.info(f"Done with {idx + every} / {len(self.zips)}")
@@ -245,8 +257,6 @@ class AutomatedTepezzaApi:
             df.to_csv(filepath)
 
             idx += every
-            prev = res
-
             
         return df
 
@@ -261,10 +271,6 @@ if __name__ == '__main__':
     try:
         with AutomatedTepezzaApi() as api:
             api.startup()
-            
-            #t = threading.Thread(target=api.thk.launch, daemon=True)
-            #t.start()
-
             api.get_data(5, 'data/_tepezza_raw_AUTO2.csv')
 
     except KeyboardInterrupt:
