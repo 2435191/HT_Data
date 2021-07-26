@@ -23,9 +23,6 @@ def _tap(key: Union[str, Key], keyboard: Controller, lower: int = 50, upper: int
     keyboard.release(key)
 
 def _type_zipcode(keyboard: Controller, zipcode: str) -> None:
-    
-    
-    clipboard.copy(zipcode)
 
     with keyboard.pressed(Key.cmd_l): # paste
         _tap('v', keyboard)

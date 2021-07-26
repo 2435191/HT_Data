@@ -59,7 +59,7 @@ class AutomatedTepezzaApi:
 
     # TODO: add disable hook to hotkey
     def __init__(self):
-        self.thk = TepezzaHotkey()
+        # self.thk = TepezzaHotkey()
         self.__exit__()
 
     def startup(self) -> None:
@@ -215,19 +215,24 @@ class AutomatedTepezzaApi:
         self.logger = logging.getLogger("get data")
         self.watch_network_logger = logging.getLogger("watch network")
         
-        
-        for idx in range(start_from, len(self.zips), every):
+        prev = None
+        idx = start_from
+        while idx < len(self.zips):
 
             target_zip = self.zips.iloc[idx]
             self.thk.zipcode = target_zip
 
-            self.logger.info(f"Target zip: {target_zip}")
-
+            self.logger.info(f"{Colors.YELLOW}Target zip: {target_zip}{Colors.ENDC}")
+            clipboard.copy(target_zip)
             """
             TYPE STUFF HERE
             """
 
             res = self._watch_network(self.watch_network_logger)
+            if prev == res: # FIXME
+                idx -= every
+                self.logger.warning(f"Data match previous. Returning to idx = {idx}.")
+                continue
 
             with open(f'test_{idx}.json', 'w+') as f:
                 json.dump(res, f, indent=2)
@@ -236,8 +241,11 @@ class AutomatedTepezzaApi:
 
             self.logger.debug(res)
             self.logger.info(f"Done with {idx + every} / {len(self.zips)}")
-            df.append(res)
+            df = df.append(res)
             df.to_csv(filepath)
+
+            idx += every
+            prev = res
 
             
         return df
@@ -254,10 +262,10 @@ if __name__ == '__main__':
         with AutomatedTepezzaApi() as api:
             api.startup()
             
-            t = threading.Thread(target=api.thk.launch, daemon=True)
-            t.start()
+            #t = threading.Thread(target=api.thk.launch, daemon=True)
+            #t.start()
 
-            api.get_data(5, 'data/_tepezza_raw_AUTO.csv')
+            api.get_data(5, 'data/_tepezza_raw_AUTO2.csv')
 
     except KeyboardInterrupt:
         pass
