@@ -212,4 +212,4 @@ if __name__ == '__main__':
 
     advanced_df = AsoprsAdvancedDataApi.get_detailed_asoprs_data(basic_df, 'idx', 5, 10)
     
-    advanced_df.to_csv('data/_advanced_asoprs_raw.csv')
+    advanced_df.to_csv('data/_asoprs_raw.csv')
