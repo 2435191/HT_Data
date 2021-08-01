@@ -9,11 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
-from doctor_class import Doctor
-
-
-
-
 class BasicItedsApi:
     URL = 'https://thyroideyedisease.org/physician-directory-member-list/'
     BASIC_CSV_PATH = 'data/_iteds_basic_data.csv'
