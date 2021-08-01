@@ -137,7 +137,7 @@ class AsoprsAdvancedDataApi:
 
             for k, v in res.items():
                 df.at[idx, k] = v
-            df.to_csv('data/_advanced_asoprs_raw.csv')
+            df.to_csv('data/raw/_asoprs_raw.csv')
                 
             i += 1
 
@@ -204,12 +204,12 @@ logger.setLevel(logging.INFO)
 
 if __name__ == '__main__':
     # basic_df = AsoprsBasicDataApi.get_asoprs_lst()
-    # basic_df.to_csv('data/_basic_asoprs_raw.csv')
+    # basic_df.to_csv('data/raw/_basic_asoprs_raw.csv')
 
-    basic_df = pandas.read_csv('data/_basic_asoprs_raw.csv', index_col=0)
+    basic_df = pandas.read_csv('data/raw/_basic_asoprs_raw.csv', index_col=0)
     ids = basic_df['photo_url'].apply(lambda s: s.split('/')[-2])
     basic_df['idx'] = ids
 
     advanced_df = AsoprsAdvancedDataApi.get_detailed_asoprs_data(basic_df, 'idx', 5, 10)
     
-    advanced_df.to_csv('data/_asoprs_raw.csv')
+    advanced_df.to_csv('data/raw/_asoprs_raw.csv')

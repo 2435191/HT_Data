@@ -76,7 +76,7 @@ def clean_tepezza(in_df: pandas.DataFrame) -> pandas.DataFrame:
     }
 
     specialty_codes_crosswalk = pandas.read_csv(
-        'data/specialty_codes.csv', index_col=0, comment='#')\
+        'data/util/specialty_codes.csv', index_col=0, comment='#')\
         .loc[:, ['Code', 'Classification', 'Specialization']]
     
     @functools.lru_cache(maxsize=None)
@@ -124,13 +124,13 @@ if __name__ == '__main__':
 
     for name in ('asoprs', 'endocrinologists', 'tepezza'):
 
-        df = pandas.read_csv(f'data/_{name}_raw.csv')
+        df = pandas.read_csv(f'data/raw/_{name}_raw.csv')
         func = globals()[f'clean_{name}']
 
         out_df = func(df)
         assert out_df.columns.to_list() == COLUMNS
         out_df['src'] = name
-        out_df.to_csv(f'data/{name}.csv')
+        out_df.to_csv(f'data/processed/{name}.csv')
         all_dfs.append(out_df)
 
     concat = pandas.concat(all_dfs)
@@ -147,4 +147,4 @@ if __name__ == '__main__':
         ignore_index=True, 
         key=lambda ser: ser.apply(lambda s: s.strip('"').lower())
     )
-    full_data.to_csv('data/all.csv')
+    full_data.to_csv('data/processed/all.csv')

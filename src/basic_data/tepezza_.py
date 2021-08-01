@@ -7,7 +7,7 @@ if __name__ == '__main__':
     try:
         with TepezzaApi() as api:
             api.startup()
-            api.get_data(5, 'data/_tepezza_raw.csv', True, '05853')
+            api.get_data(5, 'data/raw/_tepezza_raw.csv', True, '05853')
 
     except KeyboardInterrupt:
         pass

@@ -11,7 +11,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 class BasicItedsApi:
     URL = 'https://thyroideyedisease.org/physician-directory-member-list/'
-    BASIC_CSV_PATH = 'data/_iteds_basic_data.csv'
+    BASIC_CSV_PATH = 'data/raw/_basic_iteds_raw.csv'
 
     def __init__(self):
         self._driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -38,8 +38,6 @@ class BasicItedsApi:
         self._scrape_page()
 
         while True:
-            
-
             try:
                 next_ = WebDriverWait(self._driver, 10).until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, '[class="next page-numbers"]'))

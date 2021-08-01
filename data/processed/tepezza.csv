@@ -1,0 +1,139 @@
+,first_name,last_name,city,postal_code,state,specialty_code,src
+0,Lawrence,Buono,Riverhead,11901,NY,207W00000X,tepezza
+1,Lawrence,Buono,Southold,11971,NY,207W00000X,tepezza
+2,Gideon,Schneck,East Setauket,11733,NY,207W00000X,tepezza
+3,Nariman,Boyle,East Setauket,11733,NY,207W00000X,tepezza
+4,Peter,Wong,East Setauket,11733,NY,207W00000X,tepezza
+5,Gideon,Schneck,Stony Brook,11790,NY,207W00000X,tepezza
+6,Leon,Rafailov,Smithtown,11787,NY,207W00000X,tepezza
+7,Samuel,Baharestani,Smithtown,11787,NY,207W00000X,tepezza
+8,Larissa,Habib,New Haven,06510,CT,207W00000X,tepezza
+9,Renelle,Lim,New Haven,06519,CT,207W00000X,tepezza
+10,Neil,Nichols,Hauppauge,11788,NY,207W00000X,tepezza
+11,Neil,Nichols,Brentwood,11717,NY,207W00000X,tepezza
+12,Stacy,Scofield-Kaplan,Commack,11725,NY,207W00000X,tepezza
+13,Alexander,Rabinovich,West Islip,11795,NY,207W00000X,tepezza
+14,David,Schlessinger,Woodbury,11797,NY,207W00000X,tepezza
+15,Rachel,Ellis,Hicksville,11801,NY,207W00000X,tepezza
+16,Na,Ma,Syosset,11791,NY,207W00000X,tepezza
+17,Mark,Ruchman,Southbury,06488,CT,207W00000X,tepezza
+18,Jonathan,Silbert,Waterbury,06708,CT,207W00000X,tepezza
+19,Tara,Cronin,Waterbury,06708,CT,207W00000X,tepezza
+20,Bokkwan,Jun,East Meadow,11554,NY,2084N0400X,tepezza
+21,Marc,Werner,Garden City,11530,NY,207W00000X,tepezza
+22,Peter,Wong,Garden City,11530,NY,207W00000X,tepezza
+23,Katherine,Zamecki,Danbury,06810,CT,207W00000X,tepezza
+24,Valerie,Elmalem,Mineola,11501,NY,207W00000X,tepezza
+25,Peter,Wong,Rockville Centre,11570,NY,207W00000X,tepezza
+26,Daniel,Garibaldi,Rockville Centre,11570,NY,207W00000X,tepezza
+27,Scott,Uretsky,New Hyde Park,11042,NY,207W00000X,tepezza
+28,Madina,Falcone,Farmington,06030,CT,207W00000X,tepezza
+29,Rand,Rodgers,Great Neck,11021,NY,152W00000X,tepezza
+30,Lyndon,Lee,West Hartford,06107,CT,207W00000X,tepezza
+31,Daniel,Garibaldi,Valley Stream,11581,NY,207W00000X,tepezza
+32,Mamta,Shah,Mount Kisco,10549,NY,207W00000X,tepezza
+33,Anne,Barmettler,Hartsdale,10530,NY,207W00000X,tepezza
+34,Evan,Schloss,Carmel,10512,NY,2084N0400X,tepezza
+35,Rachel,Ellis,Fresh Meadows,11366,NY,207W00000X,tepezza
+36,Yasmine,Khan,Vernon,06066,CT,207RE0101X,tepezza
+37,Simeon,Lauer,Kew Gardens,11415,NY,207WX0200X,tepezza
+38,Anne,Barmettler,Bronx,10467,NY,207W00000X,tepezza
+39,Kayvan,Keyhani,Yorktown Heights,10598,NY,207W00000X,tepezza
+40,Simeon,Lauer,Bronx,10457,NY,207WX0200X,tepezza
+41,Kira,Segal,New York,10021,NY,207W00000X,tepezza
+42,Gary,Lelli,New York,10021,NY,207W00000X,tepezza
+43,Kyle,Godfrey,New York,10021,NY,207W00000X,tepezza
+44,Susan,Zoltan,New York,10028,NY,207W00000X,tepezza
+45,Robert,Schwarcz,New York,10021,NY,207YS0123X,tepezza
+46,Eleanore,Kim,New York,10021,NY,207W00000X,tepezza
+47,Simeon,Lauer,New York,10023,NY,207WX0200X,tepezza
+48,Brian,Tse,Miami,33136,FL,207W00000X,tepezza
+49,Byron,Lam,Miami,33136,FL,207W00000X,tepezza
+50,Joshua,Pasol,Miami,33136,FL,2084N0400X,tepezza
+51,Sara,Wester,Miami,33136,FL,207W00000X,tepezza
+52,Thomas,Johnson,Miami,33136,FL,207W00000X,tepezza
+53,Wendy,Lee,Miami,33136,FL,207W00000X,tepezza
+54,Matthew,Kay,Aventura,33180,FL,207W00000X,tepezza
+55,Ana,Victoria,Miami,33176,FL,207W00000X,tepezza
+56,Eric,Ciliberti,Hollywood,33020,FL,207W00000X,tepezza
+57,Matthew,Kay,Ft Lauderdale,33308,FL,207W00000X,tepezza
+58,Eric,Ciliberti,Boca Raton,33432,FL,207W00000X,tepezza
+59,Mudit,Jain,Plantation,33317,FL,207RE0101X,tepezza
+60,Michael,Glassman,Pembroke Pines,33028,FL,207W00000X,tepezza
+61,Brian,Tse,Plantation,33324,FL,207W00000X,tepezza
+62,Joshua,Pasol,Plantation,33324,FL,2084N0400X,tepezza
+63,Dan,Georgescu,Deerfield Beach,33442,FL,207W00000X,tepezza
+64,Bryan,Vinik,Boca Raton,33486,FL,207RE0101X,tepezza
+65,Dan,Georgescu,Plantation,33322,FL,207W00000X,tepezza
+66,Eric,Ciliberti,Plantation,33322,FL,207W00000X,tepezza
+67,Alejandro,Trepp Carrasco,Boca Raton,33431,FL,207RE0101X,tepezza
+68,William,Burks,Margate,33063,FL,207W00000X,tepezza
+69,Eric,Ciliberti,Tamarac,33321,FL,207W00000X,tepezza
+70,Eric,Ciliberti,Delray Beach,33484,FL,207W00000X,tepezza
+71,Michael,Schaffer,Delray Beach,33484,FL,207W00000X,tepezza
+72,Bryan,Vinik,Delray Beach,33484,FL,207RE0101X,tepezza
+73,Dan,Georgescu,Weston,33326,FL,207W00000X,tepezza
+74,Sirtaz,Sibia,Boynton Beach,33437,FL,207W00000X,tepezza
+75,William,Kaye,West Palm Beach,33401,FL,207RE0101X,tepezza
+76,Sirtaz,Sibia,Lake Worth,33467,FL,207W00000X,tepezza
+77,Matthew,Kay,West Palm Beach,33409,FL,207W00000X,tepezza
+78,Peter,Rubin,Palm Beach Gardens,33410,FL,207W00000X,tepezza
+79,Bradford,Lee,Palm Beach Gardens,33418,FL,207W00000X,tepezza
+80,Joshua,Pasol,Palm Beach Gardens,33418,FL,2084N0400X,tepezza
+81,Nathan,Blessing,Palm Beach Gardens,33418,FL,207W00000X,tepezza
+82,Dan,Georgescu,Jupiter,33458,FL,207W00000X,tepezza
+83,Matthew,Kay,Jupiter,33458,FL,207W00000X,tepezza
+84,Paul,Pare',Stuart,34994,FL,207W00000X,tepezza
+85,Ahmet,Ergin,Port Saint Lucie,34952,FL,207RE0101X,tepezza
+86,William,Vickers,Port St Lucie,34986,FL,207W00000X,tepezza
+87,Alexander,Blandford,Vero Beach,32960,FL,207W00000X,tepezza
+88,Brian,Tse,Naples,34103,FL,207W00000X,tepezza
+89,Austin,Coleman,Naples,34109,FL,207W00000X,tepezza
+90,Jason,Ross,Melbourne,32901,FL,207W00000X,tepezza
+91,Natalia,Burgos Polanco,Melbourne,32901,FL,207RE0101X,tepezza
+92,Rajiv,Bhambri,Melbourne,32901,FL,207RE0101X,tepezza
+93,Stephen,Laquis,Fort Myers,33907,FL,207W00000X,tepezza
+94,Theresa,Fynn,Saint Cloud,34769,FL,207RE0101X,tepezza
+95,Theresa,Fynn,Kissimmee,34741,FL,207RE0101X,tepezza
+96,Steven,Covici,Springfield,01107,MA,207W00000X,tepezza
+97,Teri,Kleinberg,Worcester,01605,MA,207W00000X,tepezza
+98,Aaron,Fay,Fitchburg,01420,MA,207W00000X,tepezza
+99,Charles,Rheeman,Troy,12180,NY,207W00000X,tepezza
+100,Jamie,Schaefer,Providence,02903,RI,,tepezza
+101,Michael,Migliori,Providence,02903,RI,207W00000X,tepezza
+102,Dane,Slentz,Manchester,03104,NH,207W00000X,tepezza
+103,Philip,Rizzuto,Providence,02905,RI,207W00000X,tepezza
+104,Robert,Hofmann,Providence,02906,RI,207W00000X,tepezza
+105,Natalie,Lopasic,Latham,12110,NY,207W00000X,tepezza
+106,Edward,Wladis,Slingerlands,12159,NY,207WX0200X,tepezza
+107,John,Lee,Lawrence,01841,MA,207W00000X,tepezza
+108,Alberto,Distefano,Boston,02118,MA,207W00000X,tepezza
+109,Michael,Yoon,Boston,02114,MA,207W00000X,tepezza
+110,Daniel,Lefebvre,Boston,02114,MA,207W00000X,tepezza
+111,Nahyoung,Lee,Boston,02114,MA,207W00000X,tepezza
+112,Suzanne,Freitag,Boston,02114,MA,207W00000X,tepezza
+113,Alison,Callahan,Boston,02116,MA,207W00000X,tepezza
+114,Laurel,Vuong,Boston,02116,MA,207W00000X,tepezza
+115,Christie,Morse,Concord,03301,NH,207WX0110X,tepezza
+116,David,Weinberg,Concord,03301,NH,207W00000X,tepezza
+117,Gary,Borodic,Quincy,02169,MA,207W00000X,tepezza
+118,Charles,Rheeman,Malta,12020,NY,207W00000X,tepezza
+119,Scott,Corin,N Dartmouth,02747,MA,207W00000X,tepezza
+120,David,Chen,Fishkill,12524,NY,207W00000X,tepezza
+121,Irina,Koreen,Goshen,10924,NY,207W00000X,tepezza
+122,Jamie,Schaefer,Providence,02903,RI,207WX0200X,tepezza
+123,Simeon,Lauer,Suffern,10901,NY,207WX0200X,tepezza
+124,Simeon,Lauer,Hackensack,07601,NJ,207WX0200X,tepezza
+125,Michael,Richard,Clifton,07011,NJ,207W00000X,tepezza
+126,Alexander,Harris,New Hartford,13413,NY,207W00000X,tepezza
+127,Elizabeth,Houle,Burlington,05401,VT,207W00000X,tepezza
+128,Brynn,Wajda,Portland,04102,ME,207W00000X,tepezza
+129,Natan,Kahn,Portland,04102,ME,207W00000X,tepezza
+130,Linda,Schumacher-Feero,Augusta,04330,ME,207W00000X,tepezza
+131,Zachary,Klett,Bangor,04401,ME,207W00000X,tepezza
+132,David,Ewing-Chow,Watertown,13601,NY,207W00000X,tepezza
+133,Bryant,Carruth,Syracuse,13212,NY,207W00000X,tepezza
+134,Robert,Hill,North Syracuse,13212,NY,207W00000X,tepezza
+135,Thomas,Bersani,Syracuse,13212,NY,207W00000X,tepezza
+137,Joseph,Armenia,Webster,14580,NY,207W00000X,tepezza
+138,Sean,Mogan,Webster,14580,NY,207W00000X,tepezza

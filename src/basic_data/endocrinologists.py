@@ -142,4 +142,4 @@ if __name__ == '__main__':
         d = api.get_dict(soup)
 
         df = df.append(d, ignore_index=True)
-        df.to_csv('data/_endocrinologists_raw.csv')
+        df.to_csv('data/raw/_endocrinologists_raw.csv')
