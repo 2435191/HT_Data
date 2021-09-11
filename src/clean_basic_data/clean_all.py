@@ -3,6 +3,8 @@ import functools
 from typing import Optional
 import pandas
 
+__doc__ = """Get specialty codes and consolidate data from different sources in basic_data."""
+
 COLUMNS = ['first_name', 'last_name', 'city', 'postal_code', 'state', 'specialty_code']
 GENERIC_OPHTHALMOLOGY_CODE = '207W00000X'
 GENERIC_ENDOCRINOLOGY_CODE = '207RE0101X'
