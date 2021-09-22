@@ -23,7 +23,7 @@ class DoctorQuery(BaseModel):
     postal_code: str = ''
     country_code: str = 'US'
 
-    subspecialty_code: Optional[str] = None
+    specialty_code: Optional[str] = None
 
 
     @validator('version')
@@ -79,7 +79,7 @@ if __name__ == '__main__':
         ('city',),
         ('postal_code',), 
         ('state',),
-        ('subspecialty_code',),
+        ('specialty_code',),
         ('first_name', 'last_name')
     )
     START_IDX = 3 # "bottom" of search
