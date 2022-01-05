@@ -127,6 +127,8 @@ if __name__ == '__main__':
     for name in ('asoprs', 'endocrinologists', 'tepezza'):
 
         df = pandas.read_csv(f'data/raw/_{name}_raw.csv')
+        if name == 'tepezza':
+            df = df.append(pandas.read_csv('data/raw/_tepezza_raw_old.csv'))
         func = globals()[f'clean_{name}']
 
         out_df = func(df)
@@ -141,12 +143,16 @@ if __name__ == '__main__':
     columns_for_drop_duplicates = [i for i in concat.columns if i not in ignore_cols]
     
     full_data = concat\
-    .drop_duplicates(
-        columns_for_drop_duplicates, 
-        ignore_index=True)\
     .sort_values(
         'last_name', 
         ignore_index=True, 
         key=lambda ser: ser.apply(lambda s: s.strip('"').lower())
     )
+    full_data.to_csv('data/processed/all_with_duplicates.csv')
+
+    full_data = full_data\
+    .drop_duplicates(
+        columns_for_drop_duplicates, 
+        ignore_index=True)
+    
     full_data.to_csv('data/processed/all.csv')

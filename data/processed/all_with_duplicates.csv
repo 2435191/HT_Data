@@ -1,0 +1,2403 @@
+,first_name,last_name,city,postal_code,state,specialty_code,src
+0,Vinay,Aakalu,Chicago,60612,IL,207W00000X,asoprs
+1,Vinay,Aakalu,Chicago,60612,IL,207W00000X,tepezza
+2,Samuel,Abbate,Wasilla,99654,AK,207RE0101X,endocrinologists
+3,Jean-Paul,Abboud,Murrieta,92562,CA,207WX0200X,tepezza
+4,Maha,Abboud,Elmhurst,60126,IL,207RE0101X,endocrinologists
+5,Mustapha,Abdul-Rahman,Winchester,22601,VA,207RE0101X,endocrinologists
+6,Kiyomi,Abe,Los Angeles,90073,CA,207RE0101X,endocrinologists
+7,Ari,Abel,Wilmington,19808,DE,207W00000X,asoprs
+8,Daniel,Abouganem,Miami,33166,FL,207RE0101X,endocrinologists
+9,Michael,Abowd,Toledo,43617,OH,207W00000X,tepezza
+10,Jody,Abrams,Sarasota,34239,FL,207W00000X,tepezza
+11,Ali,Achira,Dearborn,48126,MI,207RE0101X,endocrinologists
+12,Frances,Acosta,Brandon,33511,FL,207W00000X,tepezza
+13,Wesley,Adams,Livingston,59047,MT,207W00000X,tepezza
+14,Wesley,Adams,Salida,81201,CO,207W00000X,tepezza
+15,James,Adams,Ypsilanti,48197,MI,207W00000X,asoprs
+16,Wesley,Adams,Pueblo,81001,CO,207W00000X,tepezza
+17,Kenneth,Adams,Albuquerque,87111,NM,207W00000X,tepezza
+18,Saira,Adeel,Austell,30106,GA,207RE0101X,endocrinologists
+19,Saira,Adeel,Austell,30106,GA,207RE0101X,endocrinologists
+20,Ore-Ofeoluwatomi,Adesina,Houston,77030,TX,207W00000X,tepezza
+21,Stuart,Adler,Saint Louis,63136,MO,207RE0101X,endocrinologists
+22,Sonoo,Advani,West Orange,07052,NJ,207RE0101X,endocrinologists
+23,Chhavi,Agarwal,Scarsdale,10583,NY,207RE0101X,endocrinologists
+24,Madhu,Agarwal,Newport Beach,92660,CA,207W00000X,tepezza
+25,Bahar,Aghighi,Los Gatos,95030,CA,207RE0101X,endocrinologists
+26,Gary,Aguilar,San Francisco,94109,CA,207W00000X,asoprs
+27,Norman,Ahl,Tucson,85711,AZ,207W00000X,asoprs
+28,Naseer,Ahmad,Southfield,48075,MI,207RE0101X,endocrinologists
+29,Syed,Ahmad,Plano,75075,TX,207W00000X,tepezza
+30,Shema,Ahmad,Round Rock,78665,TX,207RE0101X,endocrinologists
+31,Amjad,Ahmad,Lisle,60532,IL,207W00000X,asoprs
+32,sheila,ahmadi,Los Angeles,90095,CA,207RE0101X,endocrinologists
+33,Syed,Ahmed,Florence,35630,AL,207RE0101X,endocrinologists
+34,Mohammed,Ahmed,Coon Rapids,55433,MN,207RE0101X,endocrinologists
+35,Achal,Ahmed,Crystal Lake,60014,IL,207RE0101X,endocrinologists
+36,Eric,Ahn,Torrance,90505,CA,207W00000X,asoprs
+37,Eric,Ahn,Torrance,90505,CA,,tepezza
+38,Eric,Ahn,Los Angeles,90013,CA,,tepezza
+39,Bijan,Ahrari,Las Vegas,89148,NV,207RE0101X,tepezza
+40,Bijan,Ahrari,Las Vegas,89128,NV,207RE0101X,tepezza
+41,Bijan,Ahrari,Las Vegas,89148,NV,207RE0101X,endocrinologists
+42,Audrey,Ahuero,Houston,77063,TX,207W00000X,asoprs
+43,Salma,Ahwach,Jacksonville,32204,FL,207RE0101X,endocrinologists
+44,Natasha,Akhter,Raleigh,27617,NC,207RE0101X,endocrinologists
+45,Chris,Alabiad,Miami,33136,FL,207W00000X,asoprs
+46,Adil,Alavi,Munster,46321,IN,207RE0101X,endocrinologists
+47,Angel,Alejandro,Miami,33186,FL,207RE0101X,endocrinologists
+48,Jimmy,Alele,Cincinnati,45255,OH,207RE0101X,endocrinologists
+49,Maher,Alesali,White Hall,71602,AR,207RE0101X,endocrinologists
+50,Erik,Alexander,Boston,02115,MA,207RE0101X,endocrinologists
+51,Erika,Alford,Tamuning,96913,GU,207RE0101X,endocrinologists
+52,Mark,Alford,Fort Worth,76104,TX,207W00000X,tepezza
+53,Mark,Alford,Fort Worth,76104,TX,207W00000X,asoprs
+54,Moussa,Alhaj,Ashland,41101,KY,207RE0101X,endocrinologists
+55,Shamsa,Ali,Port Huron,48060,MI,207RE0101X,tepezza
+56,somera,ali,Phoenixville,19460,PA,207RE0101X,endocrinologists
+57,Sophia,Ali,Toledo,43560,OH,207RE0101X,endocrinologists
+58,Jules,Aljammal,Salt Lake City,84124,UT,207RE0101X,endocrinologists
+59,Richard,Allen,Houston,77030,TX,207W00000X,asoprs
+60,Cheryl,Almirante,Newport News,23606,VA,207RE0101X,endocrinologists
+61,Rami,Almokayyad,St Louis Park,55416,MN,207RE0101X,endocrinologists
+62,Rajaa,Almourani,Columbia,65211,MO,207RE0101X,endocrinologists
+63,Joseph,Aloi,Winston Salem,27157,NC,207RE0101X,endocrinologists
+64,Mahmoud,Alsayed,Phoenix,85006,AZ,207RE0101X,endocrinologists
+65,Mohamad,Alsayed,Bay City,48706,MI,207RE0101X,endocrinologists
+66,Abdallah,Altarshan,Evergreen Park,60805,IL,207RE0101X,endocrinologists
+67,George,Alter,Charlotte,28210,NC,207W00000X,asoprs
+68,Madiha,Alvi,Danville,17822,PA,207RE0101X,endocrinologists
+69,Arash,Amadi,Seattle,98119,WA,207W00000X,asoprs
+70,Arash,Amadi,Seattle,98119,WA,207W00000X,tepezza
+71,Rambod,Amani-Yazdi,San Dimas,91773,CA,207RE0101X,tepezza
+72,Suma,Amarnath,Ypsilanti,48197,MI,207RE0101X,endocrinologists
+73,Malena,Amato,Austin,78758,TX,207W00000X,asoprs
+74,Malena,Amato,Austin,78758,TX,207W00000X,tepezza
+75,Elena,Ambrogini,Little Rock,72205,AR,207RE0101X,endocrinologists
+76,Violet,Amirjalali,Henderson,89052,NV,207RE0101X,tepezza
+77,Natalia,Anchipolovsky,Hackensack,07601,NJ,207RE0101X,endocrinologists
+78,Richard,Anderson,SLC,84108,UT,207W00000X,asoprs
+79,Agustin,Andrade,Miami Beach,33140,FL,207RE0101X,endocrinologists
+80,Richard,Angrist,Somerset,08873,NJ,207W00000X,asoprs
+81,Christine,Annunziata,Matthews,28105,NC,207W00000X,tepezza
+82,Christine,Annunziata,Charlotte,28205,NC,207W00000X,asoprs
+83,Aileen,Antonio,Grand Rapids,49503,MI,2084N0400X,tepezza
+84,Mc,Antony,Anderson,29621,SC,207RE0101X,endocrinologists
+85,Andy,Anzeljc,Morristown,37814,TN,207W00000X,tepezza
+86,Andy,Anzeljc,Knoxville,37922,TN,207W00000X,tepezza
+87,Andy,Anzeljc,Knoxville,37920,TN,207W00000X,tepezza
+88,Margaret,Apedo,Wappingers Falls,12590,NY,207RE0101X,endocrinologists
+89,Robert,Applebaum,Tampa,33609,FL,207W00000X,tepezza
+90,Robert,Applebaum,Brandon,33511,FL,207W00000X,tepezza
+91,Robert,Applebaum,Lakeland,33805,FL,207W00000X,tepezza
+92,Baha,Arafah,Cleveland,44106,OH,207RE0101X,endocrinologists
+93,Carlos,Arauz-Pacheco,Rockwall,75032,TX,207RE0101X,endocrinologists
+94,Deepa,Aravind,Huntington Station,11746,NY,207RE0101X,endocrinologists
+95,Kathleen,Archer,Houston,77079,TX,207W00000X,asoprs
+96,Mary,Arden-Cordone,Stamford,06902,CT,207RE0101X,endocrinologists
+97,Ridha,Arem,Houston,77054,TX,207RE0101X,endocrinologists
+98,Carlos,Arguello,Birmingham,35233,AL,207RE0101X,endocrinologists
+99,Srividya,Ariyan,Peoria,85381,AZ,207RE0101X,endocrinologists
+100,Miguel,Ariza,Dracut,01826,MA,207RE0101X,endocrinologists
+101,Joseph,Armenia,Webster,14580,NY,207W00000X,tepezza
+102,Joseph,Armenia,Webster,14580,NY,207W00000X,asoprs
+103,Dagmar,Arnold,Olney,20832,MD,207RE0101X,endocrinologists
+104,Shahana,Arshad,Clifton Springs,14432,NY,207RE0101X,endocrinologists
+105,Joe,Arterberry,,,,207W00000X,asoprs
+106,Ernest,Asamoah,Indianapolis,46256,IN,207RE0101X,endocrinologists
+107,Ernest,Asamoah,Indianapolis,46256,IN,207RE0101X,tepezza
+108,Mahdere,Asfaw,Fredericksburg,22401,VA,207RE0101X,endocrinologists
+109,Neeraj,Ashri,Kings Mountain,28086,NC,207RE0101X,endocrinologists
+110,Arnold,Asp,La Crosse,54601,WI,207RE0101X,endocrinologists
+111,D,Aspenson,Tulsa,74133,OK,207RE0101X,endocrinologists
+112,Donald,Aspenson,Tulsa,74133,OK,207RE0101X,tepezza
+113,D,Aspenson,Tulsa,74133,OK,207RE0101X,endocrinologists
+114,Dania,Assad,Southfield,48075,MI,207RE0101X,endocrinologists
+115,David,Auerbach,Maitland,32751,FL,207W00000X,tepezza
+116,Edwin,Augustat,Fort Worth,76109,TX,207W00000X,asoprs
+117,Dipa,Avichal,New Hyde Park,11042,NY,207RE0101X,endocrinologists
+118,Akinola,Ayodeji,Dothan,36301,AL,207RE0101X,endocrinologists
+119,Walaa,Ayoub,Lexington,40504,KY,207RE0101X,endocrinologists
+120,Aparna,Ayyagari,Plano,75025,TX,207RE0101X,endocrinologists
+121,Sidra,Azim,Mountain View,94040,CA,207RE0101X,endocrinologists
+122,Ghobad,Azizi,Wilmington,28406,NC,207RE0101X,endocrinologists
+123,Varsha,Babu,Fresno,93720,CA,207RE0101X,endocrinologists
+124,Thien-Giang,Bach-Huynh,Falls Church,22046,VA,207RE0101X,endocrinologists
+125,Samuel,Baharestani,Smithtown,11787,NY,207W00000X,tepezza
+126,Samuel,Baharestani,Smithtown,11787,NY,207W00000X,asoprs
+127,Gul,Bahtiyar,Brooklyn,11206,NY,207RE0101X,endocrinologists
+128,Joan,Bailey,Phoenix,85004,AZ,207RE0101X,endocrinologists
+129,Rosalie,Bair,Bethesda,20817,MD,207W00000X,asoprs
+130,Jasmina,Bajric,Tampa,33612,FL,207W00000X,asoprs
+131,Ayla,Bakar,Mchenry,60050,IL,207RE0101X,endocrinologists
+132,Meredith,Baker,Edina,55435,MN,207W00000X,asoprs
+133,Sterling,Baker,Edmond,73013,OK,207W00000X,asoprs
+134,Kyle,Balch,Gainesville,32608,FL,207W00000X,asoprs
+135,Ernest,Baldwin,Salt Lake City,84102,UT,207RE0101X,endocrinologists
+136,Alan,Balsam,Deerfield Beach,33442,FL,207RE0101X,endocrinologists
+137,Vivek,Bansal,CLINTON,08809,NJ,207RE0101X,endocrinologists
+138,Shunzhong,Bao,Little Rock,72205,AR,207RE0101X,endocrinologists
+139,Todd,Baquet,Lafayette,70506,LA,207RE0101X,tepezza
+140,Behin,Barahimi,Nashville,37232,TN,207W00000X,asoprs
+141,Shadi,Barakat,Baltimore,21229,MD,207RE0101X,endocrinologists
+142,Sawsan,Barakat,Tarzana,91356,CA,207RE0101X,endocrinologists
+143,Giuseppe,Barbesino,Boston,02114,MA,207RE0101X,endocrinologists
+144,Vanessa,Barboza,Bronx,10016,NY,207RE0101X,endocrinologists
+145,Maan,Barhoum,Libertyville,60048,IL,207RE0101X,endocrinologists
+146,Marla,Barkoff,Chicago,60611,IL,207RE0101X,endocrinologists
+147,Anne,Barmettler,Bronx,10467,NY,207W00000X,tepezza
+148,Anne,Barmettler,Bronx,10467,NY,207W00000X,asoprs
+149,Anne,Barmettler,Hartsdale,10530,NY,207W00000X,tepezza
+150,Nicholas,Barna,Hazelton,18202,PA,207W00000X,asoprs
+151,Joseph,Barrera,Mission Viejo,92691,CA,207RE0101X,endocrinologists
+152,Rhonda,Barrett,Fort Mill,29715,SC,207W00000X,asoprs
+153,George,Bartley,Rochester,55905,MN,207W00000X,asoprs
+154,Sabreena,Basu,Atlanta,30322,GA,207RE0101X,endocrinologists
+155,Ruggero,Battan,Grand Rapids,49503,MI,207RE0101X,endocrinologists
+156,Andrew,Bauer,Philadelphia,19104,PA,207RE0101X,endocrinologists
+157,Maheteme,Bayeh,Silver Spring,20904,MD,207RE0101X,endocrinologists
+158,Eric,Baylin,Atlanta,30338,GA,207W00000X,asoprs
+159,Gerard,Bazile,San Diego,92123,CA,207RE0101X,endocrinologists
+160,Kevin,Beadles,Martinez,94553,CA,207W00000X,asoprs
+161,William,Bearden,Richmond,23226,VA,207W00000X,asoprs
+162,Randall,Beatty,Pittsburgh,15212,PA,207W00000X,tepezza
+163,Randall,Beatty,Pittsburgh,15212,PA,207W00000X,asoprs
+164,Bruce,Becker,Westlake Village,91361,CA,207W00000X,tepezza
+165,Bruce,Becker,Encino,91316,CA,207W00000X,asoprs
+166,Edward,Bedrossian Jr,Philadelphia,19107,PA,207W00000X,asoprs
+167,Shirley,Bembo,Princeton,08540,NJ,207RE0101X,endocrinologists
+168,Nesreen,BenHamed,Huntington,25701,WV,207RE0101X,endocrinologists
+169,Angelita,Beredo,Inglewood,90301,CA,207RE0101X,endocrinologists
+170,Brian,Berelowitz,Las Vegas,89144,NV,207RE0101X,endocrinologists
+171,Daniel,Berger,Goleta,93110,CA,207RE0101X,tepezza
+172,Mica,Bergman,Santa Barbara,93110,CA,207W00000X,tepezza
+173,Mehtap,Berkmen,Wailuku,96793,HI,207RE0101X,endocrinologists
+174,Mark,Berkowitz,Sterling Heights,48313,MI,207W00000X,asoprs
+175,A.,Berlin,South Freeport,04078,ME,207W00000X,asoprs
+176,Eric,Berman,Charleston,29425,SC,207W00000X,tepezza
+177,Carlo,Bernardino,Salinas,93901,CA,207W00000X,asoprs
+178,Carlo,Bernardino,Salinas,93901,CA,207W00000X,tepezza
+179,Victor,Bernet,Jacksonville,32224,FL,207RE0101X,endocrinologists
+180,Victor,Bernet,Jacksonville,32224,FL,207RE0101X,tepezza
+181,Lauren,Bernstein,Asheville,28806,NC,207RE0101X,endocrinologists
+182,Karen,Berris,Farmington Hills,48334,MI,207RE0101X,endocrinologists
+183,Craig,Berris,Sacramento,95825,CA,207W00000X,asoprs
+184,F. Dean,Berry,Los Angeles,90024,CA,207W00000X,asoprs
+185,Thomas,Bersani,Syracuse,13212,NY,207W00000X,asoprs
+186,Thomas,Bersani,Syracuse,13212,NY,207W00000X,tepezza
+187,Todd,Beyer,Tallmadge,44278,OH,207W00000X,tepezza
+188,Todd,Beyer,Tallmadge,44278,OH,207W00000X,asoprs
+189,Charles,Beyer-Machule,Wellesley,02482,MA,207W00000X,asoprs
+190,Ruchi,Bhabhra,Cincinnati,45267,OH,207RE0101X,endocrinologists
+191,Sumit,Bhagra,Austin,55912,MN,207RE0101X,endocrinologists
+192,Rajiv,Bhambri,Melbourne,32901,FL,207RE0101X,tepezza
+193,Arti,Bhan,detroit,48202,MI,207RE0101X,endocrinologists
+194,Bhavika,Bhan,Overland Park,66213,KS,207RE0101X,endocrinologists
+195,Geetha,Bhat,Cherry Hill,08034,NJ,207RE0101X,endocrinologists
+196,Geetha,Bhat,Cherry Hill,08034,NJ,207RE0101X,endocrinologists
+197,Vishal,Bhatia,Evansville,47714,IN,207RE0101X,endocrinologists
+198,Rajib,Bhattacharya,Kansas City,66160,KS,207RE0101X,endocrinologists
+199,Rajib,Bhattacharya,Kansas City,66160,KS,207RE0101X,tepezza
+200,Maziar,Bidar,Fresno,93720,CA,207W00000X,asoprs
+201,Maziar,Bidar,Fresno,93720,CA,207W00000X,tepezza
+202,Brian,Biesman,Nashville,37203,TN,207W00000X,asoprs
+203,William,Bigham,Coronado,92118,CA,207W00000X,asoprs
+204,Smita,Bijlani,Rochester Hills,48307,MI,207RE0101X,endocrinologists
+205,Jurij,Bilyk,Philadelphia,19107,PA,207W00000X,asoprs
+206,Chad,Bingham,Salem,97302,OR,207W00000X,asoprs
+207,Lindsay,Bischoff,Nashville,37232,TN,207RE0101X,endocrinologists
+208,David,Bishop,Durango,81301,CO,207W00000X,asoprs
+209,Rachelle,Bitton,Lake Success,11042,NY,207RE0101X,endocrinologists
+210,Evan,Black,Southfield,48034,MI,207W00000X,asoprs
+211,Tracy,Black,Durham,27704,NC,207RE0101X,endocrinologists
+212,John,Blackman,Columbus,43213,OH,207RE0101X,endocrinologists
+213,Richard,Blanchard,Saint Petersburg,33705,FL,207RE0101X,endocrinologists
+214,Alexander,Blandford,Vero Beach,32960,FL,207W00000X,asoprs
+215,Alexander,Blandford,Vero Beach,32960,FL,207W00000X,tepezza
+216,Howard,Blank,Farmington Hills,48334,MI,207RE0101X,endocrinologists
+217,Sean,Blaydon,Austin,78705,TX,207W00000X,tepezza
+218,Sean,Blaydon,Austin,78705,TX,207W00000X,asoprs
+219,David,Bleich,Newark,07103,NJ,207RE0101X,endocrinologists
+220,Nathan,Blessing,Palm Beach Gardens,33418,FL,207W00000X,asoprs
+221,Nathan,Blessing,Palm Beach Gardens,33418,FL,207W00000X,tepezza
+222,Romy,Block,Skokie,60077,IL,207RE0101X,endocrinologists
+223,Ingrid,Block-Kurbisch,San Francisco,94117,CA,207RE0101X,endocrinologists
+224,Kristina,Blohm,Phoenix,85054,AZ,207RE0101X,endocrinologists
+225,Eve,Bloomgarden,Chicago,60611,IL,207RE0101X,tepezza
+226,Eve,Bloomgarden,Chicago,60611,IL,207RE0101X,endocrinologists
+227,Noah,Bloomgarden,Bronx,10461,NY,207RE0101X,endocrinologists
+228,Louis,Blumenfeld,Maitland,32751,FL,207WX0110X,tepezza
+229,Melissa,Bobadilla,El Paso,79902,TX,207RE0101X,endocrinologists
+230,Ivica,Boban,Franklin,53132,WI,207RE0101X,endocrinologists
+231,Fred,Bodker,Overland Park,66204,KS,207W00000X,asoprs
+232,Fred,Bodker,Overland Park,66204,KS,207W00000X,tepezza
+233,Jennifer,Bohl,Akron,44310,OH,207W00000X,tepezza
+234,Milton,Boniuk,Houston,77030,TX,207W00000X,asoprs
+235,Patricia,Bononi,Pittsburgh,15224,PA,207RE0101X,endocrinologists
+236,Marietta,Borges,Meobourne,32940,FL,207RE0101X,endocrinologists
+237,William,Bornstein,Atlanta,30322,GA,207RE0101X,endocrinologists
+238,Gary,Borodic,Quincy,02169,MA,207W00000X,tepezza
+239,Swaraj,Bose,Orange,92868,CA,207W00000X,tepezza
+240,Alex,Bossolo,Trujillo Alto,00977,PR,207RE0101X,endocrinologists
+241,Michael,Bota,Spokane,99202,WA,207RE0101X,endocrinologists
+242,Laura,Boucai,New York,10021,NY,207RE0101X,endocrinologists
+243,Matthew,Bouchonville,Albuquerque,87131,NM,207RE0101X,endocrinologists
+244,Bert,Bowden,Grant,35747,AL,207W00000X,asoprs
+245,Thomas,Bowen,Redding,96001,CA,207W00000X,tepezza
+246,Cynthia,Boxrud,Santa Monica,90404,CA,207W00000X,asoprs
+247,Nariman,Boyle,East Setauket,11733,NY,207W00000X,tepezza
+248,Michael,Boyle,Severna Park,21146,MD,207W00000X,asoprs
+249,Nariman,Boyle,Setauket,11733,NY,207W00000X,asoprs
+250,Andrew,Brackbill,Allentown,18103,PA,207RE0101X,endocrinologists
+251,Alan,Brackup,Langhorne,19047,PA,207W00000X,asoprs
+252,Elizabeth,Bradley,Rochester,55905,MN,207W00000X,tepezza
+253,Elizabeth,Bradley,Rochester,55905,MN,207W00000X,asoprs
+254,Stephen,Brandt,Atlanta,30322,GA,207RE0101X,endocrinologists
+255,Paul,Brannan,Sarasota,34233,FL,207W00000X,asoprs
+256,Paul,Brannan,Sarasota,34233,FL,207W00000X,tepezza
+257,Emily,Bratton,Austin,78705,TX,207W00000X,tepezza
+258,Emily,Bratton,Austin,78705,TX,207W00000X,asoprs
+259,Brian,Brazzo,New York,10065,NY,207W00000X,asoprs
+260,Elise,Brett,New York,10028,NY,207RE0101X,endocrinologists
+261,Cesar,Briceno,Philadelphia,19104,PA,207W00000X,asoprs
+262,Juan,Brito,Rochester,55905,MN,207RE0101X,endocrinologists
+263,Talmage,Broadbent,Spokane,99202,WA,207W00000X,tepezza
+264,Talmage,Broadbent,Spokane,99202,WA,207W00000X,asoprs
+265,Wade,Brock,Little Rock,72205,AR,207W00000X,tepezza
+266,Wade,Brock,Little Rock,72205,AR,207W00000X,asoprs
+267,Mark,Brown,Mobile,36695,AL,207W00000X,asoprs
+268,Jeffrey,Brown,Houston,77079,TX,207RE0101X,endocrinologists
+269,David,Brown,Rockville,20850,MD,207RE0101X,endocrinologists
+270,John,Bruch,Greenville,29605,SC,207RE0101X,endocrinologists
+271,Jan,Bruder,San Antonio,78229,TX,207RE0101X,endocrinologists
+272,Richard,Bryant,Dothan,36301,AL,207W00000X,asoprs
+273,Jessica,Brzana,Issaquah,98029,WA,207RE0101X,endocrinologists
+274,Maura,Bucciarelli,Mount Laurel,08054,NJ,207RE0101X,endocrinologists
+275,Adam,Buchanan,Saint Louis,63131,MO,207W00000X,asoprs
+276,Bryce,Buchowicz,Gainesville,32605,FL,2084N0400X,tepezza
+277,Daniel,Buerger,Pittsburgh,15206,PA,207W00000X,asoprs
+278,David,Buerger,Pittsburgh,15206,PA,207W00000X,asoprs
+279,John,Bullock,Kettering,45429,OH,207W00000X,asoprs
+280,Lawrence,Buono,Riverhead,11901,NY,207W00000X,tepezza
+281,Lawrence,Buono,Southold,11971,NY,207W00000X,tepezza
+282,Richard,Burgett,Indianapolis,46290,IN,207W00000X,asoprs
+283,Natalia,Burgos Polanco,Melbourne,32901,FL,207RE0101X,tepezza
+284,Jennifer,Burgoyne,Wichita,67226,KS,207W00000X,tepezza
+285,Cathy,Burkat,Madison,53705,WI,207WX0200X,tepezza
+286,Cathy,Burkat,Rockford,61107,IL,207WX0200X,tepezza
+287,Cat,Burkat,Madison,53705,WI,207W00000X,asoprs
+288,James,Burks,Odessa,79765,TX,207RE0101X,tepezza
+289,William,Burks,Margate,33063,FL,207W00000X,tepezza
+290,Lynn,Burmeister,Minneapolis,55455,MN,207RE0101X,endocrinologists
+291,Sherri-Ann,Burnett-Bowie,Boston,02114,MA,207RE0101X,endocrinologists
+292,Basil,Burney,Montgomery,36106,AL,207RE0101X,endocrinologists
+293,Carrie,Burns,Villanova,19085,PA,207RE0101X,endocrinologists
+294,John,Burns,Columbus,43215,OH,207W00000X,asoprs
+295,Michael,Burnstine,Los Angeles,90013,CA,207W00000X,asoprs
+296,Allen,Burris,Midlothian,23114,VA,207RE0101X,endocrinologists
+297,John,Burroughs,Colorado Springs,80907,CO,207W00000X,asoprs
+298,Aaron,Bussey,Alcoa,37701,TN,207RE0101X,endocrinologists
+299,Eric,Buxton,Greenbrae,94904,CA,207RE0101X,tepezza
+300,Joselito,Cabaccan,San Jose,95148,CA,207RE0101X,tepezza
+301,Maria,Cabanillas,Houston,77030,TX,207RE0101X,endocrinologists
+302,maria,caga-anan,Spring,77379,TX,207RE0101X,endocrinologists
+303,Kenneth,Cahill,Columbus,43215,OH,207W00000X,asoprs
+304,Kenneth,Cahill,Zanesville,43701,OH,207W00000X,tepezza
+305,Kenneth,Cahill,Columbus,43215,OH,207W00000X,tepezza
+306,Nedim,Cakan,Madera,93636,CA,207RE0101X,endocrinologists
+307,Conley,Call,Spanish Fork,84660,UT,207W00000X,asoprs
+308,Alison,Callahan,Boston,02116,MA,207W00000X,tepezza
+309,Michael,Callahan,Birmingham,35233,AL,207W00000X,asoprs
+310,Alison,Callahan,Boston,02111,MA,207W00000X,asoprs
+311,Christopher,Calvano,Dickinson,77539,TX,207W00000X,asoprs
+312,Evelyn,Camacho-Patterson,Chatham,07928,NJ,207RE0101X,endocrinologists
+313,Mark,Campbell,Altoona,16601,PA,207RE0101X,endocrinologists
+314,Ashley,Campbell,Baltimore,21287,MD,207W00000X,asoprs
+315,Ahmet,Can,Elmira,14905,NY,207RE0101X,endocrinologists
+316,Jose,Canas,Saint Petersburg,33701,FL,207RE0101X,endocrinologists
+317,Sterling,Cannon,Columbus,31904,GA,207W00000X,tepezza
+318,Anne,Cappola,Philadelphia,19104,PA,207RE0101X,endocrinologists
+319,Michael,Carella,Lansing,48912,MI,207RE0101X,tepezza
+320,Tim,Carey,Seattle,98105,WA,207W00000X,asoprs
+321,Jeffrey,Carlsen,Johnson City,37604,TN,207W00000X,tepezza
+322,Jacqueline,Carrasco,Wynnewood,19096,PA,207W00000X,asoprs
+323,Richard,Carroll,Minneapolis,55419,MN,207W00000X,asoprs
+324,Bryant,Carruth,Syracuse,13212,NY,207W00000X,tepezza
+325,Bryant,Carruth,Syracuse,13212,NY,207W00000X,asoprs
+326,Constantin,Carseli,Norwich,06360,CT,207RE0101X,endocrinologists
+327,Keith,Carter,Iowa City,52242,IA,207W00000X,tepezza
+328,Chad,Carter,Springfield,65804,MO,152W00000X,tepezza
+329,Chad,Carter,Joplin,64804,MO,152W00000X,tepezza
+330,Keith,Carter,Iowa City,52242,IA,207W00000X,asoprs
+331,Susan,Carter,Warren,07928,NJ,207W00000X,asoprs
+332,Mont,Cartwright,Kissimmee,34744,FL,207W00000X,asoprs
+333,Douglas,Casady,West Des Moines,50266,IA,207W00000X,asoprs
+334,Paul,Casanova-Romero,Port Saint Lucie,34986,FL,207RE0101X,endocrinologists
+335,Christopher,Case,Jefferson City,65109,MO,207RE0101X,endocrinologists
+336,Christopher,Case,Jefferson City,65109,MO,207RE0101X,tepezza
+337,Beret,Casey,Ashland,54806,WI,207RE0101X,endocrinologists
+338,Francisco,Castillo,Troutdale,97060,OR,207W00000X,tepezza
+339,Francisco,Castillo,Portland,97216,OR,207W00000X,tepezza
+340,Francisco,Castillo,Portland,97213,OR,207W00000X,asoprs
+341,Daniel,Castillo,New York,10001,NY,207RE0101X,endocrinologists
+342,Judith,Castillo-Perez,Trumbull,06611,CT,207RE0101X,endocrinologists
+343,Jonathan,Castro,Goshen,10924,NY,207RE0101X,endocrinologists
+344,M.,Castro,Rochester,55905,MN,207RE0101X,endocrinologists
+345,Francesco,Celi,Richmond,23298,VA,207RE0101X,endocrinologists
+346,Florence,Celzo-Vista,Middletown,10941,NY,207RE0101X,endocrinologists
+347,Mark,Cepela,Crestview Hills,41017,KY,207W00000X,tepezza
+348,Mark,Cepela,Cincinnati,45236,OH,207W00000X,tepezza
+349,Mark,Cepela,Crestview Hills,41017,KY,207W00000X,asoprs
+350,Monisha,Chadha,Houma,70363,LA,207RE0101X,endocrinologists
+351,Harinderpal,Chahal,Fresno,93720,CA,207W00000X,tepezza
+352,Jaspreet,Chahal,Covington,41011,KY,207RE0101X,endocrinologists
+353,Harinder,Chahal,Fresno,93720,CA,207W00000X,asoprs
+354,Sushela,Chaidarun,Lebanon,03756,NH,207RE0101X,endocrinologists
+355,Aruna,Chakravorty,Dublin,94568,CA,207RE0101X,endocrinologists
+356,Christopher,Chambers,Seattle,98105,WA,207W00000X,asoprs
+357,Chee,Chan,Mount Kisco,10549,NY,207RE0101X,endocrinologists
+358,Khushbu,Chandarana,Cary,27518,NC,207RE0101X,endocrinologists
+359,Anil,Chandel,Milwaukee,53215,WI,207RE0101X,endocrinologists
+360,Suvesh,Chandiok,Encinitas,92024,CA,207RE0101X,endocrinologists
+361,Sumesh,Chandra,Tampa,33613,FL,207RE0101X,endocrinologists
+362,Jessica,Chang,Los Angeles,90033,CA,207W00000X,tepezza
+363,Jessica,Chang,Los Angeles,90033,CA,207W00000X,asoprs
+364,Holly,Chang,Bellevue,98004,WA,207W00000X,asoprs
+365,Donny,Chang,Worcester,01605,MA,207RE0101X,endocrinologists
+366,Karen,Chapman,Sarasota,34239,FL,207W00000X,asoprs
+367,Michael,Chappell,Kansas City,64154,MO,207W00000X,tepezza
+368,Michael,Chappell,Lees Summit,64086,MO,207W00000X,tepezza
+369,Michael,Chappell,Kansas City,64154,MO,207W00000X,asoprs
+370,Michael,Chappell,Leavenworth,66048,KS,207W00000X,tepezza
+371,Devron,Char,San Francisco,94114,CA,207W00000X,asoprs
+372,Marina,Charitou,East Setauket,11733,NY,207RE0101X,endocrinologists
+373,Carmina,Charles,Apopka,32703,FL,207RE0101X,tepezza
+374,Emily,Charlson,San Francisco,94115,CA,207W00000X,tepezza
+375,Kaushik,Chatterjee,Spokane,99204,WA,207RE0101X,endocrinologists
+376,Shampa,Chatterjee,Westerville,43081,OH,207RE0101X,endocrinologists
+377,Imtiaz,Chaudhry,Houston,77030,TX,207W00000X,asoprs
+378,Foiqa,Chaudhry,Houston,77043,TX,207RE0101X,endocrinologists
+379,Manuel,Chavarri,Alpena,49707,MI,207RE0101X,endocrinologists
+380,Mauricio,Chavez,Vancouver,98683,WA,207W00000X,asoprs
+381,Brian,Chavez,Laguna Hills,92653,CA,207RE0101X,endocrinologists
+382,James,Chelnis,New York,10019,NY,207W00000X,asoprs
+383,RAMACHANDRA,CHEMITIGANTI,ODESSA,79763,TX,207RE0101X,endocrinologists
+384,Steven,Chen,Scottsdale,85255,AZ,207W00000X,tepezza
+385,Steven,Chen,Glendale,85308,AZ,207W00000X,asoprs
+386,Valerie,Chen,Charlotte,28226,NC,207W00000X,asoprs
+387,Steven,Chen,Glendale,85308,AZ,207W00000X,tepezza
+388,Sako,Chen,Downey,90242,CA,207RE0101X,endocrinologists
+389,David,Chen,Fishkill,12524,NY,207W00000X,tepezza
+390,Jennifer,Cheng,Neptune,07753,NJ,207RE0101X,endocrinologists
+391,Richard,Cherlin,Los Gatos,95032,CA,207RE0101X,endocrinologists
+392,Robert,Cheron,Utica,13501,NY,207RE0101X,endocrinologists
+393,Dianne,Cheung,Torrance,90505,CA,207RE0101X,endocrinologists
+394,Christopher,Cheyer,Detroit,48201,MI,207W00000X,tepezza
+395,Elizabeth,Chiang,Brecksville,44141,OH,207W00000X,tepezza
+396,Elizabeth,Chiang,Cleveland,44109,OH,207W00000X,tepezza
+397,Richard,Childress,Memphis,38119,TN,207RE0101X,endocrinologists
+398,Niyati,Chiniwala,Jackson,08527,NJ,207RE0101X,endocrinologists
+399,Smith Ann,Chisholm,Milwaukee,53226,WI,207W00000X,asoprs
+400,Smith Ann,Chisholm,Milwaukee,53226,WI,207W00000X,tepezza
+401,Ken,Chiu,Duarte,91010,CA,207RE0101X,endocrinologists
+402,Raymond,Cho,Columbus,43212,OH,207W00000X,asoprs
+403,Raymond,Cho,Columbus,43212,OH,207W00000X,tepezza
+404,Raymond,Cho,Westerville,43082,OH,207W00000X,tepezza
+405,Charles,Choe,San Diego,92161,CA,207RE0101X,endocrinologists
+406,Christina,Choe,Hendersonville,28791,NC,207W00000X,tepezza
+407,Christina,Choe,Asheville,28803,NC,207W00000X,tepezza
+408,Charles,Choe,San Diego,92161,CA,207RE0101X,endocrinologists
+409,Christina,Choe,Asheville,28803,NC,207W00000X,asoprs
+410,John,Choi,Warrenville,60555,IL,207W00000X,asoprs
+411,Catherine,Choi,Walnut Creek,94598,CA,207W00000X,asoprs
+412,Lauren,Choi,Torrance,90505,CA,207RE0101X,endocrinologists
+413,Ulupi,Choksi,Shenandoah,77380,TX,207RE0101X,endocrinologists
+414,Phillip,Choo,Pittsburgh,15206,PA,207W00000X,asoprs
+415,Eva,Chou,Bethesda,20889,MD,207W00000X,asoprs
+416,Samar,Choubah,Brockton,02302,MA,207RE0101X,endocrinologists
+417,Maria,Choudhary,Ventura,93003,CA,207W00000X,tepezza
+418,Sara,Choudhry,Center Valley,18034,PA,207RE0101X,endocrinologists
+419,Frank,Christensen,Chapel Hill,27514,NC,207W00000X,asoprs
+420,Murray,Christianson,Detroit,48202,MI,207W00000X,asoprs
+421,Elena,Christofides,Columbus,43201,OH,207RE0101X,tepezza
+422,Neelima,Chu,La Mesa,91942,CA,207RE0101X,endocrinologists
+423,James,Chu,Monterey,93940,CA,207RE0101X,endocrinologists
+424,Katherine,Chubinskaya,Vancouver,98664,WA,207RE0101X,endocrinologists
+425,Tae-Hwa,Chun,Ann Arbor,48109,MI,207RE0101X,endocrinologists
+426,Rao,Chundury,Omaha,68105,NE,207W00000X,asoprs
+427,Rao,Chundury,Omaha,68118,NE,207W00000X,tepezza
+428,Rao,Chundury,Omaha,68105,NE,207W00000X,tepezza
+429,W. Andrew,Cies,Newport Beach,92660,CA,207W00000X,asoprs
+430,Eric,Ciliberti,Hollywood,33020,FL,207W00000X,tepezza
+431,Eric,Ciliberti,Boca Raton,33432,FL,207W00000X,tepezza
+432,Eric,Ciliberti,Tamarac,33321,FL,207W00000X,tepezza
+433,Eric,Ciliberti,Delray Beach,33484,FL,207W00000X,tepezza
+434,Eric,Ciliberti,Plantation,33322,FL,207W00000X,tepezza
+435,Brandon,Clair,Largo,33770,FL,207W00000X,tepezza
+436,Nathaniel,Clark,Plymouth,02360,MA,207RE0101X,endocrinologists
+437,David,Clemmons,Chapel Hill,27599,NC,207RE0101X,endocrinologists
+438,Patrick,Clyde,Roseburg,97471,OR,207RE0101X,endocrinologists
+439,Kimberly,Cockerham,Stockton,95207,CA,207W00000X,tepezza
+440,Kimberly,Cockerham,Modesto,95350,CA,207W00000X,tepezza
+441,Kimberly,Cockerham,Stockton,95219,CA,207W00000X,asoprs
+442,Kimberly,Cockerham,Manteca,95336,CA,207W00000X,tepezza
+443,Mary,Coday,Bellevue,98007,WA,207W00000X,tepezza
+444,Daniel,Coden,La Jolla,92037,CA,207W00000X,asoprs
+445,Carlos,Coelho,Aventura,33180,FL,207RE0101X,endocrinologists
+446,Neil,Cohen,Staten Island,10301,NY,207RE0101X,endocrinologists
+447,David,Cohen,New Brunswick,08901,NJ,207RE0101X,endocrinologists
+448,Ronald,Cohen,Chicago,60637,IL,207RE0101X,endocrinologists
+449,Marc,Cohen,Bala Cynwyd,19004,PA,207W00000X,asoprs
+450,Adam,Cohen,Glenview,60026,IL,207W00000X,tepezza
+451,Adam,Cohen,Glenview,60026,IL,207W00000X,asoprs
+452,"Harvey ""Chip""",Cole,Atlanta,30342,GA,207W00000X,asoprs
+453,Eric,Cole,Silverdale,98383,WA,207W00000X,asoprs
+454,Harvey,Cole,Atlanta,30342,GA,207W00000X,tepezza
+455,Austin,Coleman,Naples,34109,FL,207W00000X,tepezza
+456,Atif,Collins,Fresno,93711,CA,207W00000X,asoprs
+457,Jessicah,Collins,Fishersville,22939,VA,207RE0101X,endocrinologists
+458,Richard,Comi,Lebanon,03756,NH,207RE0101X,endocrinologists
+459,Richard,Comi,Lebanon,03756,NH,207RE0101X,endocrinologists
+460,Christopher,Compton,Louisville,40202,KY,207W00000X,asoprs
+461,Lourdes,Concha,Harlingen,78550,TX,207RE0101X,endocrinologists
+462,Stacey,Condren,Vancouver,98663,WA,207RE0101X,endocrinologists
+463,Michael,Connor,Palm Beach Gardens,33410,FL,207W00000X,asoprs
+464,Loran Todd,Cook,Provo,84604,UT,207W00000X,tepezza
+465,Odelia,Cooper,Los Angeles,90048,CA,207RE0101X,endocrinologists
+466,Robert,Cooper,Springfield,01107,MA,207RE0101X,endocrinologists
+467,David,Cooper,Baltimore,21287,MD,207RE0101X,endocrinologists
+468,Thomas,Copperman,Seattle,98104,WA,207W00000X,asoprs
+469,Thomas,Copperman,Seattle,98107,WA,207W00000X,tepezza
+470,Scott,Corin,North Dartmouth,02747,MA,207W00000X,asoprs
+471,Scott,Corin,N Dartmouth,02747,MA,207W00000X,tepezza
+472,Bryan,Costin,Brecksville,44141,OH,207W00000X,asoprs
+473,Steven,Couch,St. Louis,63110,MO,207W00000X,asoprs
+474,Steven,Covici,Springfield,01107,MA,207W00000X,tepezza
+475,Steven,Covici,Springfield,01107,MA,207W00000X,asoprs
+476,David,Cowen,Ashland,41101,KY,207WX0200X,tepezza
+477,David,Cowen,Pikeville,41501,KY,207WX0200X,tepezza
+478,David,Cowen,Corbin,40701,KY,207WX0200X,tepezza
+479,David,Cowen,Lexington,40503,KY,207WX0200X,tepezza
+480,David,Cowen,London,40741,KY,207WX0200X,tepezza
+481,David,Cowen,Lexington,40503,KY,207W00000X,asoprs
+482,Shannon,Cox,Tulsa,74104,OK,207W00000X,asoprs
+483,Shannon,Cox,Tulsa,74104,OK,207WX0200X,tepezza
+484,Tara,Cronin,Waterbury,06708,CT,207W00000X,tepezza
+485,Margaret,Crook,Charlottesville,22911,VA,207RE0101X,endocrinologists
+486,Francisco,Cruz,Brooklyn,11211,NY,207RE0101X,endocrinologists
+487,Keith,Cryar,Temple,76508,TX,207RE0101X,endocrinologists
+488,Trisha,Cubb,Houston,77030,TX,207RE0101X,endocrinologists
+489,Catherine,Cuite,Charlotte,28210,NC,207W00000X,tepezza
+490,Amanda,Cunningham,Southaven,38672,MS,207RE0101X,endocrinologists
+491,Kimberlee,Curnyn,Hoffman Estates,60169,IL,207W00000X,tepezza
+492,Kimberlee,Curnyn,Arlington Heights,60005,IL,207W00000X,tepezza
+493,Philip,Custer,St. Louis,63110,MO,207W00000X,asoprs
+494,Carolee,Cutler Peck,Idaho Falls,83404,ID,207W00000X,asoprs
+495,Albert,Cytryn,Bethesda,20817,MD,207W00000X,asoprs
+496,Craig,Czyz,Columbus,43201,OH,207W00000X,asoprs
+497,Sherwin,D'Souza,Boise,83702,ID,207RE0101X,tepezza
+498,Lora,Dagi Glass,New York,10032,NY,207W00000X,asoprs
+499,Roger,Dailey,Portland,97239,OR,207W00000X,asoprs
+500,Roger,Dailey,Portland,97239,OR,207W00000X,tepezza
+501,Albert,Dal Canto,Sandy,84094,UT,207W00000X,tepezza
+502,Albert,Dal Canto,Sandy,84094,UT,207W00000X,asoprs
+503,Daniel,Dale,Green Bay,54304,WI,207W00000X,asoprs
+504,Vishal,Datta,Collegeville,19426,PA,207RE0101X,endocrinologists
+505,Sameera,Daud-Ahmad,Emerson,07630,NJ,207RE0101X,endocrinologists
+506,Pascal,Dauphin,Hendersonville,37075,TN,207RE0101X,endocrinologists
+507,Terry,Davies,New York,10029,NY,207RE0101X,endocrinologists
+508,Brett,Davies,San Antonio,78209,TX,207W00000X,asoprs
+509,Terry,Davies,New York,10029,NY,207RE0101X,endocrinologists
+510,Oksana,Davydov,Alexandria,22310,VA,207RE0101X,endocrinologists
+511,Andrew,Day,Valencia,91355,CA,207RE0101X,endocrinologists
+512,Dawn,De Castro,San Diego,92131,CA,207W00000X,asoprs
+513,Adam,De La Garza,Atlanta,30322,GA,207W00000X,tepezza
+514,Kendra,Deangelis,Clearwater,33759,FL,207W00000X,tepezza
+515,Christopher,Debacker,San Antonio,78258,TX,207W00000X,tepezza
+516,Christopher,DeBacker,San Antonio,78258,TX,207W00000X,asoprs
+517,Ismary,Decastro,Savannah,31404,GA,207RE0101X,tepezza
+518,Mary,DeHerrera-Codo,Naperville,60563,IL,207RE0101X,endocrinologists
+519,Charles,DelGiorno,Turnersville,08012,NJ,207RE0101X,endocrinologists
+520,David,Della Rocca,New York,10065,NY,207W00000X,asoprs
+521,Sheri,DeMartelaere,,,,207W00000X,asoprs
+522,Hakan,Demirci,Ann Arbor,48073,MI,207W00000X,asoprs
+523,Beatriz,DeMoranville,Fall River,02720,MA,207RE0101X,endocrinologists
+524,Michael,Dempsey,Rockville,20852,MD,207RE0101X,endocrinologists
+525,Misha,Denham,Coral Gables,33134,FL,207RE0101X,endocrinologists
+526,Benjamin,Dennis,Columbus,31904,GA,207RE0101X,endocrinologists
+527,Sarah,DeParis,San Rafael,94903,CA,207W00000X,asoprs
+528,Kaniksha,Desai,Palo Alto,94304,CA,207RE0101X,endocrinologists
+529,Tadele,Desalew,Dover,19904,DE,207RE0101X,endocrinologists
+530,Jessica,Devin,Steamboat Springs,80487,CO,207RE0101X,endocrinologists
+531,Mohit,Dewan,Woodbury,55125,MN,207W00000X,asoprs
+532,Asheesh,Dewan,Las Vegas,89113,NV,207RE0101X,tepezza
+533,Lucy,Dey,Joliet,60435,IL,207RE0101X,endocrinologists
+534,Gauri,Dhir,Myrtle Beach,29577,SC,207RE0101X,endocrinologists
+535,James,Dickson,Columbia,29201,SC,207W00000X,asoprs
+536,Jorge,Diez,East Hartford,06108,CT,207RE0101X,endocrinologists
+537,Catherine,Dinauer,New Haven,06511,CT,207RE0101X,endocrinologists
+538,Stefania,Diniz,Los Angeles,90095,CA,207W00000X,asoprs
+539,Alberto,Distefano,Boston,02118,MA,207W00000X,tepezza
+540,Vidita,Divan,Topeka,66606,KS,207RE0101X,tepezza
+541,Richard,Dlott,Martinez,94553,CA,207RE0101X,endocrinologists
+542,Farheen,Dojki,Munster,46321,IN,207RE0101X,endocrinologists
+543,Ayotunde,Dokun,Memphis,38103,TN,207RE0101X,endocrinologists
+544,Robert,Doll,Allentown,18103,PA,207RE0101X,endocrinologists
+545,Kip,Dolphin,Easley,29640,SC,207W00000X,tepezza
+546,Sirisha,Donepudi,Marion,43302,OH,207RE0101X,endocrinologists
+547,Charles,Donner,Santa Barbara,93110,CA,207RE0101X,tepezza
+548,Kevin,Donohue,Arlington,22205,VA,207RE0101X,endocrinologists
+549,Chrysoula,Dosiou,Stanford,94305,CA,207RE0101X,tepezza
+550,Jean,Dostou,Chapel Hill,27599,NC,207RE0101X,endocrinologists
+551,Timothy,Doucet,Conroe,77304,TX,207W00000X,asoprs
+552,Raymond,Douglas,Los Angeles,90048,CA,207W00000X,asoprs
+553,Marcos,Doxanas,Baltimore,21212,MD,207W00000X,asoprs
+554,Jennifer,Doyle,North Little Rock,72117,AR,2084N0400X,tepezza
+555,Matthew,Draelos,Edmond,73034,OK,207RE0101X,endocrinologists
+556,Laryssa,Dragan,Fort Collins,80525,CO,207W00000X,asoprs
+557,Marlys,Drange,Pasadena,91105,CA,207RE0101X,endocrinologists
+558,Steven,Dresner,Los Angeles,90066,CA,207W00000X,asoprs
+559,Suma,Dronavalli,Atlanta,30309,GA,207RE0101X,endocrinologists
+560,Robert,Dryden,Tucson,85712,AZ,207W00000X,asoprs
+561,Anuradha,Dua,Alexandria,22306,VA,207RE0101X,endocrinologists
+562,Michael,Duben,Fairfield,06825,CT,207RE0101X,endocrinologists
+563,Susan,Dubois,Austin,78741,TX,207RE0101X,endocrinologists
+564,Kathleen,Duerksen,Tucson,85712,AZ,207W00000X,asoprs
+565,Kathleen,Duerksen,Tucson,85712,AZ,207W00000X,tepezza
+566,Mark,Duffy,Green Bay,54303,WI,207W00000X,tepezza
+567,Mark,Duffy,Green Bay,54303,WI,207W00000X,asoprs
+568,Jasleen,Duggal,Bakersfield,93308,CA,207RE0101X,tepezza
+569,Jasleen,Duggal,Bakersfield,93311,CA,207RE0101X,tepezza
+570,Alina,Dumitrescu,Iowa City,52242,IA,207W00000X,tepezza
+571,Clinton,Duncan,Cedar City,84720,UT,207W00000X,tepezza
+572,Vikram,Durairaj,Austin,78705,TX,207W00000X,asoprs
+573,Vikram,Durairaj,Austin,78705,TX,207W00000X,tepezza
+574,Dawn,Duss,Jacksonville,32202,FL,207W00000X,tepezza
+575,Jonathan,Dutton,Durham,27707,NC,207W00000X,asoprs
+576,Chitharanjan,Duvoor,Jonesboro,72401,AR,207RE0101X,endocrinologists
+577,Arcot,Dwarakanathan,Olympia Fields,60461,IL,207RE0101X,endocrinologists
+578,Karen,Earle,San Francisco,94109,CA,207RE0101X,endocrinologists
+579,Susana,Ebner,New York,10032,NY,207RE0101X,endocrinologists
+580,Susana,Ebner,New York,10032,NY,207RE0101X,endocrinologists
+581,Daniel,Ebroon,Thousand Oaks,91361,CA,207W00000X,asoprs
+582,Diana,Echeverry,Lynwood,90262,CA,207RE0101X,endocrinologists
+583,Jeffrey,Edelstein,Chandler,85224,AZ,207W00000X,tepezza
+584,Jeff,Edelstein,Chandler,85224,AZ,207W00000X,asoprs
+585,Kian,Eftekhari,Salt Lake City,84102,UT,207W00000X,asoprs
+586,Kian,Eftekhari,Salt Lake City,84102,UT,207WX0200X,tepezza
+587,Janice,Eggert,Las Vegas,89121,NV,207W00000X,asoprs
+588,Charles,Eil,Fall River,02720,MA,207RE0101X,endocrinologists
+589,Andrew,Eiseman,Charleston,29425,SC,207W00000X,tepezza
+590,Andrew,Eiseman,Charleston,29425,SC,207W00000X,asoprs
+591,Leyla,El-Choufi,Augusta,30901,GA,207RE0101X,endocrinologists
+592,Tarek,El-Sawy,Cupertino,95014,CA,207W00000X,tepezza
+593,Tarek,El-Sawy,Menlo Park,94025,CA,207W00000X,asoprs
+594,Ebby,Elahi,New York,10028,NY,207W00000X,asoprs
+595,Leslie,Eldeiry,Boston,02215,MA,207RE0101X,endocrinologists
+596,Georges,Elhomsy,Wichita,67226,KS,207RE0101X,endocrinologists
+597,Kasra,Eliasieh,Oakland,94609,CA,207W00000X,tepezza
+598,Kasra,Eliasieh,Oakland,94609,CA,207W00000X,asoprs
+599,Rachel,Ellis,Hicksville,11801,NY,207W00000X,tepezza
+600,Don,Ellis,Del Mar,92014,CA,207W00000X,asoprs
+601,Rachel,Ellis,Fresh Meadows,11366,NY,207W00000X,tepezza
+602,Valerie,Elmalem,Mineola,11501,NY,207W00000X,tepezza
+603,Victor,Elner,Ann Arbor,48105,MI,207W00000X,asoprs
+604,Victor,Elner,Ann Arbor,48105,MI,207W00000X,tepezza
+605,Dionardo,Encarnacion,Danville,17822,PA,207RE0101X,endocrinologists
+606,Todd,Engen,Provo,84604,UT,207W00000X,asoprs
+607,Todd,Engen,Provo,84604,UT,207W00000X,tepezza
+608,Margaret,England,Santa Maria,93454,CA,207RE0101X,endocrinologists
+609,Elizabeth,Ennis,Birmingham,35211,AL,207RE0101X,endocrinologists
+610,Yoash,Enzer,Providence,02905,RI,207W00000X,asoprs
+611,Gil,Epstein,Fort Lauderdale,33324,FL,207W00000X,asoprs
+612,Melanie,Erb,Irvine,92618,CA,207W00000X,asoprs
+613,Ahmet,Ergin,Port Saint Lucie,34952,FL,207RE0101X,tepezza
+614,Benjamin,Erickson,Palo Alto,94303,CA,207W00000X,asoprs
+615,Beatriz,Esayag-Tendler,Farmington,06030,CT,207RE0101X,endocrinologists
+616,Priscilla,Escalona,Clinton,29325,SC,207RE0101X,endocrinologists
+617,George,Escaravage,Wilmington,28401,NC,207W00000X,asoprs
+618,Bita,Esmaeli,Houston,77030,TX,207W00000X,asoprs
+619,Neda,Esmaili,Milwaukee,53226,WI,207W00000X,tepezza
+620,Neda,Esmaili,Milwaukee,53226,WI,207W00000X,asoprs
+621,Gabriela,Espinoza,St. Louis,63104,MO,207W00000X,asoprs
+622,Gathline,Etienne,Newnan,30265,GA,2084N0400X,tepezza
+623,James,Etzkorn,Saint Louis,63131,MO,207RE0101X,endocrinologists
+624,Kelly,Everman,Franklin,37203,TN,207W00000X,asoprs
+625,Joseph,Eviatar,New York,10011,NY,207W00000X,asoprs
+626,David,Ewing-Chow,Watertown,13601,NY,207W00000X,tepezza
+627,Jacqueline,Fabello-Gamiao,Livonia,48154,MI,207RE0101X,endocrinologists
+628,Jacqueline,Fabello-Gamiao,Livonia,48154,MI,207RE0101X,endocrinologists
+629,James,Fagin,New York,10065,NY,207RE0101X,endocrinologists
+630,Thomas,Fahey,New York,10065,NY,207RE0101X,endocrinologists
+631,Wesley,Fairfield,Brewer,04412,ME,207RE0101X,endocrinologists
+632,Jeffrey,Fajardo,Topeka,66606,KS,207RE0101X,tepezza
+633,Vera,Fajtova,Boston,02215,MA,207RE0101X,endocrinologists
+634,Madina,Falcone,Farmington,06030,CT,207W00000X,tepezza
+635,Maria,Falcone,South Bend,46617,IN,207RE0101X,endocrinologists
+636,Donald,Falgoust,Lake Charles,70605,LA,207W00000X,tepezza
+637,Robert,Fante,Denver,80210,CO,207W00000X,asoprs
+638,Robert,Fante,Denver,80210,CO,207W00000X,tepezza
+639,Saima,Farghani,Manahawkin,08050,NJ,207RE0101X,endocrinologists
+640,Stuart,Farris,Springfield,62704,IL,207W00000X,asoprs
+641,Alan,Farwell,Boston,02118,MA,207RE0101X,endocrinologists
+642,Cheryl,Fassler,Nashville,37203,TN,207RE0101X,endocrinologists
+643,Blake,Fausett,Eugene,97401,OR,207W00000X,tepezza
+644,Michael,Favorito,Mineola,11501,NY,207RE0101X,endocrinologists
+645,Aaron,Fay,Fitchburg,01420,MA,207W00000X,tepezza
+646,Aaron,Fay,Fitchburg,01420,MA,207W00000X,asoprs
+647,Henry,Fein,Baltimore,21215,MD,207RE0101X,endocrinologists
+648,George,Feinbaum,Brooklyn,11222,NY,207RE0101X,endocrinologists
+649,Kenneth,Feldman,Harbor City,90710,CA,207W00000X,asoprs
+650,Melba,Feliciano-Emmanvel,San Juan,00926,PR,207RE0101X,endocrinologists
+651,Douglas,Felt,Ogden,84403,UT,207W00000X,asoprs
+652,John,Fezza,Sarasota,34239,FL,207W00000X,asoprs
+653,Lauren,Ficks,Ventura,93003,CA,207RE0101X,endocrinologists
+654,Ross,Fierro,Mobile,36608,AL,207RE0101X,endocrinologists
+655,Sergio,Figueroa,Madisonville,42431,KY,207RE0101X,endocrinologists
+656,Amy,Fisco,Racine,53405,WI,207RE0101X,endocrinologists
+657,Claudia,Fish,Watertown,13601,NY,207RE0101X,endocrinologists
+658,Lisa,Fish,Minneapolis,55415,MN,207RE0101X,endocrinologists
+659,Patrick,Flaharty,Fort Myers,33912,FL,207W00000X,asoprs
+660,Joseph,Flanagan,Wynnewood,19096,PA,207W00000X,asoprs
+661,James,Fleming,Memphis,38103,TN,207W00000X,asoprs
+662,Jeremy,Flood,Philadelphia,19104,PA,207RE0101X,endocrinologists
+663,Howard,Fogel,Stoughton,02072,MA,207RE0101X,endocrinologists
+664,Svetlana,Fomin,SYRACUSE,13210,NY,207RE0101X,endocrinologists
+665,Julie,Foote,Boise,83704,ID,207RE0101X,endocrinologists
+666,Steve,Fordan,Dallas,75208,TX,207RE0101X,endocrinologists
+667,Jill,Foster,Westerville,43082,OH,207W00000X,tepezza
+668,Jill,Foster,Columbus,43215,OH,207W00000X,tepezza
+669,Jill,Foster,Marysville,43040,OH,207W00000X,tepezza
+670,Jill,Foster,Columbus,43215,OH,207W00000X,asoprs
+671,Tamara,Fountain,Deerfield,60015,IL,207W00000X,asoprs
+672,Amy,Fowler,Durham,27710,NC,207W00000X,asoprs
+673,Brian,Fowler,Memphis,38103,TN,207W00000X,asoprs
+674,Larry,Fox,Jacksonville,32207,FL,207RE0101X,endocrinologists
+675,Shari,Fox,Denver,80205,CO,207RE0101X,endocrinologists
+676,Christopher,Fox,Superior,80027,CO,207RE0101X,endocrinologists
+677,Marc,Frager,Boca Raton,33486,FL,207RE0101X,endocrinologists
+678,Charles,Francis,Huntington,25705,WV,207W00000X,tepezza
+679,Gary,Francis,San Antonio,78229,TX,207RE0101X,endocrinologists
+680,Shane,Frankl,Lubbock,79410,TX,207RE0101X,endocrinologists
+681,Elizabeth,Fraze,Palo Alto,94301,CA,207RE0101X,endocrinologists
+682,Robert,Fredericks,Reno,89519,NV,207RE0101X,endocrinologists
+683,L. Neal,Freeman,Melbourne,32940,FL,207W00000X,asoprs
+684,David,Freilich,Englewood,07631,NJ,207W00000X,asoprs
+685,Suzanne,Freitag,Boston,02114,MA,207W00000X,tepezza
+686,Suzanne,Freitag,Boston,02114,MA,207W00000X,asoprs
+687,Theodore,Friedman,Los Angeles,90059,CA,207RE0101X,endocrinologists
+688,Elliott,Friedman,Middletown,10940,NY,207RE0101X,endocrinologists
+689,Peter,Fries,Bettendorf,52722,IA,207W00000X,asoprs
+690,Todd,Frieze,Lehi,84043,UT,207RE0101X,tepezza
+691,Todd,Frieze,Provo,84604,UT,207RE0101X,tepezza
+692,Todd,Frieze,Lehi,84043,UT,207RE0101X,endocrinologists
+693,Constance,Fry,San Antonio,78229,TX,207W00000X,asoprs
+694,Constance,Fry,San Antonio,78229,TX,207W00000X,tepezza
+695,Roxana,Fu,Pittsburgh,15213,PA,207W00000X,asoprs
+696,Molly,Fuller,Bermuda Run,27006,NC,207W00000X,asoprs
+697,Barry,Fuller,Ypsilanti,48197,MI,207W00000X,asoprs
+698,Stanley,Fuller,Fairbanks,99701,AK,207W00000X,tepezza
+699,Molly,Fuller,Bermuda Run,27006,NC,207W00000X,tepezza
+700,John,Fuqua,Indianapolis,46202,IN,207RE0101X,endocrinologists
+701,Theresa,Fynn,Saint Cloud,34769,FL,207RE0101X,tepezza
+702,Theresa,Fynn,Kissimmee,34741,FL,207RE0101X,tepezza
+703,Laura,Gadzala,Portland,97210,OR,207W00000X,asoprs
+704,Jason,Gaglia,Boston,02215,MA,207RE0101X,endocrinologists
+705,Maria,Galang-Qahwash,Owosso,48867,MI,207W00000X,tepezza
+706,Sandi-Jo,Galati,Trumbull,06611,CT,207RE0101X,endocrinologists
+707,Jose,Galindo,Carlisle,17015,PA,207RE0101X,endocrinologists
+708,John,Gallen,Medford,97504,OR,207RE0101X,tepezza
+709,Samuel,Gallo,Columbus,43213,OH,207W00000X,tepezza
+710,Samuel,Gallo,Springfield,45505,OH,207W00000X,tepezza
+711,Samuel,Gallo,Dublin,43016,OH,207W00000X,tepezza
+712,Leslie,Gamache,Denver,80218,CO,207RE0101X,endocrinologists
+713,Ivan,Gamboa,Baton Rouge,70808,LA,207RE0101X,endocrinologists
+714,Ivan,Gamboa,Baton Rouge,70808,LA,207RE0101X,tepezza
+715,Parag,Gandhi,Rosedale,21237,MD,207W00000X,asoprs
+716,Perry,Garber,Port Washington,11050,NY,207W00000X,asoprs
+717,Denise,Garcia,Gilbert,85295,AZ,207W00000X,tepezza
+718,George,Garcia,Orange,92868,CA,207W00000X,asoprs
+719,Denise,Garcia,Gilbert,85295,AZ,207W00000X,asoprs
+720,Mariana,Garcia-Touza,Kansas City,64128,MO,207RE0101X,endocrinologists
+721,Daniel,Garibaldi,Rockville Centre,11570,NY,207W00000X,tepezza
+722,Daniel,Garibaldi,Valley Stream,11581,NY,207W00000X,tepezza
+723,James,Gaume,Nashville,37205,TN,207RE0101X,endocrinologists
+724,Roberta,Gausas,Philadelphia,19103,PA,207W00000X,asoprs
+725,Lauren,Gavaris,Washington,20016,DC,207W00000X,asoprs
+726,Paul,Gavaris,Washington,20016,DC,207W00000X,asoprs
+727,Alina,Gavrila-Filip,Boston,02215,MA,207RE0101X,endocrinologists
+728,David,Gay,Austin,78745,TX,207W00000X,tepezza
+729,Gregg,Gayre,San Rafael,94901,CA,207W00000X,asoprs
+730,Craig,Geist,Washington,20037,DC,207W00000X,asoprs
+731,Flor,Geola,Los Angeles,90025,CA,207RE0101X,endocrinologists
+732,Christian,George,Grosse Pointe Park,48230,MI,207W00000X,tepezza
+733,Dan,Georgescu,Fort Lauderdale,33309,FL,207W00000X,asoprs
+734,Dan,Georgescu,Deerfield Beach,33442,FL,207W00000X,tepezza
+735,Dan,Georgescu,Plantation,33322,FL,207W00000X,tepezza
+736,Dan,Georgescu,Weston,33326,FL,207W00000X,tepezza
+737,Dan,Georgescu,Jupiter,33458,FL,207W00000X,tepezza
+738,Larissa,Ghadiali,Hinsdale,60521,IL,207W00000X,tepezza
+739,Rajat,Ghaiy,Marietta,30060,GA,207W00000X,tepezza
+740,Rajat,Ghaiy,Lawrenceville,30046,GA,207W00000X,tepezza
+741,Rajat,Ghaiy,Fayetteville,30214,GA,207W00000X,tepezza
+742,Rajat,Ghaiy,Atlanta,30339,GA,207W00000X,tepezza
+743,Hoda,Ghanem,Dublin,94568,CA,207RE0101X,endocrinologists
+744,Pranav,Ghody,Forest Hills,11375,NY,207RE0101X,endocrinologists
+745,Joseph,Giacometti,Scranton,18503,PA,207W00000X,asoprs
+746,Roma,Gianchandani,Ann Arbor,48105,MI,207RE0101X,endocrinologists
+747,Silvana,Giannelli,Loma Linda,92354,CA,207RE0101X,endocrinologists
+748,Andrew,Gianoukakis,Torrance,90502,CA,207RE0101X,endocrinologists
+749,Edmund,Giegerich,Brooklyn,11215,NY,207RE0101X,endocrinologists
+750,James,Gigantelli,Huntington,25705,WV,207W00000X,asoprs
+751,James,Gigantelli,Huntington,25705,WV,207W00000X,tepezza
+752,James,Gigantelli,Charleston,25301,WV,207W00000X,tepezza
+753,Benjamin,Gigliotti,Rochester,14642,NY,207RE0101X,endocrinologists
+754,Grant,Gilliland,Dallas,75231,TX,207W00000X,asoprs
+755,Michael,Gingold,Farmington,06032,CT,207W00000X,asoprs
+756,Swaminathan,Giridharan,Brooklyn,11235,NY,207RE0101X,endocrinologists
+757,Geoffrey,Gladstone,Southfield,48034,MI,207W00000X,asoprs
+758,Michael,Glassman,Pembroke Pines,33028,FL,207W00000X,asoprs
+759,Michael,Glassman,Pembroke Pines,33028,FL,207W00000X,tepezza
+760,Herbert,Glatt,Knoxville,37920,TN,207W00000X,asoprs
+761,Jeremy,Gleeson,Albuquerque,87111,NM,207RE0101X,endocrinologists
+762,Arthur,Glover,Gold River,95670,CA,207W00000X,asoprs
+763,Paul,Glowienka,Beavercreek,45431,OH,207RE0101X,endocrinologists
+764,Kyle,Godfrey,New York,10021,NY,207W00000X,tepezza
+765,Kyle,Godfrey,New York,10021,NY,207W00000X,asoprs
+766,Tara,Goecks,Denver,80210,CO,207W00000X,tepezza
+767,Tara,Goecks,Denver,80210,CO,207W00000X,asoprs
+768,Yaroslav,Gofnung,Westlake Village,91361,CA,207RE0101X,endocrinologists
+769,Robert,Gold,Maitland,32751,FL,207WX0110X,tepezza
+770,Katherine,Gold,Jacksonville,32224,FL,207W00000X,asoprs
+771,Katherine,Gold,Jacksonville,32224,FL,207W00000X,tepezza
+772,Andrew,Goldbaum,New York,10065,NY,207W00000X,asoprs
+773,Philip,Goldberg,Branford,06405,CT,207RE0101X,endocrinologists
+774,Robert,Goldberg,Los Angeles,90095,CA,207W00000X,asoprs
+775,Stuart,Goldberg,Lancaster,17601,PA,207W00000X,asoprs
+776,Stacia,Goldey,Largo,33770,FL,207W00000X,asoprs
+777,Stacia,Goldey,Largo,33770,FL,207W00000X,tepezza
+778,Melanie,Goldfarb,Santa Monica,90404,CA,207RE0101X,endocrinologists
+779,Whitney,Goldner,Omaha,68198,NE,207RE0101X,endocrinologists
+780,Jeff,Goldstein,Asheville,28803,NC,207W00000X,asoprs
+781,Jeffrey,Goldstein,Asheville,28803,NC,207W00000X,tepezza
+782,Scott,Goldstein,Southampton,18966,PA,207W00000X,asoprs
+783,Gerald,Goltz,Sewickley,15143,PA,207RE0101X,endocrinologists
+784,Edison,Goncalves,Birmingham,35209,AL,207RE0101X,endocrinologists
+785,Russell,Gonnering,Elm Grove,53122,WI,207W00000X,asoprs
+786,Michael,Gonzales,Reno,89521,NV,207RE0101X,tepezza
+787,Mithra,Gonzalez,Rochester,14642,NY,207W00000X,asoprs
+788,Adriana,Gonzalez,Roswell,30076,GA,207R00000X,tepezza
+789,Ralph,Goodman,Miramar Beach,32550,FL,207RE0101X,endocrinologists
+790,M. Douglas,Gossman,Louisville,40299,KY,207W00000X,asoprs
+791,Peter,Goulden,New York,10025,NY,207RE0101X,endocrinologists
+792,Scott,Grady,Portland,97225,OR,207RE0101X,endocrinologists
+793,John,Graham,Brooklyn,11201,NY,207RE0101X,endocrinologists
+794,Ramona,Granda-Rodriguez,San Antonio,78229,TX,207RE0101X,endocrinologists
+795,Michael,Grant,Baltimore,21201,MD,207W00000X,asoprs
+796,Claire,Graves,Sacramento,95817,CA,207RE0101X,endocrinologists
+797,Allison,Graziadei,Schenectady,12304,NY,207RE0101X,endocrinologists
+798,Kristine,Grdinovac,Kansas City,66160,KS,207RE0101X,endocrinologists
+799,Loren,Greene,New York,10016,NY,207RE0101X,endocrinologists
+800,Elizabeth,Grethen,Zionsville,46077,IN,207RE0101X,endocrinologists
+801,Greg,Griepentrog,Milwaukee,53226,WI,207W00000X,asoprs
+802,Gregory,Griepentrog,Milwaukee,53226,WI,207W00000X,tepezza
+803,Michelle,Griffith,Nashville,37232,TN,207RE0101X,endocrinologists
+804,Mindy,Griffith,Jersey City,07306,NJ,207RE0101X,endocrinologists
+805,Seanna,Grob,San Francisco,94143,CA,207W00000X,asoprs
+806,Seanna,Grob,Berkeley,94702,CA,207W00000X,tepezza
+807,Peter,Grondziowski,Pittsburgh,15241,PA,207RE0101X,endocrinologists
+808,Neil,Gross,Lynn,01901,MA,207W00000X,asoprs
+809,Michael,Groth,Beverly Hills,90210,CA,207W00000X,asoprs
+810,Francis,Grumbine,Towson,21204,MD,207W00000X,asoprs
+811,Helena,Guber,Brooklyn,11209,NY,207RE0101X,endocrinologists
+812,Carmen,Guberina,New York,10065,NY,207W00000X,asoprs
+813,Modhi,Gude,Oklahoma City,73162,OK,207RE0101X,endocrinologists
+814,Kurt,Guelzow,Roanoke,24016,VA,207W00000X,asoprs
+815,Pierre,Guibor,Secaucus,07094,NJ,207W00000X,asoprs
+816,Valeria,Guimaraes,Prescott Valley,86314,AZ,207RE0101X,endocrinologists
+817,Pushpinder,Guleria,Rancho Mirage,92270,CA,207RE0101X,endocrinologists
+818,Sheila,Gupta,Ormond Beach,32174,FL,207RE0101X,endocrinologists
+819,Shivani,Gupta,Panorama City,91402,CA,207W00000X,asoprs
+820,Malini,Gupta,Memphis,38119,TN,207RE0101X,endocrinologists
+821,KRITI,GUPTA,Buda,78610,TX,207RE0101X,endocrinologists
+822,Ankur,Gupta,Dayton,45428,OH,207RE0101X,endocrinologists
+823,Anuradha,Guthikonda,Peachtree City,30269,GA,207RE0101X,endocrinologists
+824,Greta,Guyer,South Charleston,25309,WV,207RE0101X,endocrinologists
+825,Richard,Haber,New York,10029,NY,207RE0101X,endocrinologists
+826,Larissa,Habib,New Haven,06510,CT,207W00000X,tepezza
+827,Larissa,Habib,New Haven,06510,CT,207W00000X,asoprs
+828,Mouhammed,Habra,Houston,77030,TX,207RE0101X,endocrinologists
+829,Valerie,Hadam,Lyndhurst,44124,OH,207RE0101X,endocrinologists
+830,Shirin,Haddady,Boston,02118,MA,207RE0101X,endocrinologists
+831,Susan,Haden,Newton,02459,MA,207RE0101X,endocrinologists
+832,Majd,Hakim,Frederick,21702,MD,207RE0101X,endocrinologists
+833,Julie,Hallanger-Johnson,Tampa,33612,FL,207RE0101X,endocrinologists
+834,Conrad,Hamako,Freedom,95019,CA,207W00000X,asoprs
+835,Mitchell,Hamburg,Kansas City,64111,MO,207RE0101X,endocrinologists
+836,Tara,Hamilton,Medford,02155,MA,207RE0101X,endocrinologists
+837,Matthew,Hammons,Fort Worth,76104,TX,207WX0200X,tepezza
+838,Matthew,Hammons,Fort Worth,76104,TX,207W00000X,asoprs
+839,Michael,Hancock,Indianapolis,46237,IN,207RE0101X,endocrinologists
+840,Yehuda,Handelsman,Tarzana,91356,CA,207RE0101X,endocrinologists
+841,Lawrence,Handler,Troy,48084,MI,207W00000X,asoprs
+842,Kathleen,Hands,San Antonio,78258,TX,207RE0101X,tepezza
+843,Fiby,Hanna,Jersey City,07306,NJ,207RE0101X,endocrinologists
+844,Laura,Hanson,Blue Ash,45242,OH,207W00000X,tepezza
+845,Erik,Happ,Natrona Heights,15065,PA,207W00000X,tepezza
+846,Erik,Happ,Pittsburgh,15212,PA,207W00000X,tepezza
+847,Erik,Happ,Washington,15301,PA,207W00000X,tepezza
+848,Erik,Happ,Cranberry Twp,16066,PA,207W00000X,tepezza
+849,Syed,Haq,Marble Falls,78654,TX,207RE0101X,endocrinologists
+850,Amir,Harari,Scottsdale,85260,AZ,207RE0101X,endocrinologists
+851,Shimon,Harary,Memphis,38119,TN,207RE0101X,endocrinologists
+852,Rocio,Harbison,Houston,77054,TX,207RE0101X,endocrinologists
+853,Roderick,Hargrove,Hickory,28602,NC,207W00000X,asoprs
+854,John,Harrington,Dallas,75230,TX,207W00000X,asoprs
+855,David,Harris,Tulsa,74136,OK,207RE0101X,endocrinologists
+856,Gerald,Harris,Milwaukee,53226,WI,207W00000X,asoprs
+857,Matheson,Harris,Salt Lake City,84107,UT,207W00000X,asoprs
+858,Matheson,Harris,St George,84790,UT,207W00000X,tepezza
+859,Alexander,Harris,New Hartford,13413,NY,207W00000X,tepezza
+860,Matheson,Harris,Murray,84107,UT,207W00000X,tepezza
+861,Gerald,Harris,Milwaukee,53226,WI,207W00000X,tepezza
+862,Andrew,Harrison,Minneapolis,55455,MN,207W00000X,tepezza
+863,Andrew,Harrison,Minneapolis,55455,MN,207W00000X,asoprs
+864,H.,Harrison,Virginia Beach,23454,VA,207RE0101X,endocrinologists
+865,Walter,Hartel,Beavercreek,45440,OH,207W00000X,tepezza
+866,Stefan,Hasinski,Phoenix,85053,AZ,207RE0101X,endocrinologists
+867,Andrea,Hass,Palm Beach Gardens,33410,FL,207W00000X,asoprs
+868,Adam,Hassan,Grand Rapids,49525,MI,207W00000X,tepezza
+869,Adam,Hassan,Grand Rapids,49525,MI,207W00000X,asoprs
+870,Amir,Hassan,Houston,77089,TX,207RE0101X,tepezza
+871,Sima,Hassani,Woodland Hills,91367,CA,207RE0101X,endocrinologists
+872,Matthew,Hauck,Vancouver,98686,,207W00000X,asoprs
+873,Weldon,Havins,Henderson,89074,NV,207W00000X,asoprs
+874,Michael,Hawes,Englewood,80113,CO,207W00000X,asoprs
+875,Lauren,Hawkins,Fayetteville,72703,AR,207RE0101X,endocrinologists
+876,Brent,Hayek,Gainesville,30501,GA,207W00000X,asoprs
+877,Brent,Hayek,Gainesville,30501,GA,207W00000X,tepezza
+878,Aliya,Hayes,Pasadena,77505,TX,207RE0101X,endocrinologists
+879,Megan,Haymart,Ann Arbor,48109,MI,207RE0101X,endocrinologists
+880,Lisa,Hays,Shawnee Mission,66204,KS,207RE0101X,endocrinologists
+881,Tahir,Haytoglu,Elmira,14905,NY,207RE0101X,endocrinologists
+882,Stella,Hecker,Fort Worth,76104,TX,207RE0101X,endocrinologists
+883,J. Timothy,Heffernan,Seattle,98104,WA,207W00000X,asoprs
+884,John,Heffernan,Seattle,98104,WA,207W00000X,tepezza
+885,Katrinka,Heher,Boston,02110,MA,207W00000X,asoprs
+886,Grant,Heinz,Gilbert,85234,AZ,207W00000X,asoprs
+887,Grant,Heinz,Mesa,85206,AZ,207WX0200X,tepezza
+888,Elizabeth,Helfer,Stratford,08084,NJ,207RE0101X,endocrinologists
+889,Howard,Heller,Dallas,75246,TX,207RE0101X,endocrinologists
+890,Susan,Henley,Colorado Springs,80907,CO,207RE0101X,endocrinologists
+891,James,Hennessey,Boston,02215,MA,207RE0101X,endocrinologists
+892,Mark,Henry,Somerset,42503,KY,207W00000X,tepezza
+893,Ginger,Henson,Blue Ash,45242,OH,207W00000X,tepezza
+894,Ginger,Henson,Cincinnati,45245,OH,207W00000X,tepezza
+895,Dustin,Heringer,Scottsdale,85258,AZ,207W00000X,asoprs
+896,Dustin,Heringer,Scottsdale,85258,AZ,,tepezza
+897,Dustin,Heringer,Peoria,85382,AZ,,tepezza
+898,Carlos,Hernandez-Cassis,North Las Vegas,89086,NV,207RE0101X,endocrinologists
+899,Gerard,Hershewe,Reno,89502,NV,2084N0400X,tepezza
+900,Ian,Herskowitz,Evans,30809,GA,207RE0101X,endocrinologists
+901,Julie,Heuduck,Winnsboro,71295,LA,207RE0101X,endocrinologists
+902,Eva,Hewes,Los Altos,94023,CA,207W00000X,asoprs
+903,Hans,Heymann,Fayetteville,72704,AR,207W00000X,tepezza
+904,Hans,Heymann,Fayetteville,72703,AR,207W00000X,asoprs
+905,Peter,Hildebrand,Las Vegas,89106,NV,207W00000X,asoprs
+906,Peter Lloyd,Hildebrand,Las Vegas,89113,NV,207W00000X,tepezza
+907,Peter Lloyd,Hildebrand,Las Vegas,89106,NV,207W00000X,tepezza
+908,Peter Lloyd,Hildebrand,Las Vegas,89149,NV,207W00000X,tepezza
+909,Peter Lloyd,Hildebrand,Las Vegas,89144,NV,207W00000X,tepezza
+910,Robert,Hill,North Syracuse,13212,NY,207W00000X,tepezza
+911,Robert,Hill,Syracuse,13212,NY,207W00000X,asoprs
+912,Eric,Hink,Aurora,80045,CO,207W00000X,asoprs
+913,Eric,Hink,Boulder,80303,CO,207W00000X,tepezza
+914,Eric,Hink,Aurora,80045,CO,207W00000X,tepezza
+915,Eric,Hink,Denver,80222,CO,207W00000X,tepezza
+916,Marc,Hirschbein,Baltimore,21215,MD,207W00000X,asoprs
+917,Thanh,Hoang,Bethesda,20814,MD,207RE0101X,endocrinologists
+918,Scott,Hobson,Indianapolis,46290,IN,207W00000X,asoprs
+919,Ameya,Hodarkar,Providence,02906,RI,207RE0101X,endocrinologists
+920,Jonathan,Hoenig,Beverly Hills,90212,CA,207W00000X,asoprs
+921,Robert,Hofmann,Providence,02906,RI,207W00000X,tepezza
+922,R. Jeffrey,Hofmann,Providence,02906,RI,207W00000X,asoprs
+923,David,Holck,San Antonio,78258,TX,207W00000X,tepezza
+924,David,Holck,San Antonio,78258,TX,207W00000X,asoprs
+925,John,Holds,St Louis,63105,MO,207W00000X,asoprs
+926,Jordan,Hollsten,San Antonio,78231,TX,207W00000X,asoprs
+927,Donald,Hollsten,San Antonio,78231,TX,207W00000X,asoprs
+928,Yancey,Holmes,Covington,41011,KY,207RE0101X,endocrinologists
+929,Sang,Hong,Milwaukee,53226,WI,207WX0200X,tepezza
+930,Robert,Horvat,Merced,95348,CA,207RE0101X,endocrinologists
+931,Maged,Hossameldin,Chicago,60637,IL,207RE0101X,endocrinologists
+932,Lawrence,Hotes,Dorchester,02124,MA,207RE0101X,endocrinologists
+933,Kenneth,Houchin,Elko,89801,NV,207W00000X,tepezza
+934,Kenneth,Houchin,Las Vegas,89117,NV,207W00000X,tepezza
+935,Elizabeth,Houle,Burlington,05401,VT,207W00000X,tepezza
+936,John,Hovis,Rockford,61103,IL,207RE0101X,endocrinologists
+937,Jennifer,Hsieh,Long Beach,90815,CA,207RE0101X,endocrinologists
+938,Adam,Hsu,City Of Industry,91748,CA,207W00000X,tepezza
+939,Mimi,Hu,Houston,77030,TX,207RE0101X,endocrinologists
+940,Caroline,Huang,Falls Church,22046,VA,207RE0101X,endocrinologists
+941,Christopher,Hudak,Fort Worth,76132,TX,207RE0101X,endocrinologists
+942,Howard,Huey,New York,10013,NY,207RE0101X,endocrinologists
+943,James,Huffman,London,40741,KY,207W00000X,tepezza
+944,Susan,Hughes,Cherry Hill,08003,NJ,207W00000X,asoprs
+945,Jennifer,Hui,Palm Desert,92211,CA,207W00000X,tepezza
+946,Jennifer,Hui,Palm Desert,92211,CA,207W00000X,asoprs
+947,Raphael,Hulkower,Bronx,10467,NY,207RE0101X,endocrinologists
+948,John,Hunts,Eugene,97401,OR,207W00000X,asoprs
+949,Kenneth,Hupart,Brooklyn,11235,NY,207RE0101X,endocrinologists
+950,Heather,Huribal,Greenlawn,11740,NY,207RE0101X,endocrinologists
+951,Peter,Hurley,Buffalo,14221,NY,207W00000X,asoprs
+952,Daniel,Hwang,Atlanta,30339,GA,207WX0200X,tepezza
+953,Catherine,Hwang,Cleveland,44195,OH,207W00000X,asoprs
+954,Catherine,Hwang,Cleveland,44195,OH,207W00000X,tepezza
+955,Daniel,Hwang,Lawrenceville,30046,GA,207WX0200X,tepezza
+956,Daniel,Hwang,Stockbridge,30281,GA,207WX0200X,tepezza
+957,Kenneth,Hyde,Houston,77025,TX,207W00000X,tepezza
+958,Shelly,Im,Yonkers,10710,NY,207RE0101X,endocrinologists
+959,Jonathan,Insel,Tucson,85715,AZ,207RE0101X,tepezza
+960,Amena,Iqbal,Saint Joseph,49085,MI,207RE0101X,tepezza
+961,David,Irizarry,Alcoa,37701,TN,207RE0101X,endocrinologists
+962,David,Irizarry,Alcoa,37701,TN,207RE0101X,tepezza
+963,David,Isaacs,Beverly Hills,90210,CA,207W00000X,asoprs
+964,Zarmen,Israelian-Konaraki,Glendale,91206,CA,207RE0101X,endocrinologists
+965,Kamel,Itani,Dallas,75390,TX,207W00000X,tepezza
+966,Kamel,Itani,Dallas,75230,TX,207W00000X,asoprs
+967,Carla,Iudica-Souza,Pomona,10970,NY,207RE0101X,endocrinologists
+968,Maria,Iuorno,Midlothian,23112,VA,207RE0101X,endocrinologists
+969,Srinivas,Iyengar,Encinitas,92024,CA,207W00000X,asoprs
+970,Pallavi,Iyer,Birmingham,35233,AL,207RE0101X,endocrinologists
+971,Bhanu,Iyer,Summit,07901,NJ,207RE0101X,endocrinologists
+972,Muhammad,Jabbar,Flint,48503,MI,207RE0101X,endocrinologists
+973,Steven,Jackson,Salt Lake City,84124,UT,207W00000X,asoprs
+974,Chad,Jackson,Boise,83702,ID,207W00000X,asoprs
+975,Sindhu,Jacob,Clermont,34711,FL,207RE0101X,tepezza
+976,Sarah,Jacobs,Huntsville,35801,AL,207W00000X,asoprs
+977,Frederick,Jacobsen,Washington,20037,DC,207RE0101X,endocrinologists
+978,Teresa,Jacques,Modesto,95356,CA,207RE0101X,endocrinologists
+979,Jamie,Jadid,Henderson,89052,NV,207RE0101X,tepezza
+980,Mudit,Jain,Plantation,33317,FL,207RE0101X,tepezza
+981,Michael,Jakoby,Springfield,62702,IL,207RE0101X,endocrinologists
+982,Harini,Jalagani,Cartersville,30120,GA,207RE0101X,endocrinologists
+983,Francis,Jansen,Springfield,65804,MO,207W00000X,tepezza
+984,Michael,Jedrzynski,Carmichael,95608,CA,208200000X,tepezza
+985,Sadaf,Jeelani,Gainesville,32607,FL,207RE0101X,endocrinologists
+986,Sadaf,Jeelani,Gainesville,32607,FL,207RE0101X,endocrinologists
+987,Ankur,Jindal,Huntsville,35801,AL,207RE0101X,endocrinologists
+988,Sukhjit,Johl,Sacramento,95815,CA,207W00000X,asoprs
+989,Priya,John,Atlanta,30345,GA,207RE0101X,endocrinologists
+990,Barry,Johns,Macon,31210,GA,207RE0101X,tepezza
+991,Thomas,Johnson,Miami,33136,FL,207W00000X,tepezza
+992,Gene,Johnson,Chardon,44024,OH,207W00000X,tepezza
+993,Thomas,Johnson,Miami,33136,FL,207W00000X,asoprs
+994,Scott,Jones,Colorado Srings,80907,CO,207W00000X,asoprs
+995,Yian,Jones,Sioux City,51104,IA,207W00000X,tepezza
+996,Scott,Jones,Pueblo,81008,CO,207W00000X,tepezza
+997,Scott,Jones,Colorado Springs,80907,CO,207W00000X,tepezza
+998,David,Jones,Jackson,39216,MS,207W00000X,asoprs
+999,Jacqueline,Jonklaas,Washington,20007,DC,207RE0101X,endocrinologists
+1000,Zachary,Joos,Kirkland,98033,WA,207W00000X,tepezza
+1001,ASHLY,JOSEPH,Roswell,30076,GA,207RE0101X,endocrinologists
+1002,Shannon,Joseph,Ann Arbor,48105,MI,207W00000X,tepezza
+1003,Shannon,Joseph,Ann Arbor,48105,MI,207W00000X,asoprs
+1004,Dennis,Joseph,Somerset,42503,KY,207RE0101X,endocrinologists
+1005,Amar,Joshi,Albuquerque,87106,NM,207W00000X,tepezza
+1006,Dyron,Jue,San Jose,95128,CA,207RE0101X,endocrinologists
+1007,Maliha,Jumani,Columbus,31904,GA,207RE0101X,endocrinologists
+1008,Bokkwan,Jun,East Meadow,11554,NY,2084N0400X,tepezza
+1009,Udaya,Kabadi,Des Moines,50314,IA,207RE0101X,endocrinologists
+1010,Alon,Kahana,Flint,48532,MI,207W00000X,tepezza
+1011,Alon,Kahana,Livonia,48154,MI,207W00000X,tepezza
+1012,Alon,Kahana,Ann Arbor,48104,MI,207W00000X,tepezza
+1013,Alon,Kahana,Southfield,48034,MI,207W00000X,asoprs
+1014,Natan,Kahn,Portland,04102,ME,207W00000X,tepezza
+1015,Olga,Kaliebe,Tampa,33607,FL,207RE0101X,endocrinologists
+1016,Kevin,Kalwerisky,St. Louis,63105,MO,207W00000X,asoprs
+1017,Krishna,Kalyam,plano,75024,TX,207W00000X,asoprs
+1018,David,Kamin,Los Angeles,90024,CA,207W00000X,asoprs
+1019,Thomas,Kandl,Savannah,31404,GA,207WX0200X,tepezza
+1020,Thomas,Kandl,Savannah,31404,GA,207W00000X,asoprs
+1021,Anuradhika,Kandula,Campbell,95008,CA,207RE0101X,endocrinologists
+1022,Leah,Kang-Oh,Winston Salem,27103,NC,207RE0101X,endocrinologists
+1023,Mitesh,Kapadia,Boston,02111,MA,207W00000X,asoprs
+1024,Chirag,Kapadia,Phoenix,85006,AZ,207RE0101X,endocrinologists
+1025,James,Kapustiak,Merrionette Park,60803,IL,207W00000X,asoprs
+1026,James,Karesh,Baltimore,21215,MD,207W00000X,asoprs
+1027,Justin,Karlin,Newport Beach,92660,CA,207W00000X,tepezza
+1028,Justin,Karlin,Fountain Valley,92708,CA,207W00000X,tepezza
+1029,Esra,Karslioglu French,Pittsburgh,15213,PA,207RE0101X,tepezza
+1030,Sona,Kashyap,Charlotte,28210,NC,207RE0101X,endocrinologists
+1031,Lawrence,Kass,St. Petersburg,33703,FL,207W00000X,asoprs
+1032,Jean,Kassem,Bellingham,98226,WA,207W00000X,tepezza
+1033,Sajeev,Kathuria,Lutherville,21093,MD,207W00000X,asoprs
+1034,William,Katowitz,Philadelphia,19104,PA,207W00000X,asoprs
+1035,James,Katowitz,Philadelphia,19104,PA,207W00000X,asoprs
+1036,Daniel,Katselnik,San Antonio,78231,TX,207RE0101X,tepezza
+1037,Daniel,Katselnik,Shavano Park,78231,TX,207RE0101X,endocrinologists
+1038,Melissa,Katz,New York,10021,NY,207RE0101X,endocrinologists
+1039,Steven,Katz,Columbus,43214,OH,207W00000X,tepezza
+1040,Harold,Katz,Saint Paul,55102,MN,207RE0101X,endocrinologists
+1041,Courtney,Kauh,Columbus,43212,OH,207W00000X,asoprs
+1042,Courtney,Kauh,Columbus,43212,OH,207W00000X,tepezza
+1043,Shailja,Kaul,Langhorne,19047,PA,207RE0101X,endocrinologists
+1044,Alan,Kauppi,Lynchburg,24502,VA,207RE0101X,endocrinologists
+1045,Kawaljeet,Kaur,Mequon,53097,WI,207RE0101X,endocrinologists
+1046,Harpreet,Kaur,Mason City,50401,IA,207RE0101X,endocrinologists
+1047,Marsha,Kavanagh,Portsmouth,03801,NH,207W00000X,asoprs
+1048,Matthew,Kay,West Palm Beach,33409,FL,207W00000X,tepezza
+1049,Matthew,Kay,Ft Lauderdale,33308,FL,207W00000X,tepezza
+1050,Matthew,Kay,Jupiter,33458,FL,207W00000X,tepezza
+1051,Matthew,Kay,Aventura,33180,FL,207W00000X,tepezza
+1052,William,Kaye,West Palm Beach,33401,FL,207RE0101X,tepezza
+1053,Michael,Kazim,New York,10032,NY,207W00000X,asoprs
+1054,Nadia,Kazim,Naples,34109,FL,207W00000X,asoprs
+1055,Carly,Kelley,Durham,27710,NC,207RE0101X,endocrinologists
+1056,Katherine,Kendjorsky,Delaware,43015,OH,207RE0101X,endocrinologists
+1057,Charles,Kent,Cranberry Twp,16066,PA,207W00000X,tepezza
+1058,Tiffany,Kent,Grand Rapids,49546,MI,207W00000X,asoprs
+1059,Tiffany,Kent,Grand Rapids,49546,MI,207W00000X,tepezza
+1060,Charles,Kent,Greensburg,15601,PA,207W00000X,tepezza
+1061,Charles,Kent,Pittsburgh,15219,PA,207W00000X,tepezza
+1062,Robert,Kersten,San Francisco,94143,CA,207W00000X,asoprs
+1063,Robert,Kersten,San Francisco,94143,CA,207W00000X,tepezza
+1064,Golyar,Keyhan,Stockton,95210,CA,207RE0101X,endocrinologists
+1065,Kayvan,Keyhani,Yorktown Heights,10598,NY,207W00000X,tepezza
+1066,Kayvan,Keyhani,Yorktown Heights,10598,NY,207W00000X,asoprs
+1067,Sonalika,Khachikian,Rapid City,57701,SD,207RE0101X,endocrinologists
+1068,Agha,Khan,Pueblo,81002,CO,207RE0101X,endocrinologists
+1069,Yasmine,Khan,Vernon,06066,CT,207RE0101X,tepezza
+1070,Mahfuzul,Khan,Baltimore,21237,MD,207RE0101X,endocrinologists
+1071,Farha,Khan,Robbinsdale,55422,MN,207RE0101X,endocrinologists
+1072,Jemshed,Khan,Overland Park,66207,KS,207W00000X,asoprs
+1073,Raheela,Khawaja,Columbus,43210,OH,207RE0101X,endocrinologists
+1074,Don,Kikkawa,La Jolla,92093,CA,207W00000X,asoprs
+1075,Christian,Kim,Fort Lee,07024,NJ,207RE0101X,endocrinologists
+1076,MiSung,Kim,Kirkland,98034,WA,207RE0101X,endocrinologists
+1077,Man,Kim,Seattle,98112,WA,207W00000X,asoprs
+1078,Hee,Kim,Atlanta,30322,GA,207W00000X,tepezza
+1079,Caroline,Kim,Philadelphia,19104,PA,207RE0101X,endocrinologists
+1080,Denise,Kim,Ann Arbor,48105,MI,207W00000X,tepezza
+1081,Jonathan,Kim,Los Angeles,90033,CA,207W00000X,asoprs
+1082,Eleanore,Kim,New York,10021,NY,207W00000X,tepezza
+1083,Charles,Kim,Stockton,95207,CA,207W00000X,asoprs
+1084,H. Joon,Kim,Atlanta,30322,GA,207W00000X,asoprs
+1085,H. Jane,Kim,Union City,94587,CA,207W00000X,asoprs
+1086,Sarah,Kim,Ocala,34474,FL,207WX0200X,tepezza
+1087,Han,Kim,Baltimore,21287,MD,207RE0101X,endocrinologists
+1088,Laura,Kimball-Ravari,Bossier City,71111,LA,207RE0101X,endocrinologists
+1089,Robert,Kimmel,Puyallup,98372,WA,207RE0101X,endocrinologists
+1090,Bonnie,Kimmel,Walnut Creek,94597,CA,207RE0101X,endocrinologists
+1091,Wynter,Kipgen,Stillwater,74074,OK,207RE0101X,endocrinologists
+1092,Maria,Kirzhner,Charlottesville,22908,VA,207W00000X,asoprs
+1093,Zachary,Kistka,South Bend,46635,IN,207RE0101X,tepezza
+1094,Elie,Klam,Cincinnati,45220,OH,207RE0101X,endocrinologists
+1095,Stephen,Klapper,Carmel,46032,IN,207W00000X,asoprs
+1096,Stephen,Klapper,Carmel,46032,IN,207W00000X,tepezza
+1097,Teri,Kleinberg,Worcester,01605,MA,207W00000X,tepezza
+1098,Zachary,Klett,Bangor,04401,ME,207W00000X,tepezza
+1099,Eric,Klett,Chapel Hill,27599,NC,207RE0101X,endocrinologists
+1100,Zachary,Klett,Bangor,04401,ME,207W00000X,asoprs
+1101,Olena,Klindukhova,Warner Robins,31093,GA,207RE0101X,endocrinologists
+1102,Kim,Klippenstein,Nashville,37203,TN,207W00000X,asoprs
+1103,Joshua,Klopper,Denver,80205,CO,207RE0101X,endocrinologists
+1104,Philip,Knapp,Boston,02118,MA,207RE0101X,endocrinologists
+1105,Thomas,Knecht,Pismo Beach,93449,CA,207RE0101X,tepezza
+1106,Thomas,Knecht,Santa Maria,93454,CA,207RE0101X,tepezza
+1107,Thomas,Knecht,San Luis Obispo,93401,CA,207RE0101X,tepezza
+1108,Karen,Knudsen,Williamsburg,23188,VA,207RE0101X,endocrinologists
+1109,Audrey,Ko,Des Moines,50266,IA,207W00000X,asoprs
+1110,Marcus,Ko,Reno,89511,NV,207W00000X,asoprs
+1111,Audrey,Ko,West Des Moines,50266,IA,207W00000X,tepezza
+1112,Kristen,Kobaly,Philadelphia,19104,PA,207RE0101X,endocrinologists
+1113,Kurt,Kodroff,Brooklyn,11203,NY,207RE0101X,endocrinologists
+1114,John,Koh,Bloomfield Hills,48302,MI,207W00000X,tepezza
+1115,Chung-Kay,Koh,Park Ridge,60068,IL,207RE0101X,endocrinologists
+1116,Chung-Kay,Koh,Park Ridge,60068,IL,207RE0101X,endocrinologists
+1117,Roger,Kohn,Santa Barbara,93105,CA,207W00000X,asoprs
+1118,Hindola,Konrad,New York,10025,NY,207W00000X,asoprs
+1119,John,Koo,Portland,97227,OR,207W00000X,asoprs
+1120,Jane,Korducki,La Crosse,54601,WI,207RE0101X,endocrinologists
+1121,Irina,Koreen,Goshen,10924,NY,207W00000X,tepezza
+1122,Irina,Koreen,Goshen,10924,NY,207W00000X,asoprs
+1123,Bobby,Korn,La Jolla,92093,CA,207W00000X,asoprs
+1124,Alisa,Kosla,Worcester,01655,MA,207RE0101X,endocrinologists
+1125,Andrea,Kossler,Palo Alto,94303,CA,207W00000X,asoprs
+1126,Andrea,Kossler,Palo Alto,94303,CA,207W00000X,tepezza
+1127,David,Kostick,Jacksonville,32256,FL,207W00000X,tepezza
+1128,David,Kostick,Ponte Vedra Beach,32082,FL,207W00000X,tepezza
+1129,David,Kostick,St Augustine,32086,FL,207W00000X,tepezza
+1130,Brett,Kotlus,New York,10065,NY,207W00000X,asoprs
+1131,Anupam,Kotwal,Omaha,68198,NE,207RE0101X,endocrinologists
+1132,Angela,Kovacik,Phoenix,85054,AZ,207W00000X,tepezza
+1133,Angela,Kovacik,Phoenix,85012,AZ,207W00000X,tepezza
+1134,Kenneth,Krantz,Santa Ana,92704,CA,207W00000X,asoprs
+1135,Kathryn,Kreider,Durham,27710,NC,207RE0101X,endocrinologists
+1136,Ronald,Kristan,Holmdel,07733,NJ,207W00000X,asoprs
+1137,Debra,Kroll,New York,10021,NY,207W00000X,asoprs
+1138,Jan,Kronish,Delray Beach,33484,FL,207W00000X,asoprs
+1139,Thomas,Kropp,Wailuku,96793,HI,207W00000X,asoprs
+1140,Amy,Kulak,Jacksonville,32210,FL,207W00000X,tepezza
+1141,Amy,Kulak,Ponte Vedra Beach,32082,FL,207W00000X,tepezza
+1142,Amy,Kulak,Fernandina Beach,32034,FL,207W00000X,tepezza
+1143,Roger,Kulstad,Madison,53715,WI,207RE0101X,endocrinologists
+1144,Roger,Kulstad,Madison,53715,WI,207RE0101X,endocrinologists
+1145,Dwight,Kulwin,Cincinnati,45220,OH,207W00000X,asoprs
+1146,Nirmala,Kumar,Greeley,80631,CO,207RE0101X,endocrinologists
+1147,Yuvraj,Kumbkarni,Tampa,33613,FL,207RE0101X,endocrinologists
+1148,Jacqueline,Kung,Boston,02111,MA,207RE0101X,endocrinologists
+1149,Biju,Kunhiraman,Yakima,98908,WA,207RE0101X,endocrinologists
+1150,Jennifer,Kuo,New York,10032,NY,207RE0101X,endocrinologists
+1151,Salila,Kurra,New York,10032,NY,207RE0101X,endocrinologists
+1152,Jean,Kury,San Juan,00907,PR,207RE0101X,endocrinologists
+1153,Sandra,Kwak,Newport Beach,92663,CA,207RE0101X,endocrinologists
+1154,Maxwell,Kwaku,Tyler,75708,TX,207RE0101X,endocrinologists
+1155,Geoffrey,Kwitko,Tampa,33609,FL,207W00000X,tepezza
+1156,Francis,La Piana,Washington,00000,DC,207W00000X,asoprs
+1157,Artak,Labadzhyan,Los Angeles,90048,CA,207RE0101X,endocrinologists
+1158,Paul,Ladenson,Baltimore,21287,MD,207RE0101X,endocrinologists
+1159,Corey,Lager,Portage,49024,MI,207RE0101X,endocrinologists
+1160,Brian,Lagreca,Billings,59102,MT,207W00000X,tepezza
+1161,Sharon,Lahiri,Detroit,48202,MI,207RE0101X,endocrinologists
+1162,Michael,Lai,Santa Maria,93454,CA,207RE0101X,tepezza
+1163,Michael,Lai,San Luis Obispo,93401,CA,207RE0101X,tepezza
+1164,Rosemarie,Lajara,Dallas,75287,TX,207RE0101X,endocrinologists
+1165,Brian,Lake,Largo,33773,FL,207RE0101X,endocrinologists
+1166,Shamsher,Lakhian,Plano,75093,TX,207RE0101X,endocrinologists
+1167,Shamsher,Lakhian,Plano,75093,TX,207RE0101X,endocrinologists
+1168,Atul,Lalani,Scottsdale,85258,AZ,207RE0101X,endocrinologists
+1169,Byron,Lam,Miami,33136,FL,207W00000X,tepezza
+1170,Eleanor,Lam,Voorhees,08043,NJ,207RE0101X,endocrinologists
+1171,Genevieve,Lama,Yorktown Heights,10598,NY,207RE0101X,endocrinologists
+1172,Michael,Landa,Savannah,31405,GA,207W00000X,asoprs
+1173,Jennifer,Landy,Pinellas Park,33782,FL,207W00000X,tepezza
+1174,Jennifer,Landy,Ruskin,33573,FL,207W00000X,tepezza
+1175,Jennifer,Landy,Brandon,33511,FL,207W00000X,tepezza
+1176,Katherine,Lane,South Burlington,05403,VT,207W00000X,asoprs
+1177,Nicole,Langelier,Richmond,23233,VA,207W00000X,asoprs
+1178,Paul,Langer,Short Hills,07078,NJ,207W00000X,asoprs
+1179,Eric,Langer,Sterling Heights,48310,MI,207RE0101X,endocrinologists
+1180,John,Langford,Munster,46321,IN,207W00000X,tepezza
+1181,John,Langford,Munster,46324,IN,207W00000X,asoprs
+1182,Anne,Langguth,Hiawatha,52233,IA,207W00000X,tepezza
+1183,Anne,Langguth,Waterloo,50701,IA,207W00000X,tepezza
+1184,Anne,Langguth,Iowa City,52246,IA,207W00000X,tepezza
+1185,Hector,Lantigua,Urbana,61801,IL,207RE0101X,endocrinologists
+1186,Philip,Lapp,Rutland,05701,VT,207RE0101X,endocrinologists
+1187,Stephen,Laquis,Fort Myers,33907,FL,207W00000X,tepezza
+1188,Stephen,Laquis,Fort Myers,33907,FL,207W00000X,asoprs
+1189,David,Larned,Wilmington,19806,DE,207W00000X,asoprs
+1190,Ossama,Lashin,Lorain,44053,OH,207RE0101X,endocrinologists
+1191,Kevin,Latinis,Harrisonville,64701,MO,207RR0500X,tepezza
+1192,Chu,Lau,Woodland,95695,CA,207RE0101X,endocrinologists
+1193,Simeon,Lauer,Hackensack,07601,NJ,207WX0200X,tepezza
+1194,Simeon,Lauer,Bronx,10457,NY,207WX0200X,tepezza
+1195,Simeon,Lauer,Kew Gardens,11415,NY,207WX0200X,tepezza
+1196,Simeon,Lauer,New York,10023,NY,207WX0200X,tepezza
+1197,Simeon,Lauer,Hackensack,07601,NJ,207W00000X,asoprs
+1198,Simeon,Lauer,Suffern,10901,NY,207WX0200X,tepezza
+1199,Lisanne,Laurier,Spokane,99202,WA,207RE0101X,endocrinologists
+1200,Luisa,Leal,Nashville,37211,TN,207RE0101X,endocrinologists
+1201,Gregory,Ledger,Springfield,65807,MO,207RE0101X,endocrinologists
+1202,Wendy,Lee,Miami,33136,FL,207W00000X,tepezza
+1203,Nahyoung,Lee,Boston,02114,MA,207W00000X,tepezza
+1204,Christopher,Lee,Framingham,01702,MA,207RE0101X,endocrinologists
+1205,Do-Eun,Lee,Lafayette,94549,CA,207RE0101X,tepezza
+1206,Lyndon,Lee,West Hartford,06107,CT,207W00000X,asoprs
+1207,Bradford,Lee,Palm Beach Gardens,33418,FL,207W00000X,tepezza
+1208,Lyndon,Lee,West Hartford,06107,CT,207W00000X,tepezza
+1209,Sun,Lee,Boston,02118,MA,207RE0101X,endocrinologists
+1210,Nahyoung,Lee,Boston,02114,MA,207W00000X,asoprs
+1211,Andrew,Lee,Houston,77030,TX,207W00000X,tepezza
+1212,Do-Eun,Lee,Napa,94558,CA,207RE0101X,tepezza
+1213,John,Lee,Lawrence,01841,MA,207W00000X,tepezza
+1214,Shun-How,Lee,Framingham,01702,MA,207RE0101X,endocrinologists
+1215,Edward,Lee,Los Angeles,90010,CA,207W00000X,asoprs
+1216,Brian,Lee,Ellicott City,21043,MD,207W00000X,asoprs
+1217,Scott,Lee,Pinole,94564,CA,207W00000X,tepezza
+1218,Bradford,Lee,Palm Beach Gardens,33418,FL,207W00000X,asoprs
+1219,Wendy,Lee,Miami,33136,FL,207W00000X,asoprs
+1220,Hui Bae Harold,Lee,Indianapolis,46280,IN,207W00000X,asoprs
+1221,Seong,Lee,Atlanta,30328,GA,207W00000X,asoprs
+1222,Esther,Lee,Ridgewood,07450,NJ,207RE0101X,endocrinologists
+1223,Henry,Lee,Warren,07059,NJ,207W00000X,asoprs
+1224,Hui,Lee,Indianapolis,46280,IN,207W00000X,tepezza
+1225,Michael,Lee,Minneapolis,55455,MN,207W00000X,tepezza
+1226,Daniel,Lefebvre,Boston,02114,MA,207W00000X,tepezza
+1227,Daniel,Lefebvre,Dedham,02026,MA,207W00000X,asoprs
+1228,Steven,Leibowitz,Henderson,89052,NV,207W00000X,tepezza
+1229,Steven,Leibowitz,Bakersfield,93301,CA,207W00000X,tepezza
+1230,Steven,Leibowitz,Las Vegas,89144,NV,207W00000X,tepezza
+1231,Steven,Leibowitz,Las Vegas,89144,NV,207W00000X,asoprs
+1232,John,Leidy,Huntington,25701,WV,207RE0101X,endocrinologists
+1233,Matthew,Leinung,Albany,12208,NY,207RE0101X,endocrinologists
+1234,Gary,Lelli,New York,10021,NY,207W00000X,tepezza
+1235,Gary,Lelli,New York,10021,NY,207W00000X,asoprs
+1236,Bradley,Lemke,Sun Prairie,53590,WI,207W00000X,asoprs
+1237,Lucas,Lenci,Springfield,65804,MO,207W00000X,tepezza
+1238,Clara,Lengyel-Kremenic,Medford,11763,NY,207RE0101X,endocrinologists
+1239,Luis,Leon-Alvarado,San Angelo,76903,TX,207W00000X,tepezza
+1240,Matthew,Leone,Newburgh,12550,NY,207RE0101X,endocrinologists
+1241,Shulamit,Lerner,Bronx,10463,NY,207RE0101X,endocrinologists
+1242,Alan,Lessner,Gainesville,32605,FL,207W00000X,asoprs
+1243,Linda,Lester,Portland,97239,OR,207RE0101X,endocrinologists
+1244,Frank,Leung,Gurnee,60031,IL,207RE0101X,endocrinologists
+1245,David,Leventer,Deal,07723,NJ,207W00000X,asoprs
+1246,Jackson,Lever,Ogden,84403,UT,207W00000X,asoprs
+1247,Claresa,Levetan,Lansdale,19446,PA,207RE0101X,endocrinologists
+1248,Flora,Levin,Westport,06880,CT,207W00000X,asoprs
+1249,Marc,Levin,Palo Alto,94301,CA,207W00000X,tepezza
+1250,Peter,Levin,Palo Alto,94301,CA,207W00000X,asoprs
+1251,Robert,Levine,Nashua,03060,NH,207RE0101X,endocrinologists
+1252,Mark,Levine,Palm Beach Gardens,33410,FL,207W00000X,asoprs
+1253,Robert,Levine,Beverly Hills,90210,CA,207W00000X,asoprs
+1254,Steven,Levine,Shreveport,71103,LA,207RE0101X,tepezza
+1255,Marc,Levy,Sarasota,34239,FL,207W00000X,tepezza
+1256,Julie,Lew,Athens,45701,OH,207W00000X,tepezza
+1257,Julie,Lew,Gallipolis,45631,OH,207W00000X,tepezza
+1258,Kyle,Lewis,Jackson,39211,MS,207W00000X,asoprs
+1259,Craig,Lewis,East Lansing,48823,MI,207W00000X,asoprs
+1260,Ilya,Leyngold,Durham,27713,NC,207W00000X,asoprs
+1261,Ming,Li,San Jose,95112,CA,207RE0101X,tepezza
+1262,Sophie,Liao,Denver,80202,CO,207W00000X,tepezza
+1263,Sophie,Liao,Denver,80222,CO,207W00000X,tepezza
+1264,Sophie,Liao,Aurora,80045,CO,207W00000X,asoprs
+1265,Sophie,Liao,Lone Tree,80124,CO,207W00000X,tepezza
+1266,Sophie,Liao,Aurora,80045,CO,207W00000X,tepezza
+1267,Leonard,Lichenstein,Charleston,29425,SC,207RE0101X,endocrinologists
+1268,David,Lieb,Norfolk,23501,VA,207RE0101X,endocrinologists
+1269,Renelle,Lim,New Haven,06519,CT,207W00000X,tepezza
+1270,Lily,Lin,Sacramento,95817,CA,207W00000X,tepezza
+1271,Daniel,Lin,Warren,48088,MI,207W00000X,tepezza
+1272,Joseph,Lin,West Covina,91790,CA,207W00000X,tepezza
+1273,Daniel,Lin,Saginaw,48603,MI,207W00000X,tepezza
+1274,Lily,Lin,Sacramento,95817,CA,207W00000X,asoprs
+1275,John,Linberg,Morgantown,26505,WV,207W00000X,asoprs
+1276,Robert,Lind,Flemington,08822,NJ,207RE0101X,endocrinologists
+1277,William,Lipham,Bloomington,55431,MN,207W00000X,asoprs
+1278,William,Lipham,Bloomington,55431,MN,207W00000X,tepezza
+1279,Richard,Lisman,New York,10065,NY,207W00000X,asoprs
+1280,Boaz,Lissauer,New York,10028,NY,207W00000X,asoprs
+1281,Gary,Lissner,Chicago,60611,IL,207W00000X,asoprs
+1282,Gary,Lissner,Chicago,60611,IL,207W00000X,tepezza
+1283,William,Litchfield,Henderson,89052,NV,207RE0101X,tepezza
+1284,Patrick,Litonjua,Janesville,53546,WI,207RE0101X,endocrinologists
+1285,Wenjing,Liu,Newport Beach,92660,CA,207W00000X,asoprs
+1286,Don,Liu,Columbia,65212,MO,207W00000X,asoprs
+1287,Catherine,Liu,San Diego,92093,CA,207W00000X,asoprs
+1288,Zhao,Liu,Danvers,01923,MA,207RE0101X,endocrinologists
+1289,Chienying,Liu,San Francisco,94143,CA,207RE0101X,endocrinologists
+1290,Llanyee,Liwanpo,Orange,92869,CA,207RE0101X,endocrinologists
+1291,Jose,Llinas,Edinburg,78539,TX,207RE0101X,endocrinologists
+1292,Mikel,Lo,Tucson,85741,AZ,207W00000X,asoprs
+1293,Christopher,Lo,Los Angeles,90015,CA,207W00000X,tepezza
+1294,Christopher,Lo,Los Angeles,90015,CA,207W00000X,asoprs
+1295,Vasdev,Lohano,New Albany,47150,IN,207RE0101X,endocrinologists
+1296,Naaznin,Lokhandwala,Methuen,01844,MA,207RE0101X,endocrinologists
+1297,John,Long,Birmingham,35205,AL,207W00000X,asoprs
+1298,Susan,Longar,Daly City,94015,CA,207W00000X,tepezza
+1299,Natalie,Lopasic,Latham,12110,NY,207W00000X,tepezza
+1300,Lea Ann,Lope,Greensburg,15601,PA,207W00000X,tepezza
+1301,Ilona,Lorincz,Philadelphia,19104,PA,207RE0101X,endocrinologists
+1302,Melissa,Loughney,Washington,20036,DC,207RE0101X,endocrinologists
+1303,Deanna,Louie,Perry,32347,FL,207W00000X,tepezza
+1304,Deanna,Louie,Tallahassee,32308,FL,207W00000X,tepezza
+1305,Joanne,Low,Santa Monica,90404,CA,207W00000X,asoprs
+1306,Jonathan,Lowry,Morganton,28655,NC,207W00000X,asoprs
+1307,Peter,Lu,Lawrenceville,30046,GA,207RE0101X,endocrinologists
+1308,Sara,Lubitz,New Brunswick,08901,NJ,207RE0101X,endocrinologists
+1309,Noah,Lubowsky,Monroeville,15146,PA,207RE0101X,endocrinologists
+1310,Francesco,Luca,Kansas City,64111,MO,207RE0101X,endocrinologists
+1311,Mark,Lucarelli,Madison,53705,WI,207W00000X,asoprs
+1312,Mark,Lucarelli,Rockford,61107,IL,207W00000X,tepezza
+1313,Mark,Lucarelli,Madison,53705,WI,207W00000X,tepezza
+1314,Kathryn,Lucas,Morehead City,28557,NC,207RE0101X,endocrinologists
+1315,Eduardo,Luna,Weslaco,78596,TX,207RE0101X,endocrinologists
+1316,Mark,Lupo,Sarasota,34239,FL,207RE0101X,endocrinologists
+1317,Mark,Lupo,Sarasota,34239,FL,207RE0101X,tepezza
+1318,Martin,Luria,Long Branch,07740,NJ,207RE0101X,endocrinologists
+1319,Pooja,Luthra,Farmington,06030,CT,207RE0101X,endocrinologists
+1320,Adam,Lyko,Post Falls,83854,ID,207RE0101X,endocrinologists
+1321,Cari,Lyle,Pittsburgh,15206,PA,207W00000X,asoprs
+1322,David,Lyon,Independence,64055,MO,207W00000X,tepezza
+1323,David,Lyon,Leawood,66211,KS,207W00000X,asoprs
+1324,David,Lyon,Kansas City,64108,MO,207W00000X,tepezza
+1325,David,Lyon,Leawood,66211,KS,207W00000X,tepezza
+1326,Lisa,Lystad,Cleveland,44195,OH,207W00000X,tepezza
+1327,Na,Ma,Syosset,11791,NY,207W00000X,tepezza
+1328,Zeina,Maani,Walnut,91789,CA,207RE0101X,endocrinologists
+1329,Baker,Machhadieh,Centerville,45459,OH,207RE0101X,endocrinologists
+1330,Peter,MacIntosh,Chicago,60512,IL,207W00000X,asoprs
+1331,William,Mack,Tampa,33609,FL,207W00000X,asoprs
+1332,Sujay,Madduri,Midland,48640,MI,207RE0101X,tepezza
+1333,Sujay,Madduri,Midland,48670,MI,207RE0101X,endocrinologists
+1334,Dana,Madison,Portland,97239,OR,207RE0101X,endocrinologists
+1335,Vasudev,Magaji,Wyomissing,19610,PA,207RE0101X,endocrinologists
+1336,Michael,Magnotti,Santa Rosa,95403,CA,207RE0101X,endocrinologists
+1337,Bindiya,Magoon,Chesapeake,23320,VA,207RE0101X,endocrinologists
+1338,Vahid,Mahabadi,Sylmar,91342,CA,207RE0101X,endocrinologists
+1339,Jaisri,Maharaj,Fremont,94538,CA,207RE0101X,endocrinologists
+1340,Elizabeth,Maher,New York,10017,NY,207W00000X,asoprs
+1341,Yugal,Maheshwari,Beaumont,77703,TX,207RE0101X,endocrinologists
+1342,Hussain,Mahmud,Pittsburgh,15213,PA,207RE0101X,endocrinologists
+1343,Nicholas,Mahoney,Baltimore,21287,MD,207W00000X,asoprs
+1344,Ahad,Mahootchi,Zephyrhills,33542,FL,207W00000X,tepezza
+1345,Sachin,Majumdar,Bridgeport,06610,CT,207RE0101X,endocrinologists
+1346,Chhaya,Makhija,Fresno,93720,CA,207RE0101X,endocrinologists
+1347,Chhaya,Makhija,Fresno,93720,CA,207RE0101X,endocrinologists
+1348,Carl,Malchoff,Farmington,06030,CT,207RE0101X,endocrinologists
+1349,Amina,Malik,Humble,77338,TX,207W00000X,tepezza
+1350,Ayesha,Malik,Margate,33063,FL,207RE0101X,endocrinologists
+1351,Amina,Malik,Houston,77030,TX,207W00000X,tepezza
+1352,Dorota,Malinowski,San Antonio,78231,TX,207RE0101X,tepezza
+1353,Pooja,Mally,Atlanta,30342,GA,207W00000X,tepezza
+1354,Mark,Malton,Charlotte,28211,NC,207W00000X,tepezza
+1355,Saira,Mammen,East Liverpool,43920,OH,207RE0101X,endocrinologists
+1356,Jennifer,Mammen,Baltimore,21224,MD,207RE0101X,endocrinologists
+1357,Smriti,Manandhar,Cumberland,21502,MD,207RE0101X,endocrinologists
+1358,Ronald,Mancini,Dallas,75390,TX,207W00000X,asoprs
+1359,Ronald,Mancini,Dallas,75390,TX,207W00000X,tepezza
+1360,Susan,Mandel,Philadelphia,19104,PA,207RE0101X,endocrinologists
+1361,Susan,Mandel,Philadelphia,19104,PA,207RE0101X,endocrinologists
+1362,Geva,Mannor,La Jolla,92037,CA,207W00000X,asoprs
+1363,Pooja,Manroa,League City,77573,TX,207RE0101X,endocrinologists
+1364,Tamer,Mansour,Washington,20037,DC,207W00000X,asoprs
+1365,Lisa,Mansueto,Tempe,85282,AZ,207W00000X,asoprs
+1366,Lisa,Mansueto,Phoenix,85044,AZ,207W00000X,tepezza
+1367,Lisa,Mansueto,Tempe,85282,AZ,207W00000X,tepezza
+1368,Michael,Marchese,Stamford,06902,CT,207RE0101X,endocrinologists
+1369,Alan,Marcus,LAGUNA HILLS,92653,CA,207RE0101X,tepezza
+1370,Alan,Marcus,Laguna Hills,92653,CA,207RE0101X,endocrinologists
+1371,Debra,Margulies,Morristown,07960,NJ,207RE0101X,endocrinologists
+1372,Paul,Margulies,Manhasset,11030,NY,207RE0101X,endocrinologists
+1373,Lisa,Markman,Los Alamitos,90720,CA,207RE0101X,endocrinologists
+1374,Victor,Marlar,Asheville,28806,NC,207RE0101X,endocrinologists
+1375,Annis,Marney,Nashville,37203,TN,207RE0101X,endocrinologists
+1376,Ellen,Marqusee,Boston,02115,MA,207RE0101X,endocrinologists
+1377,Benito,Marranzini,El Paso,79935,TX,207RE0101X,tepezza
+1378,Alfred,Marrone,Torrance,90505,CA,207W00000X,asoprs
+1379,Harry,Marshak,Palm Desert,92260,CA,207W00000X,asoprs
+1380,Ronald,Martin,Carmel,46290,IN,207W00000X,tepezza
+1381,John,Martin,Coral Gables,33134,FL,207W00000X,asoprs
+1382,Ronald,Martin,Indianapolis,46290,IN,207W00000X,asoprs
+1383,Mary Ann,Martin,Las Vegas,89113,NV,207RE0101X,tepezza
+1384,Carlos,Martinez,Mayaguez,00680,PR,207RE0101X,endocrinologists
+1385,Ramon,Martinez,Pembroke Pines,33027,FL,207RE0101X,endocrinologists
+1386,Douglas,Marx,Salt Lake City,84132,UT,207W00000X,asoprs
+1387,Douglas,Marx,Mountain Home,72653,AR,207W00000X,tepezza
+1388,Douglas,Marx,Salt Lake City,84132,UT,207W00000X,tepezza
+1389,Samuel,Marynick,Dallas,75246,TX,207RE0101X,endocrinologists
+1390,Bruce,Massaro,Milwaukee,53226,WI,207W00000X,asoprs
+1391,Guy,Massry,Beverly Hills,90211,CA,207W00000X,asoprs
+1392,Lucy,Mastrandrea,Buffalo,14203,NY,207RE0101X,endocrinologists
+1393,Suhail,Masudi,Wellington,33414,FL,207RE0101X,endocrinologists
+1394,Thomas,Mather,Ladson,29456,SC,207W00000X,asoprs
+1395,Joseph,Mathews,Summerville,29485,SC,207RE0101X,endocrinologists
+1396,Randy,Mauffray,San Antonio,78215,TX,207W00000X,asoprs
+1397,Marlon,Maus,Berkeley,94704,CA,207W00000X,asoprs
+1398,Frederick,Mausolf,Lincoln,68506,NE,207W00000X,asoprs
+1399,Franck,Mauvais-Jarvis,New Orleans,70112,LA,207RE0101X,endocrinologists
+1400,Louise,Mawn,Nashville,37232,TN,207W00000X,asoprs
+1401,Jose,Mayans,Odessa,79763,TX,207W00000X,tepezza
+1402,Sarah,Mayson,Aurora,80045,CO,207RE0101X,endocrinologists
+1403,Mark,Mazow,Dallas,75230,TX,207W00000X,asoprs
+1404,Robert,Mazzoli,Steilacoom,98388,WA,207W00000X,asoprs
+1405,Elizabeth,McAninch,Palo Alto,94304,CA,207RE0101X,endocrinologists
+1406,Elizabeth,McAninch,Palo Alto,94304,CA,207RE0101X,endocrinologists
+1407,John,McCann,Sandy,84070,UT,207WX0200X,tepezza
+1408,John,McCann,Sandy,84070,UT,207W00000X,asoprs
+1409,Scheherezada,McCarthy,San Antonio,78207,TX,207RE0101X,endocrinologists
+1410,Collin,McClelland,Minneapolis,55455,MN,207W00000X,tepezza
+1411,Elysa,McClintic,Sayre,18840,PA,207W00000X,asoprs
+1412,Amanda,McClure,Fayetteville,72701,AR,207RE0101X,endocrinologists
+1413,Robert,McConnell,New York,10032,NY,207RE0101X,endocrinologists
+1414,Clinton,McCord,Atlanta,30305,GA,207W00000X,asoprs
+1415,Michael,McCracken,Parker,80134,CO,207W00000X,asoprs
+1416,Timothy,McCulley,Baltimore,21287,MD,207W00000X,asoprs
+1417,Michael,McDermott,Aurora,80045,CO,207RE0101X,endocrinologists
+1418,Timothy,McDevitt,Honolulu,96813,HI,207W00000X,tepezza
+1419,Megan,McGarvey,San Diego,92130,CA,207RE0101X,endocrinologists
+1420,John,McGetrick,Winter Haven,33881,FL,207W00000X,asoprs
+1421,John,McGetrick,Winter Haven,33881,FL,207W00000X,tepezza
+1422,Christopher,McHenry,Cleveland,44109,OH,207RE0101X,endocrinologists
+1423,Alan,McInnes,Eagle,83616,ID,207W00000X,asoprs
+1424,M. Polly,McKinstry,Laguna Hills,92653,CA,207W00000X,asoprs
+1425,Daniel,McLachlan,Hinsdale,60521,IL,207W00000X,asoprs
+1426,William,McLeish,Phoenix,85028,AZ,207W00000X,asoprs
+1427,Ginger,McMullen,Sacramento,95816,CA,207RE0101X,endocrinologists
+1428,Heath,Meattey,Hampton,03842,NH,207RE0101X,endocrinologists
+1429,Deeksha,Mehta,Teaneck,07666,NJ,207RE0101X,endocrinologists
+1430,Milap,Mehta,South Barrington,60010,IL,207W00000X,tepezza
+1431,Milap,Mehta,Naperville,60564,IL,207W00000X,tepezza
+1432,Milap,Mehta,Itasca,60143,IL,207W00000X,tepezza
+1433,Milap,Mehta,Elmhurst,60126,IL,207W00000X,tepezza
+1434,Milap,Mehta,Elmhurst,60126,IL,207W00000X,asoprs
+1435,Sonul,Mehta,Philadelphia,19103,PA,207W00000X,asoprs
+1436,Melissa,Meldrum-Aaberg,Grand Rapids,49525,MI,207W00000X,asoprs
+1437,Jill,Melicher Larson,Minnetonka,55305,MN,207WX0200X,tepezza
+1438,Jill,Melicher Larson,Minnetonka,55305,MN,207W00000X,asoprs
+1439,John,Melish,Honolulu,96826,HI,207RE0101X,endocrinologists
+1440,Raafia,Memon,Newark,19713,DE,207RE0101X,endocrinologists
+1441,Lawrence,Mendelsohn,Farmington Hills,48334,MI,207RE0101X,endocrinologists
+1442,Ana,Mendoza-Salazar,Bangor,04401,ME,207RE0101X,endocrinologists
+1443,Priya,Menon,Danville,46122,IN,207RE0101X,tepezza
+1444,Sajeev,Menon,Olathe,66061,KS,207RE0101X,endocrinologists
+1445,Jay,Mepani,Decatur,30033,GA,207RE0101X,endocrinologists
+1446,Shannath,Merbs,Baltimore,21201,MD,207W00000X,asoprs
+1447,Maria,Mercado,Bellevue,98004,WA,207RE0101X,endocrinologists
+1448,Michael,Mercandetti,Venice,34292,FL,207W00000X,asoprs
+1449,Edward,Merker,New York,10075,NY,207RE0101X,endocrinologists
+1450,John,Merriam,New York,10032,NY,207W00000X,asoprs
+1451,Helen,Merritt,Dallas,75231,TX,207W00000X,asoprs
+1452,James,Merritt,Dallas,75231,TX,207W00000X,tepezza
+1453,Helen,Merritt,Dallas,75231,TX,207W00000X,tepezza
+1454,Pradeep,Mettu,Raleigh,27607,NC,207W00000X,asoprs
+1455,Dale,Meyer,Albany (Slingerlands),12159,NY,207W00000X,asoprs
+1456,Joel,Meyers,Lafayette,80026,CO,207W00000X,tepezza
+1457,Joel,Meyers,Boulder,80301,CO,207W00000X,tepezza
+1458,Joel,Meyers,Longmont,80503,CO,207W00000X,tepezza
+1459,Spyros,Mezitis,New York,10021,NY,207RE0101X,endocrinologists
+1460,Kevin,Michels,Spokane,99202,WA,207W00000X,asoprs
+1461,Kevin,Michels,Spokane,99202,WA,207W00000X,tepezza
+1462,Michael,Migliori,Providence,02903,RI,207W00000X,tepezza
+1463,Michael,Migliori,Providence,02903,RI,207W00000X,asoprs
+1464,Dan,Mihailescu,Chicago,60612,IL,207RE0101X,endocrinologists
+1465,Lisa,Mihora,Phoenix,85023,AZ,207W00000X,asoprs
+1466,Lisa,Mihora,Peoria,85381,AZ,207W00000X,tepezza
+1467,Lisa,Mihora,Phoenix,85050,AZ,207W00000X,tepezza
+1468,James,Milite,Iselin,08830,NJ,207W00000X,asoprs
+1469,Jeffrey,Miller,Philadelphia,19107,PA,207RE0101X,endocrinologists
+1470,Gordon,Miller,Miami Beach,33140,FL,207W00000X,asoprs
+1471,Richard,Millstein,Greeley,80634,CO,207RE0101X,endocrinologists
+1472,Sarah,Mirocha,Sheboygan,53081,WI,207RE0101X,tepezza
+1473,Faryal,Mirza,Farmington,06032,CT,207RE0101X,endocrinologists
+1474,Judiann,Miskulin,Indianapolis,46227,IN,207RE0101X,endocrinologists
+1475,Srikanth,Mitta,Erie,16501,PA,207RE0101X,endocrinologists
+1476,Anar,Modi,Hollywood,20636,MD,207RE0101X,endocrinologists
+1477,Sean,Mogan,Webster,14580,NY,207W00000X,tepezza
+1478,Yasaman,Mohadjer,St Petersburg,33702,FL,207W00000X,tepezza
+1479,Jasmine,Mohadjer,St. Petersburg,33702,FL,207W00000X,asoprs
+1480,Asif,Mohamed,Columbia,21045,MD,207RE0101X,endocrinologists
+1481,Audrey,Mok,Long Beach,90807,CA,207W00000X,tepezza
+1482,Ali,Mokhtarzadeh,Minneapolis,55455,MN,207W00000X,asoprs
+1483,Ali,Mokhtarzadeh,Minneapolis,55455,MN,207W00000X,tepezza
+1484,Sri,Mokshagundam,Louisville,40202,KY,207RE0101X,endocrinologists
+1485,David,Moll,Ansonia,06401,CT,207RE0101X,endocrinologists
+1486,Vince,Montes,Mukilteo,98275,WA,207RE0101X,endocrinologists
+1487,Maribel,Montoya,Winter Garden,34787,FL,207RE0101X,endocrinologists
+1488,Grant,Moore,Phoenix,85016,AZ,207W00000X,asoprs
+1489,Grant,Moore,Prescott,86301,AZ,207W00000X,tepezza
+1490,Grant,Moore,Sun City,85351,AZ,207W00000X,tepezza
+1491,Grant,Moore,Scottsdale,85260,AZ,207W00000X,tepezza
+1492,Francis,Moore,Gainesville,32610,FL,207RE0101X,endocrinologists
+1493,Wayne,Moore,Kansas City,64108,MO,207RE0101X,endocrinologists
+1494,Annie,Moreau,Oklahoma City,73104,OK,207W00000X,tepezza
+1495,Annie,Moreau,OKC,73104,OK,207W00000X,asoprs
+1496,Monica,Moreno,St George,84790,UT,207RE0101X,endocrinologists
+1497,Payam,Morgan,Fontana,92335,CA,207W00000X,asoprs
+1498,Robert,Morgan,Kingwood,77339,TX,207RE0101X,endocrinologists
+1499,Kenneth,Morgenstern,Wayne,19087,PA,207W00000X,asoprs
+1500,Amanda,Morris,Saint Joseph,49085,MI,207RE0101X,tepezza
+1501,Carrie,Morris,Southlake,76092,TX,207W00000X,asoprs
+1502,John,Morris,Rochester,55905,MN,207RE0101X,endocrinologists
+1503,Jennifer,Morrison,Lafayette,80026,CO,207RE0101X,endocrinologists
+1504,Jay,Morrow,Beachwood,44122,OH,207RE0101X,endocrinologists
+1505,Christie,Morse,Concord,03301,NH,207WX0110X,tepezza
+1506,Rami,Mortada,Wichita,67226,KS,207RE0101X,endocrinologists
+1507,Asa,Morton,San Diego,92103,CA,207W00000X,asoprs
+1508,Eve,Moscato,SAN FRANCISCO,94115,CA,207W00000X,asoprs
+1509,James,Moses,Canal Winchester,43110,OH,207W00000X,asoprs
+1510,Raghu,Mudumbai,Seattle,98104,WA,207W00000X,tepezza
+1511,Maryann,Mugo,Taylorsville,30178,GA,207RE0101X,endocrinologists
+1512,Becky,Muldoon,Honolulu,96859,HI,207RE0101X,endocrinologists
+1513,Jamie,Mullally,Hawthorne,10532,NY,207RE0101X,endocrinologists
+1514,Samuel,Multack,Olympia Fields,60461,IL,207W00000X,tepezza
+1515,Nicolas,Mungo,Brookfield,53045,WI,207RE0101X,tepezza
+1516,Nicolas,Mungo,Waukesha,53188,WI,207RE0101X,tepezza
+1517,Kashif,Munir,Baltimore,21201,MD,207RE0101X,endocrinologists
+1518,Ann,Murchison,Philadelphia,19107,PA,207W00000X,asoprs
+1519,Jennifer,Murdock,Houston,77098,TX,207W00000X,tepezza
+1520,Michael,Murphy,Aspen,81612,CO,207W00000X,asoprs
+1521,W. John,Murrell,Amarillo,79106,TX,207W00000X,asoprs
+1522,Mythili,Murthy,Washington,20007,DC,207RE0101X,endocrinologists
+1523,Yassin,Mustafa,Centerville,45459,OH,207RE0101X,endocrinologists
+1524,Cameron,Nabavi,Mansfield,44906,OH,207W00000X,tepezza
+1525,Cameron,Nabavi,Columbus,43215,OH,207W00000X,tepezza
+1526,Cameron,Nabavi,Columbus,43215,OH,207W00000X,asoprs
+1527,Prashant,Nadkarni,Temple,76508,TX,207RE0101X,endocrinologists
+1528,Raj,Nagaraj,Noblesville,46060,IN,207RE0101X,tepezza
+1529,Sravanthi,Nagavalli,Rockford,61107,IL,207RE0101X,endocrinologists
+1530,Rosalie,Naglieri,Columbia,21044,MD,207RE0101X,endocrinologists
+1531,Soe,Naing,Fresno,93720,CA,207RE0101X,endocrinologists
+1532,Samer,Nakhle,Las Vegas,89128,NV,207RE0101X,tepezza
+1533,Samer,Nakhle,Las Vegas,89148,NV,207RE0101X,tepezza
+1534,Samer,Nakhle,Las Vegas,89140,NV,207RE0101X,endocrinologists
+1535,Tanuj,Nakra,Austin,78705,TX,207W00000X,tepezza
+1536,Tanuj,Nakra,Austin,78746,TX,207W00000X,asoprs
+1537,Deepika,Nallala,Wayne,19087,PA,207RE0101X,endocrinologists
+1538,Rajasree,Nambron,Birmingham,35242,AL,207RE0101X,endocrinologists
+1539,Mark,Nanes,Atlanta,30342,GA,207RE0101X,endocrinologists
+1540,Harmeet,Narula,Sun City West,85375,AZ,207RE0101X,endocrinologists
+1541,POOJA,NARWAL,Sleepy Hollow,10591,NY,207RE0101X,endocrinologists
+1542,David,Nash,La Crosse,54601,WI,207W00000X,tepezza
+1543,Christian,Nasr,Cleveland,44195,OH,207RE0101X,tepezza
+1544,Christian,Nasr,Cleveland,44195,OH,207RE0101X,endocrinologists
+1545,Sami,Nasrallah,Honolulu,96813,HI,207RE0101X,endocrinologists
+1546,John,Nassif,Naples,34109,FL,207W00000X,asoprs
+1547,Javzandulam,Natsag,Columbia,21044,MD,207RE0101X,endocrinologists
+1548,Thomas,Naugle,New Orleans,70130,LA,207W00000X,asoprs
+1549,Reza,Nazemi,Beverly Hills,90211,CA,207RE0101X,endocrinologists
+1550,Maryam,Nazemzadeh,Ashburn,20147,VA,207W00000X,asoprs
+1551,Leslie,Neems,Lone Tree,80045,CO,207W00000X,asoprs
+1552,Janet,Neigel,Florham Park,07932,NJ,207W00000X,asoprs
+1553,Michael,Neimkin,Atlanta,30327,GA,207W00000X,asoprs
+1554,Christine,Nelson,Ann Arbor,48105,MI,207W00000X,asoprs
+1555,Eric,Nelson,Edina,55435,MN,207W00000X,asoprs
+1556,Christine,Nelson,Ann Arbor,48105,MI,207W00000X,tepezza
+1557,Jeffrey,Nerad,Blue Ash,45242,OH,207W00000X,tepezza
+1558,Jeffrey,Nerad,Cincinnati,45242,OH,207W00000X,asoprs
+1559,Frank,Nesi,Southfield,48034,MI,207W00000X,asoprs
+1560,Francesca,Nesi-Eloff,Southfield,48034,MI,207W00000X,asoprs
+1561,Kenneth,Neufeld,Sandy Springs,30328,GA,207W00000X,tepezza
+1562,John,Ng,Portland,97239,OR,207W00000X,asoprs
+1563,John,Ng,Portland,97239,OR,207W00000X,tepezza
+1564,Peter,Ngo,Laredo,78041,TX,207RE0101X,endocrinologists
+1565,Quang,Nguyen,Henderson,89074,NV,207RE0101X,tepezza
+1566,Diep,Nguyen,Bethlehem,18020,PA,207RE0101X,endocrinologists
+1567,John,Nguyen,Morgantown,26506,WV,207W00000X,tepezza
+1568,Quang,Nguyen,Henderson,89074,NV,207RE0101X,endocrinologists
+1569,Quang,Nguyen,Henderson,89074,NV,207RE0101X,endocrinologists
+1570,Quang,Nguyen,Henderson,89074,NV,207RE0101X,endocrinologists
+1571,Quang,Nguyen,Henderson,89074,NV,207RE0101X,endocrinologists
+1572,John,Nguyen,Morgantown,26506,WV,207W00000X,asoprs
+1573,Huong,Nguyen,Baltimore,21229,MD,207RE0101X,endocrinologists
+1574,John,Nguyen,Clarksburg,26301,WV,207W00000X,tepezza
+1575,John,Nguyen,Buckhannon,26201,WV,207W00000X,tepezza
+1576,John,Nguyen,Bridgeport,26330,WV,207W00000X,tepezza
+1577,Warda,Niaz,Montgomery,36106,AL,207RE0101X,endocrinologists
+1578,Neil,Nichols,Hauppauge,11788,NY,207W00000X,tepezza
+1579,John,Nichols,Chattanooga,37415,TN,207RE0101X,endocrinologists
+1580,Neil,Nichols,Brentwood,11717,NY,207W00000X,tepezza
+1581,Edward,Nicklas,Houston,77025,TX,207RE0101X,endocrinologists
+1582,Ernst,Nicolitz,Jacksonville,32216,FL,207W00000X,asoprs
+1583,Catherine,Niewoehner,Edina,55424,MN,207RE0101X,endocrinologists
+1584,Narieman,Nik,Silver Spring,20902,MD,207W00000X,asoprs
+1585,Sean,Nikravan,Newport Beach,92663,CA,207RE0101X,endocrinologists
+1586,Naris,Nilubol,Bethesda,20892,MD,207RE0101X,endocrinologists
+1587,M.,Nizam,Provo,84604,UT,207RE0101X,endocrinologists
+1588,Paul,Norwood,Fresno,93720,CA,207RE0101X,tepezza
+1589,Thaddeus,Nowinski,Lansdale,19446,PA,207W00000X,asoprs
+1590,Rekha,Nugaram,Colonial Heights,23834,VA,207RE0101X,endocrinologists
+1591,William,Nunery,Indianapolis,46280,IN,207W00000X,asoprs
+1592,Maureen,"""O'Connor""",Bourbonnais,60914,IL,207RE0101X,endocrinologists
+1593,James,"""O'Hare""",New Orleans,70115,LA,207RE0101X,endocrinologists
+1594,Enrico,Ocampo,Tyler,56178,MN,207RE0101X,endocrinologists
+1595,Mark,Oertel,Lawrence,66044,KS,207RE0101X,endocrinologists
+1596,Alan,Oester,Wilmington,28403,NC,207W00000X,asoprs
+1597,William,Offutt,Lexington,40509,KY,207W00000X,asoprs
+1598,Sang-Rog,Oh,Sacramento,95815,CA,207W00000X,asoprs
+1599,Anupam,Ohri,New Brunswick,08901,NJ,207RE0101X,endocrinologists
+1600,Jay,Older,Tampa,33613,FL,207W00000X,asoprs
+1601,Beatriz,Olson,Middlebury,06762,CT,207RE0101X,endocrinologists
+1602,Jane,Olson,Norwalk,06851,CT,207W00000X,asoprs
+1603,Alexander,On,Seattle,98101,WA,207W00000X,asoprs
+1604,Cassandra,Onofrey,West Palm Beach,33409,FL,207W00000X,asoprs
+1605,Kingsley,Onyemere,Urbana,61801,IL,207RE0101X,endocrinologists
+1606,Yin,Oo,Dallas,75216,TX,207RE0101X,endocrinologists
+1607,Mark,Oppenheimer,Sioux Falls,57105,SD,207RE0101X,endocrinologists
+1608,James,Orcutt,Lopez Island,98261,WA,207W00000X,asoprs
+1609,Kenneth,Ordene,Freehold,07728,NJ,207RE0101X,endocrinologists
+1610,Michelle,Orr,Kansas City,64155,MO,207RE0101X,endocrinologists
+1611,Gloria,Ortiz,Mcallen,78503,TX,207RE0101X,endocrinologists
+1612,Robert,Ortiz,Highland,12528,NY,207RE0101X,endocrinologists
+1613,Daniel,Osborn,Springfield,65804,MO,207W00000X,tepezza
+1614,Qin,Ouyang,Tacoma,98405,WA,207RE0101X,endocrinologists
+1615,Omar,Ozgur,Mission Viejo,92691,CA,207W00000X,asoprs
+1616,Tyler,Pace,Simpsonville,29681,SC,207W00000X,tepezza
+1617,Stanley,Pace,Greenville,29605,SC,207W00000X,asoprs
+1618,Tyler,Pace,Greenville,29605,SC,207W00000X,tepezza
+1619,Carlos,Pacheco,Maitland,32751,FL,207RE0101X,endocrinologists
+1620,Francisco,Padilla,Seaford,19973,DE,207RE0101X,endocrinologists
+1621,John,Pak,Wheaton,60187,IL,207W00000X,asoprs
+1622,Betsy,Palal,Las Vegas,89148,NV,207RE0101X,tepezza
+1623,Betsy,Palal,Las Vegas,89128,NV,207RE0101X,tepezza
+1624,Noelene,Pang,Ventura,93003,CA,207W00000X,tepezza
+1625,Noelene,Pang,Ventura,93003,CA,207W00000X,asoprs
+1626,Srinivas,Panja,The Woodlands,77385,TX,207RE0101X,tepezza
+1627,Srinivas,Panja,Kingwood,77339,TX,207RE0101X,tepezza
+1628,Ioannis,Papagiannis,Chicago,60611,IL,207RE0101X,endocrinologists
+1629,Maria,Papaleontiou,Ann Arbor,48109,MI,207RE0101X,endocrinologists
+1630,Keshini,Parbhu,Windermere,34786,FL,207W00000X,asoprs
+1631,Keshini,Parbhu,Windermere,34786,FL,207W00000X,tepezza
+1632,Paul,Pare',Stuart,34994,FL,207W00000X,tepezza
+1633,Ashutosh,Pareek,Salem,01970,MA,207RE0101X,endocrinologists
+1634,Jonathan,Pargament,Springboro,45066,OH,207W00000X,tepezza
+1635,Jonathan,Pargament,Cincinnati,45242,OH,207W00000X,asoprs
+1636,Jonathan,Pargament,Blue Ash,45242,OH,207W00000X,tepezza
+1637,Grishma,Parikh,Edgewater,07020,NJ,207RE0101X,endocrinologists
+1638,Dong Jun,Park,Newport Beach,92660,CA,207WX0200X,tepezza
+1639,Dong Jun,Park,Newport Beach,92660,CA,207W00000X,asoprs
+1640,Christopher,Parker,Austin,78758,TX,207RR0500X,tepezza
+1641,John,Parker,Wilmington,28401,NC,207RE0101X,endocrinologists
+1642,Joshua,Pasol,Miami,33136,FL,2084N0400X,tepezza
+1643,Joshua,Pasol,Palm Beach Gardens,33418,FL,2084N0400X,tepezza
+1644,Joshua,Pasol,Plantation,33324,FL,2084N0400X,tepezza
+1645,Ashiq,Patel,Lancaster,93534,CA,207RE0101X,tepezza
+1646,Soham,Patel,Wesley Chapel,33544,FL,207RE0101X,endocrinologists
+1647,Vivek,Patel,Irvine,92617,CA,207W00000X,tepezza
+1648,Sarit,Patel,New Britain,06052,CT,207W00000X,asoprs
+1649,Payal,Patel,New York,10016,NY,207W00000X,asoprs
+1650,Bhupendra,Patel,Salt Lake City,84132,UT,207W00000X,asoprs
+1651,Rakesh,Patel,Columbia,29212,SC,207W00000X,tepezza
+1652,Nirali,Patel,Modesto,95355,CA,207RE0101X,endocrinologists
+1653,Rakesh,Patel,Columbia,29203,SC,207W00000X,asoprs
+1654,Nilem,Patel,Los Angeles,90033,CA,207RE0101X,endocrinologists
+1655,Neha,Patel Sitole,Littleton,80120,CO,207W00000X,tepezza
+1656,Michael,Patipa,West Palm Beach,33407,FL,207W00000X,asoprs
+1657,James,Patrinely,Pensacola,32502,FL,207W00000X,asoprs
+1658,Sean,Paul,Austin,78746,TX,207W00000X,asoprs
+1659,Jill,Paulson,Washington,20037,DC,207RE0101X,endocrinologists
+1660,Zachary,Pearce,Clinton Township,48038,MI,207W00000X,tepezza
+1661,Elizabeth,Pearce,Boston,02118,MA,207RE0101X,endocrinologists
+1662,Zachary,Pearce,Troy,48084,MI,207W00000X,tepezza
+1663,Zachary,Pearce,Farmington Hills,48334,MI,207W00000X,tepezza
+1664,Valerie,Peck,New York,10016,NY,207RE0101X,endocrinologists
+1665,Jeffrey,Peckinpaugh,Bozeman,59715,MT,207W00000X,tepezza
+1666,Jeffrey,Peckinpaugh,Butte,59702,MT,207W00000X,tepezza
+1667,Jeffrey,Peckinpaugh,Butte,59701,MT,207W00000X,tepezza
+1668,Jeffrey,Peckinpaugh,Livingston,59047,MT,207W00000X,tepezza
+1669,Jeffrey,Peckinpaugh,Bozeman,59718,MT,207W00000X,tepezza
+1670,Trey,Pegram,Clarksville,37043,TN,207W00000X,asoprs
+1671,Susan,Pekarovics,Los Angeles,90048,CA,207RE0101X,endocrinologists
+1672,Ronald,Pelton,Colorado Spgs,80903,CO,207W00000X,tepezza
+1673,Ronald,Pelton,Colorado Springs,80909,CO,207W00000X,tepezza
+1674,Ron,Pelton,Colorado Springs,80909,CO,207W00000X,asoprs
+1675,John,Pemberton,Little Rock,72205,AR,207W00000X,tepezza
+1676,John,Pemberton,Little Rock,72202,AR,207W00000X,tepezza
+1677,John,Pemberton DO MBA,Little Rock,72205,AR,207W00000X,asoprs
+1678,Marjorie,Pennant,Baltimore,21201,MD,207RE0101X,endocrinologists
+1679,Robert,Penne,Wynnewood,19096,PA,207W00000X,asoprs
+1680,Maylene,Peralta,Redding,96001,CA,207RE0101X,endocrinologists
+1681,Robert,Peralta,Oakland,94611,CA,207W00000X,asoprs
+1682,Jose,Perez-Rodriguez,Miami,33176,FL,207RE0101X,endocrinologists
+1683,Gretchen,Perilli,Allentown,18103,PA,207RE0101X,endocrinologists
+1684,Kevin,Perman,Bethesda,20817,MD,207W00000X,asoprs
+1685,C. Blake,Perry,Tacoma,98405,WA,207W00000X,asoprs
+1686,Julian,Perry,Cleveland,44195,OH,207W00000X,asoprs
+1687,Arthur,Perry,La Jolla,92037,CA,207W00000X,asoprs
+1688,Clifton Blake,Perry,Tacoma,98405,WA,207W00000X,tepezza
+1689,Balaji,Perumal,Greenville,29615,SC,207W00000X,asoprs
+1690,Liuska,Pesce,Hawkins Drive,02025,BT,207RE0101X,endocrinologists
+1691,Patricia,Peter,New Haven,06520,CT,207RE0101X,endocrinologists
+1692,Patricia,Petrick,Bethesda,20817,MD,207RE0101X,endocrinologists
+1693,Carisa,Petris,Columbia,65201,MO,207W00000X,asoprs
+1694,Carisa,Petris,Columbia,65201,MO,207W00000X,tepezza
+1695,Margaret,Pfeiffer,Dallas,75243,TX,207W00000X,asoprs
+1696,Radhika,Phadke,Boca Raton,33428,FL,207RE0101X,endocrinologists
+1697,Randal,Pham,San Jose,95122,CA,207W00000X,tepezza
+1698,Chau,Pham,Iowa City,52242,IA,207W00000X,tepezza
+1699,Randal,Pham,San Jose,95128,CA,207W00000X,asoprs
+1700,Giao,Phan,Richmond,23298,VA,207RE0101X,endocrinologists
+1701,Paul,Phelps,Skokie,60076,IL,207W00000X,tepezza
+1702,Paul,Phelps,Glenview,60026,IL,207W00000X,asoprs
+1703,Paul,Phelps,Glenview,60026,IL,207W00000X,tepezza
+1704,Margaret,Phillips,Gulfport,39503,MS,207W00000X,asoprs
+1705,Susan,Phillips,San Diego,92123,CA,207RE0101X,endocrinologists
+1706,Phelan,Piehota,Ladson,29456,SC,207W00000X,tepezza
+1707,Massimo,Pietropaolo,Houston,77030,TX,207RE0101X,endocrinologists
+1708,Krishna,Pinnamaneni,Tempe,85282,AZ,207RE0101X,endocrinologists
+1709,Katarzyna,Piotrowska,Sarasota,34239,FL,207RE0101X,endocrinologists
+1710,Paul,Piper,The Woodlands,77382,TX,207RE0101X,tepezza
+1711,Siobhan,Pittock,Rochester,55905,MN,207RE0101X,endocrinologists
+1712,Jennifer,Poehls,Madison,53705,WI,207RE0101X,endocrinologists
+1713,Binod,Pokhrel,Minden,71055,LA,207RE0101X,tepezza
+1714,Binod,Pokhrel,Natchitoches,71457,LA,207RE0101X,tepezza
+1715,Binod,Pokhrel,Shreveport,71104,LA,207RE0101X,tepezza
+1716,Georgina,Polanco,Wake Forest,27587,NC,207RE0101X,endocrinologists
+1717,Lynn,Polonski,Tucson,85712,AZ,207W00000X,tepezza
+1718,Vengamamba,Polu,East Lansing,48824,MI,207RE0101X,endocrinologists
+1719,Allan,Pont,Petaluma,94952,CA,207RE0101X,endocrinologists
+1720,Gaston,Ponte,Melbourne,32901,FL,207RE0101X,endocrinologists
+1721,Jerry,Popham,Denver,80218,CO,207W00000X,tepezza
+1722,Jerry,Popham,Denver,80218,CO,207W00000X,asoprs
+1723,Jeffrey,Popp,Omaha,68164,NE,207W00000X,asoprs
+1724,John,Poremba,Gardner,01440,MA,207RE0101X,endocrinologists
+1725,Leonid,Poretsky,New York,10022,NY,207RE0101X,endocrinologists
+1726,Anne,Porzig,Palo Alto,94301,CA,207RE0101X,endocrinologists
+1727,James,Powell,Hattiesburg,39402,MS,207RE0101X,endocrinologists
+1728,Nikita,Pozdeyev,Aurora,80045,CO,207RE0101X,endocrinologists
+1729,Anju,Prasad,Branson,65616,MO,207RE0101X,endocrinologists
+1730,Amiya,Prasad,Garden City,11530,NY,207W00000X,asoprs
+1731,David,Pratt,Tacoma,98405,WA,207YS0123X,tepezza
+1732,David,Pratt,Tacoma,98405,WA,207W00000X,asoprs
+1733,Mark,Prendes,Mayfield Heights,44124,OH,207W00000X,tepezza
+1734,Mark,Prendes,Cleveland,44106,OH,207W00000X,asoprs
+1735,Pamela,Prescott,Sacramento,95817,CA,207RE0101X,endocrinologists
+1736,James,Pressly,Spartanburg,29303,SC,207W00000X,tepezza
+1737,Kristina,Price,Atlanta,30342,GA,207W00000X,tepezza
+1738,Catherine,Price,Winston Salem,27157,NC,207RE0101X,endocrinologists
+1739,Melissa,Price,Fishkill,12524,NY,207RE0101X,endocrinologists
+1740,Claudio,Prisco,Miami,33183,FL,207RE0101X,endocrinologists
+1741,Igor,Priven,Manalapan,07726,NJ,207RE0101X,endocrinologists
+1742,Paul,Proffer,Amarillo,79106,TX,207W00000X,asoprs
+1743,Claudia,Prospero Ponce,El Paso,79905,TX,,tepezza
+1744,Deepanwita,Prusty,Weymouth,02190,MA,207RE0101X,endocrinologists
+1745,Polly,Purgason,Richmond,23226,VA,207W00000X,asoprs
+1746,Anuradha,Puttagunta,Ypsilanti,48197,MI,207RE0101X,endocrinologists
+1747,Allen,Putterman,Chicago,60602,IL,207W00000X,asoprs
+1748,Ammar,Qoubaitary,San Ramon,94583,CA,207RE0101X,tepezza
+1749,Ammar,Qoubaitary,San Ramon,94583,CA,207RE0101X,endocrinologists
+1750,Shaista,Quddusi,Federal Way,98003,WA,207RE0101X,endocrinologists
+1751,Lawrence,Quist,Minnetonka,55305,MN,207W00000X,asoprs
+1752,Maham,Qureshi,Bronx,10467,NY,207RE0101X,endocrinologists
+1753,Alexander,Rabinovich,West Islip,11795,NY,207W00000X,tepezza
+1754,Michael,Rabinowitz,Philadelphia,19107,PA,207W00000X,asoprs
+1755,Omid,Rad Pour,Las Vegas,89128,NV,207RE0101X,tepezza
+1756,Omid,Rad Pour,Las Vegas,89148,NV,207RE0101X,tepezza
+1757,Phillip,Radke,Edina,55435,MN,207W00000X,asoprs
+1758,Bryce,Radmall,Oregon City,97070,OR,207W00000X,asoprs
+1759,Leon,Rafailov,Smithtown,11787,NY,207W00000X,tepezza
+1760,Gary,Raflo,Concord,28025,NC,207W00000X,asoprs
+1761,Kalpana,Raghunathan,Orrville,44667,OH,207RE0101X,endocrinologists
+1762,Kalpana,Raghunathan,Orrville,44667,OH,207RE0101X,endocrinologists
+1763,Anita,Raghuwanshi,Cape May Court House,08210,NJ,207RE0101X,endocrinologists
+1764,Rishi,Raj,Pikeville,41501,KY,207RE0101X,endocrinologists
+1765,Fatemeh,Rajaii,Baltimore,21287,MD,207W00000X,asoprs
+1766,Karthika,Rajan,Circleville,43113,OH,207RE0101X,endocrinologists
+1767,Rameshkumar,Raman,Moline,61265,IL,207RE0101X,endocrinologists
+1768,AKHILA,RAMAYAPALLY,Mount Vernon,62864,IL,207RE0101X,endocrinologists
+1769,Sathyadeepak,Ramesh,Philadelphia,19107,PA,207W00000X,asoprs
+1770,Nicholas,Ramey,Roanoke,24018,VA,207W00000X,asoprs
+1771,Nicholas,Ramey,Roanoke,24018,VA,207W00000X,tepezza
+1772,Pamela,Randolph,Wilton,06897,CT,207RE0101X,endocrinologists
+1773,Jaiwant,Rangi,Folsom,95630,CA,207RE0101X,tepezza
+1774,Dolly,Rani,Indianapolis,46254,IN,207RE0101X,endocrinologists
+1775,Roshni,Ranjit-Reeves,Lutz,33559,FL,207W00000X,asoprs
+1776,Roshni,Ranjit-Reeves,Winston Salem,27103,NC,207W00000X,tepezza
+1777,Roshni,Ranjit-Reeves,Lutz,33559,FL,207W00000X,tepezza
+1778,Nicholas,Ranson,Spokane,99204,WA,207W00000X,asoprs
+1779,Nicholas,Ranson,Spokane,99204,WA,207W00000X,tepezza
+1780,Jyothi,Rao,Durham,27715,NC,207RE0101X,endocrinologists
+1781,Swathi,Rao,Noblesville,46060,IN,207RE0101X,tepezza
+1782,Robert,Rapaport,New York,10029,NY,207RE0101X,endocrinologists
+1783,Maximilien,Rappaport,Greenville,29605,SC,207RE0101X,endocrinologists
+1784,Nailyn,Rasool,San Francisco,94143,CA,207W00000X,tepezza
+1785,Kamran,Rasul,Salem,24153,VA,207RE0101X,endocrinologists
+1786,J. Earl,Rathbun,Santa Rosa,95404,CA,207W00000X,asoprs
+1787,Tarun,Ray,Philadelphia,19125,PA,207RE0101X,endocrinologists
+1788,Sumana,Reddy,Jonesboro,30236,GA,207RE0101X,endocrinologists
+1789,Arati,Reddy,Hinsdale,60521,IL,207RE0101X,endocrinologists
+1790,Radha,Reddy,Rancho Cucamonga,91730,CA,207RE0101X,endocrinologists
+1791,Harsha,Reddy,New York,10003,NY,207W00000X,asoprs
+1792,Samuel,Refetoff,Chicago,60637,IL,207RE0101X,endocrinologists
+1793,David,Reich,Jamaica,11432,NY,207RE0101X,endocrinologists
+1794,David,Reifler,Grand Rapids,49456,MI,207W00000X,asoprs
+1795,Alexandra,Reiher,lakewood,80228,CO,207RE0101X,endocrinologists
+1796,Vanessa,Rein,Madison,53717,WI,207RE0101X,endocrinologists
+1797,Chet,Reistad,Fort Collins,80525,CO,207W00000X,asoprs
+1798,Dennis,Reiter,El Paso,79936,TX,207W00000X,tepezza
+1799,Dennis,Reiter,El Paso,79902,TX,207W00000X,tepezza
+1800,David,Remigio,Bluffton,29910,SC,207W00000X,tepezza
+1801,David,Remigio,Bluffton,29910,SC,207W00000X,asoprs
+1802,Daniel,Repp,Davenport,52807,IA,207W00000X,asoprs
+1803,Angela,Restrepo,Burlington,01805,MA,207RE0101X,endocrinologists
+1804,Karen,Revere,Gladwyne,19035,PA,207W00000X,asoprs
+1805,Charles,Rheeman,Malta,12020,NY,207W00000X,tepezza
+1806,Charles,Rheeman,Troy,12180,NY,207W00000X,tepezza
+1807,Jessica,Ricciuto,Danvers,01923,MA,207RE0101X,endocrinologists
+1808,Charles,Rice,Winston-Salem,27157,NC,207W00000X,asoprs
+1809,Karina,Richani,Houston,77030,TX,207W00000X,asoprs
+1810,Karina,Richani,Houston,77030,TX,207W00000X,tepezza
+1811,Michael,Richard,Florham Park,07932,NJ,207W00000X,asoprs
+1812,Michael,Richard,Clifton,07011,NJ,207W00000X,tepezza
+1813,Randall,Riche,Pensacola,32503,FL,207RE0101X,endocrinologists
+1814,Edward,Rico,Paris,61944,IL,207RE0101X,endocrinologists
+1815,Amy,Riek,Saint Louis,63110,MO,207RE0101X,endocrinologists
+1816,Michele,Riggins,Wichita,67212,KS,207W00000X,tepezza
+1817,Aurelio,Rios-Vaca,Calexico,92231,CA,207RE0101X,endocrinologists
+1818,Roxana,Rivera,Edgewood,41017,KY,207W00000X,tepezza
+1819,Roxana,Rivera,Cincinnati,45219,OH,207W00000X,tepezza
+1820,S.,Rizvi,Fayetteville,28304,NC,207RE0101X,endocrinologists
+1821,Philip,Rizzuto,Providence,02905,RI,207W00000X,tepezza
+1822,Victor,Roberts,Lake Mary,32746,FL,207RE0101X,endocrinologists
+1823,Charlene,Robertson,Orange City,32763,FL,207RE0101X,endocrinologists
+1824,Alberto,Robledo,Doral,33126,FL,207RE0101X,endocrinologists
+1825,Alberto,Robledo,Doral,33126,FL,207RE0101X,endocrinologists
+1826,Jessica,Rockwell,Lewiston,04240,ME,207RE0101X,endocrinologists
+1827,Maria,Rodebaugh,Coeur D Alene,83814,ID,207RE0101X,endocrinologists
+1828,Rand,Rodgers,New York,10021,NY,207W00000X,asoprs
+1829,Rand,Rodgers,Great Neck,11021,NY,152W00000X,tepezza
+1830,Vivian,Rodriguez,Houston,77030,TX,207RE0101X,endocrinologists
+1831,Sheila,Rodriguez,Martinsburg,25401,WV,207RE0101X,endocrinologists
+1832,Rene,Rodriguez-Sains,Staten Island,10310,NY,207W00000X,asoprs
+1833,Janet,Roen,New York,10016,NY,207W00000X,asoprs
+1834,Elisa,Rogowitz,Murray,84107,UT,207RE0101X,endocrinologists
+1835,James,Rone,Murfreesboro,37129,TN,207RE0101X,endocrinologists
+1836,Daniel,Rootman,Los Angeles,90024,CA,207W00000X,asoprs
+1837,Candice,Rose,Kansas City,66160,KS,207RE0101X,endocrinologists
+1838,Brian,Rose,Bozeman,59715,MT,207RE0101X,tepezza
+1839,John,Rose,Madison,53715,WI,207W00000X,asoprs
+1840,Carl,Rosen,Anchorage,99507,AK,207W00000X,asoprs
+1841,William,Rosen,Hanover,03755,NH,207W00000X,asoprs
+1842,Ella,Rosenbloom,Port Jefferson,11777,NY,207RE0101X,endocrinologists
+1843,Joseph,Ross,Sarasota,34233,FL,207W00000X,asoprs
+1844,Joseph,Ross,Crystal River,34429,FL,207W00000X,tepezza
+1845,Joseph,Ross,Ocala,34471,FL,207W00000X,tepezza
+1846,Joseph,Ross,Sarasota,34233,FL,207W00000X,tepezza
+1847,Joseph,Ross,Largo,33771,FL,207W00000X,tepezza
+1848,Jason,Ross,Melbourne,32901,FL,207W00000X,tepezza
+1849,Douglas,Ross,Boston,02114,MA,207RE0101X,endocrinologists
+1850,Richard,Roth,Kingston,18704,PA,207W00000X,asoprs
+1851,Jeffrey,Rothman,Staten Island,10301,NY,207RE0101X,endocrinologists
+1852,Sergio,Rovner,El Paso,79935,TX,207RE0101X,tepezza
+1853,Robert,Rubenzik,Glendale,85306,AZ,207W00000X,asoprs
+1854,Peter,Rubin,Palm Beach Gardens,33410,FL,207W00000X,asoprs
+1855,Peter,Rubin,Palm Beach Gardens,33410,FL,207W00000X,tepezza
+1856,Rakhil,Rubinova,Mineola,11501,NY,207RE0101X,endocrinologists
+1857,Tal,Rubinstein,Cary,27513,NC,207W00000X,asoprs
+1858,Tal,Rubinstein,Greensboro,27410,NC,207W00000X,tepezza
+1859,Sandra,Rubio,Cottonwood,86326,AZ,207RE0101X,tepezza
+1860,Mark,Ruchman,Southbury,06488,CT,207W00000X,tepezza
+1861,Mark,Ruchman,Southbury,06488,CT,207W00000X,asoprs
+1862,Paul,Ruestow,Riverwoods,60015,IL,207RE0101X,endocrinologists
+1863,David,Russell,Vacaville,95688,CA,207W00000X,asoprs
+1864,Sherilyn,Russell,Clinton twp,48038,MI,207RE0101X,endocrinologists
+1865,Laura,Ryan,Upper Arlington,43221,OH,207RE0101X,endocrinologists
+1866,Philip,Ryan,Martinsburg,25401,WV,207RE0101X,endocrinologists
+1867,Wanda,Ryan,Pittsburgh,15213,PA,207RE0101X,endocrinologists
+1868,Julieta,Ryder,Chardon,44024,OH,207W00000X,tepezza
+1869,Mabel,Ryder,Rochester,55905,MN,207RE0101X,endocrinologists
+1870,Paul,Sack,Baltimore,21218,MD,207RE0101X,endocrinologists
+1871,Wendy,Sacks,West Hollywood,90048,CA,207RE0101X,endocrinologists
+1872,Taoufik,Sadat,Beckley,25801,WV,207W00000X,tepezza
+1873,Sanjay,Sahay,Garden City,11530,NY,207RE0101X,endocrinologists
+1874,Priya,Sahu,New Orleans,70121,LA,207W00000X,asoprs
+1875,Olga,Sakharova,New Haven,06511,CT,207RE0101X,endocrinologists
+1876,Peter,Sakol,Mechanicsburg,17050,PA,207W00000X,asoprs
+1877,Noel,Saks,Park Ridge,60068,IL,207W00000X,tepezza
+1878,Noel,Saks,Park Ridge,60068,IL,207W00000X,asoprs
+1879,Rocio,Salas-Whalen,New York,10128,NY,207RE0101X,endocrinologists
+1880,Marzieh,Salehi,San Antonio,78229,TX,207RE0101X,endocrinologists
+1881,Amna,Salhin,San Antonio,78229,TX,207RE0101X,endocrinologists
+1882,Supneet,Saluja,Baltimore,21202,MD,207RE0101X,endocrinologists
+1883,Xanthia,Samaropoulos,Raleigh,27612,NC,207RE0101X,endocrinologists
+1884,David,Samimi,Santa Monica,90403,CA,207W00000X,tepezza
+1885,David,Samimi,Los Angeles,90013,CA,207W00000X,asoprs
+1886,Hazem,Samy,Ocala,34474,FL,207W00000X,tepezza
+1887,Hazem,Samy,Gainesville,32605,FL,207W00000X,tepezza
+1888,Hazem,Samy,Jacksonville,32258,FL,207W00000X,tepezza
+1889,Marc,Sandberg,Flemington,08822,NJ,207RE0101X,endocrinologists
+1890,Leonard,Sanders,Monterey,93940,CA,207RE0101X,endocrinologists
+1891,James,Sanderson,Oldsmar,34677,FL,207W00000X,asoprs
+1892,Jewel,Sandy,Loma Linda,92354,CA,207W00000X,tepezza
+1893,Samar,Sankari,Charleston,25314,WV,207RE0101X,endocrinologists
+1894,Prasanna,Santhanam,Baltimore,21287,MD,207RE0101X,endocrinologists
+1895,Paraskevi,Sapountzi,Arlington Heights,60005,IL,207RE0101X,endocrinologists
+1896,Virginia,Sarapura,Aurora,80045,CO,207RE0101X,endocrinologists
+1897,Gayatri,Sarkar,Citrus Heights,95621,CA,207RE0101X,endocrinologists
+1898,David,Sarne,Chicago,60637,IL,207RE0101X,endocrinologists
+1899,Romona,Satchi,Mclean,22101,VA,207RE0101X,endocrinologists
+1900,Anpalakan,Sathasivam,Charlotte Hall,20622,MD,207RE0101X,endocrinologists
+1901,Denise,Satterfield,Sacramento,95825,CA,207W00000X,tepezza
+1902,David,Saunders,Dallas,75230,TX,207W00000X,asoprs
+1903,Joseph,Savage,Woodsville,03785,NH,207RE0101X,endocrinologists
+1904,Aaron,Savar,Beverly Hills,90210,CA,207W00000X,asoprs
+1905,David,Savar,Beverly Hills,90210,CA,207W00000X,asoprs
+1906,Louis,Savar,Beverly Hills,90210,CA,207W00000X,asoprs
+1907,Daniel,Schaefer,Amherst,14226,NY,207W00000X,asoprs
+1908,Jamie,Schaefer,Providence,02903,RI,,tepezza
+1909,Jamie,Schaefer,Providence,02903,RI,207W00000X,asoprs
+1910,Jamie,Schaefer,Providence,02903,RI,207WX0200X,tepezza
+1911,Michael,Schaffer,Delray Beach,33484,FL,207W00000X,tepezza
+1912,Vivian,Schiedler,Ashland,97520,OR,207W00000X,asoprs
+1913,John,Schietroma,Harrisburg,17111,PA,207W00000X,asoprs
+1914,Jade,Schiffman,Houston,77005,TX,207W00000X,tepezza
+1915,Jeffrey,Schiller,New York,10314,NY,207W00000X,asoprs
+1916,Robert,Schimek,New Orleans,70119,LA,207W00000X,asoprs
+1917,Dianne,Schlachter,Southfield,48034,MI,207W00000X,asoprs
+1918,Dianne,Schlachter,Southfield,48034,MI,207W00000X,tepezza
+1919,David,Schlessinger,Woodbury,11797,NY,207W00000X,tepezza
+1920,Evan,Schloss,Carmel,10512,NY,2084N0400X,tepezza
+1921,Gideon,Schneck,East Setauket,11733,NY,207W00000X,tepezza
+1922,Gideon,Schneck,Stony Brook,11790,NY,207W00000X,tepezza
+1923,Alan,Schorr,Feasterville Trevose,19053,PA,207RE0101X,endocrinologists
+1924,Pamela,Schroeder,Baltimore,21218,MD,207RE0101X,endocrinologists
+1925,Linda,Schumacher-Feero,Augusta,04330,ME,207W00000X,tepezza
+1926,Sunita,Schurgin,Medford,02155,MA,207RE0101X,endocrinologists
+1927,Monica,Schwarcz,Valhalla,10595,NY,207RE0101X,endocrinologists
+1928,Robert,Schwarcz,New York,10021,NY,207YS0123X,tepezza
+1929,Robert,Schwarcz,New York,10021,NY,207W00000X,asoprs
+1930,Stacy,Scofield-Kaplan,Commack,11725,NY,207W00000X,tepezza
+1931,Megan,Scott Carlton,Ponte Vedra Beach,32082,FL,207W00000X,tepezza
+1932,Ryan,Scruggs,Orange City,32763,FL,207WX0200X,tepezza
+1933,Ryan,Scruggs,Deland,32720,FL,207WX0200X,tepezza
+1934,Ryan,Scruggs,Orlando,32804,FL,207WX0200X,tepezza
+1935,Ryan,Scruggs,Lake Mary,32746,FL,207WX0200X,tepezza
+1936,Ryan,Scruggs,New Smyrna Beach,32168,FL,207WX0200X,tepezza
+1937,Ryan,Scruggs,Deland,32720,FL,207W00000X,asoprs
+1938,Bradley,Seely,Roseburg,97471,OR,207W00000X,tepezza
+1939,Kira,Segal,New York,10021,NY,207W00000X,tepezza
+1940,Kira,Segal,New York,10021,NY,207W00000X,asoprs
+1941,Konstantinos,Segkos,Provo,84604,UT,207RE0101X,endocrinologists
+1942,David,Segrest,Jackson,39202,MS,207W00000X,asoprs
+1943,Venkatesh,Segu,Cedar Park,78613,TX,207RE0101X,endocrinologists
+1944,Manuel,Segura,Indianapolis,46256,IN,207RE0101X,endocrinologists
+1945,Shubhi,Sehgal,Summit,53066,WI,207RE0101X,endocrinologists
+1946,Stuart,Seiff,San Francisco,94115,CA,207W00000X,asoprs
+1947,Bryan,Seiff,Dover,19904,DE,207W00000X,asoprs
+1948,Crispin,Semakula,Blaine,55434,MN,207RE0101X,endocrinologists
+1949,lavanya,Sendos,Houston,77030,TX,207RE0101X,endocrinologists
+1950,Javier,Servat,Marietta,30066,GA,207W00000X,asoprs
+1951,Prakash,Seshadri,Wilmington,19801,DE,207RE0101X,endocrinologists
+1952,Pete,Setabutr,Chicago,60612,IL,207W00000X,asoprs
+1953,Ismat,Shafiq,Rochester,14642,NY,207RE0101X,endocrinologists
+1954,Uzma,Shafqat,Morristown,07690,NJ,207RE0101X,endocrinologists
+1955,Solomon,Shaftel,San Diego,92111,CA,207W00000X,asoprs
+1956,Viral,Shah,Paramus,07652,NJ,207RE0101X,endocrinologists
+1957,Reshma,Shah,Marietta,30062,GA,207RE0101X,endocrinologists
+1958,Rajiv,Shah,Winston Salem,27157,NC,207W00000X,tepezza
+1959,Taral,Shah,Egg Harbor Township,08234,NJ,207RE0101X,endocrinologists
+1960,Hassan,Shah,Chicago,60614,IL,207W00000X,asoprs
+1961,Arti,Shah,Downey,90242,CA,207RE0101X,endocrinologists
+1962,Mamta,Shah,Mount Kisco,10549,NY,207W00000X,tepezza
+1963,Ami,Shah Vira,Cedar Park,78613,TX,207W00000X,tepezza
+1964,Michael,Shanik,Smithtown,11787,NY,207RE0101X,endocrinologists
+1965,Lawrence,Shapiro,Mineola,11501,NY,207RE0101X,endocrinologists
+1966,Maryam,Sharifi,Van Nuys,91405,CA,207RE0101X,endocrinologists
+1967,Swati,Sharma,Parsippany,07054,NJ,207RE0101X,endocrinologists
+1968,Sonia,Sharma,Sarasota,34239,FL,207RE0101X,endocrinologists
+1969,Morali,Sharma,Piedmont,94618,CA,207RE0101X,endocrinologists
+1970,Yasmin,Shayesteh Chambers,Seattle,98105,WA,207W00000X,asoprs
+1971,Mark,Shepherd,Tupelo,38803,MS,207RE0101X,endocrinologists
+1972,Todd,Shepler,Cedar Park,78613,TX,207W00000X,asoprs
+1973,Deborah,Sherman,Nashville,37205,TN,207W00000X,asoprs
+1974,Steven,Sherman,Houston,77030,TX,207RE0101X,endocrinologists
+1975,Stephen,Sherry,Glen Ridge,07028,NJ,207RE0101X,endocrinologists
+1976,Debra,Shetlar,Houston,77030,TX,207W00000X,asoprs
+1977,Shilpa,Shetty,Waterbury,06708,CT,207RE0101X,endocrinologists
+1978,Richard,Shewbridge,Medina,44256,OH,207RE0101X,endocrinologists
+1979,David,Shewmon,Lakewood,44107,OH,207RE0101X,endocrinologists
+1980,YunYing,Shi,Burlingame,94010,CA,207RE0101X,endocrinologists
+1981,Carl,Shibata,Upland,91786,CA,207W00000X,asoprs
+1982,Marc,Shields,Staunton,24401,VA,207W00000X,asoprs
+1983,Jerry,Shields,Philadelphia,19107,PA,207W00000X,asoprs
+1984,ZEWGE,SHIFERAW-DERIBE,brooklyn,11238,NY,207RE0101X,endocrinologists
+1985,Alexander,Shifrin,Neptune,07754,NJ,207RE0101X,endocrinologists
+1986,Grace,Shin,Las Vegas,89148,NV,207W00000X,tepezza
+1987,Roman,Shinder,Brooklyn,11210,NY,207W00000X,asoprs
+1988,Tiana,Shiver-Bonderer,Houston,77025,TX,207RE0101X,endocrinologists
+1989,Dolores,Shoback,San Francisco,94158,CA,207RE0101X,endocrinologists
+1990,John,Shore,Austin,78712,TX,207W00000X,asoprs
+1991,Norman,Shorr,Beverly Hills,90210,CA,207W00000X,asoprs
+1992,Daniel,Short,La Crosse,54601,WI,207RE0101X,endocrinologists
+1993,Joseph,Shovlin,Princeton,08540,NJ,207W00000X,asoprs
+1994,Anil,Shrestha,St Augustine,32080,FL,207RE0101X,tepezza
+1995,Merica,Shrestha,Vienna,22182,VA,207RE0101X,endocrinologists
+1996,Erin,Shriver,Iowa City,52242,IA,207WX0200X,tepezza
+1997,Erin,Shriver,Iowa City,52242,IA,207W00000X,asoprs
+1998,Zev,Shulkin,Dallas,75230,TX,207W00000X,tepezza
+1999,Gretchen,Shull,Joplin,64804,MO,207RE0101X,tepezza
+2000,Leon,Shulman,Bridgewater,08807,NJ,207RE0101X,endocrinologists
+2001,Sirtaz,Sibia,Lake Worth,33467,FL,207W00000X,tepezza
+2002,Sirtaz,Sibia,Boynton Beach,33437,FL,207W00000X,tepezza
+2003,John,Siddens,Greenville,29605,SC,207W00000X,tepezza
+2004,Muhammad,Siddiqui,Roswell,30076,GA,207RE0101X,endocrinologists
+2005,Aniket,Sidhaye,Baltimore,21287,MD,207RE0101X,endocrinologists
+2006,Sharleen,Sidhu,Carson City,89706,NV,207RE0101X,tepezza
+2007,Nora,Siegal,Lancaster,17601,PA,207W00000X,asoprs
+2008,Glenn,Siegel,Norwalk,06851,CT,207RE0101X,endocrinologists
+2009,Scott,Sigler,Edmond,73013,OK,207W00000X,asoprs
+2010,Shanaz,Sikder,Meridian,83642,ID,207RE0101X,tepezza
+2011,Jonathan,Silbert,Waterbury,06708,CT,207W00000X,tepezza
+2012,Rona,Silkiss,San Leandro,94578,CA,207W00000X,tepezza
+2013,Rona,Silkiss,Walnut Creek,94596,CA,207W00000X,tepezza
+2014,Rona,Silkiss,Palo Alto,94306,CA,207W00000X,tepezza
+2015,Rona,Silkiss,San Francisco,94102,CA,207W00000X,tepezza
+2016,Rona,Silkiss,San Francisco,94102,CA,207W00000X,asoprs
+2017,Rona,Silkiss,Corte Madera,94925,CA,207W00000X,tepezza
+2018,Rona,Silkiss,Oakland,94609,CA,207W00000X,tepezza
+2019,Rona,Silkiss,Fremont,94536,CA,207W00000X,tepezza
+2020,Ricardo,Silva,Jacksonville,32204,FL,207RE0101X,endocrinologists
+2021,Robert,Silver,Nashua,03062,NH,207RE0101X,endocrinologists
+2022,Mark,Silver,Mountlake Ter,98043,WA,207RE0101X,endocrinologists
+2023,Mark,Silverberg,Santa Barbara,93110,CA,207W00000X,tepezza
+2024,Alan,Silverberg,Saint Louis,63104,MO,207RE0101X,endocrinologists
+2025,Mark,Silverberg,Santa Barbara,93105,CA,207W00000X,tepezza
+2026,Alan,Silverberg,Saint Louis,63104,MO,207RE0101X,endocrinologists
+2027,Alan,Silverberg,Saint Louis,63104,MO,207RE0101X,endocrinologists
+2028,Alan,Silverberg,Saint Louis,63104,MO,207RE0101X,endocrinologists
+2029,Mitchell,Silverman,Livingston,07039,NJ,207RE0101X,endocrinologists
+2030,Daniel,Sines,Rogers,72756,AR,207W00000X,asoprs
+2031,Daniel,Sines,Rogers,72756,AR,207W00000X,tepezza
+2032,Peter,Singer,Los Angeles,90089,CA,207RE0101X,endocrinologists
+2033,David,Singer,Aspen,81611,CO,207W00000X,asoprs
+2034,Gurdeep,Singh,Binghamton,13905,NY,207RE0101X,endocrinologists
+2035,Gurdeep,Singh,Binghamton,13905,NY,207RE0101X,endocrinologists
+2036,Jennifer,Sipos,Columbus,43210,OH,207RE0101X,endocrinologists
+2037,Elias,Siraj,Norfolk,23510,VA,207RE0101X,endocrinologists
+2038,Bryan,Sires,Kirkland,98033,WA,207W00000X,asoprs
+2039,Bryan,Sires,Kirkland,98033,WA,207W00000X,tepezza
+2040,Imali,Sirisena,Philadelphia,19140,PA,207RE0101X,endocrinologists
+2041,Dimitrios,Sismanis,Richmond,23233,VA,207W00000X,asoprs
+2042,Sumit,Sitole,Denver,80222,CO,207W00000X,tepezza
+2043,Jennifer,Sivak-Callcott,Morgantown,26505,WV,207W00000X,tepezza
+2044,Jennifer,Sivak-Callcott,Morgantown,26505,WV,207W00000X,asoprs
+2045,Aaron,Skelton,Carmichael,95608,CA,207W00000X,tepezza
+2046,Bentley,Skibell,Goodyear,85395,AZ,207W00000X,asoprs
+2047,Paul,Skierczynski,Indianapolis,46202,IN,207RE0101X,endocrinologists
+2048,Mark,Sklar,Washington,20037,DC,207RE0101X,endocrinologists
+2049,Peter,Sklarin,Menlo Park,94025,CA,207RE0101X,endocrinologists
+2050,Dane,Slentz,Manchester,03104,NH,207W00000X,tepezza
+2051,Anita,Sloan-Garcia,Albuquerque,87109,NM,207RE0101X,endocrinologists
+2052,Charles,Slonim,Tampa,33617,FL,207W00000X,asoprs
+2053,Laurie,Small,Wesley Chapel,33544,FL,207W00000X,tepezza
+2054,Robert,Smallridge,Jacksonville,32224,FL,207RE0101X,endocrinologists
+2055,Jessica,Smith,Boston,02115,MA,207RE0101X,endocrinologists
+2056,Terry,Smith,Ann Arbor,48105,MI,207RE0101X,tepezza
+2057,Eugene,Smith,Atlanta,30356,GA,207W00000X,asoprs
+2058,Barry,Smith,Visalia,93277,CA,207W00000X,asoprs
+2059,Cassie,Smith,Oklahoma City,73114,OK,207RE0101X,endocrinologists
+2060,Walter,Smithwick,Jacksonville,32204,FL,207W00000X,tepezza
+2061,B,Smolarz,Robbinsville,08691,NJ,207RE0101X,endocrinologists
+2062,John,Snead,Ft. Myers,33907,FL,207W00000X,asoprs
+2063,Peter,Sneed,Traverse City,49686,MI,207W00000X,asoprs
+2064,Matthew,Sniegowski,Independence,64055,MO,207WX0200X,tepezza
+2065,Matthew,Sniegowski,Leawood,66211,KS,207W00000X,asoprs
+2066,Matthew,Sniegowski,Kansas City,64111,MO,207WX0200X,tepezza
+2067,Matthew,Sniegowski,Kansas City,64154,MO,207WX0200X,tepezza
+2068,Matthew,Sniegowski,Kansas City,64108,MO,207WX0200X,tepezza
+2069,Matthew,Sniegowski,Leawood,66211,KS,207WX0200X,tepezza
+2070,Rodney,Snow,Nashville,37203,TN,207RE0101X,endocrinologists
+2071,Steven,Snyder,SAN FRANCISCO,94117,CA,207RE0101X,endocrinologists
+2072,Vivian,Sobel,New York,10021,NY,207RE0101X,endocrinologists
+2073,Rachel,Sobel,Nashville,37232,TN,207W00000X,asoprs
+2074,Mahsa,Sohrab,Greenwich,06831,CT,207W00000X,asoprs
+2075,Jason,Sokol,Prairie Village,66208,KS,207W00000X,asoprs
+2076,Jason,Sokol,Prairie Village,66208,KS,207W00000X,tepezza
+2077,Stephen,Soll,Philadelphia,19116,PA,207W00000X,asoprs
+2078,Marie,Somogyi,Austin,78705,TX,207W00000X,asoprs
+2079,Alice,Song,Manhattan Beach,90267,CA,207W00000X,asoprs
+2080,Alice,Song,Pasadena,91105,CA,207W00000X,tepezza
+2081,Charles,Soparkar,Shenandoah,77380,TX,207W00000X,tepezza
+2082,Charles,Soparkar,Houston,77098,TX,207W00000X,asoprs
+2083,Charles,Soparkar,Houston,77098,TX,207W00000X,tepezza
+2084,Jeremy,Soule,Charleston,25304,WV,207RE0101X,tepezza
+2085,Jose,Souza,Kalispell,59901,MT,207RE0101X,endocrinologists
+2086,Dorothea,Spambalg,Pasadena,91101,CA,207RE0101X,endocrinologists
+2087,Galin,Spicer,Sullivans Island,29482,SC,207W00000X,asoprs
+2088,Ira,Spiler,Edison,08817,NJ,207RE0101X,endocrinologists
+2089,Jordan,Spindle,Tyler,75701,TX,207W00000X,asoprs
+2090,Ashok,Srihari,Gainesville,32610,FL,207RE0101X,endocrinologists
+2091,Preethi,Sriram,Glen Burnie,21061,MD,207RE0101X,endocrinologists
+2092,Amrita,Srivastava,Port Jefferson,11777,NY,207RE0101X,endocrinologists
+2093,Anca,Staii,Dracut,01826,MA,207RE0101X,endocrinologists
+2094,Paul,Stallman,Pismo Beach,93449,CA,207W00000X,asoprs
+2095,George,Stamataros,Holly Springs,27540,NC,207RE0101X,endocrinologists
+2096,Marius,Stan,Rochester,55905,MN,207RE0101X,endocrinologists
+2097,Marius,Stan,Rochester,55905,MN,207RE0101X,tepezza
+2098,Natalie,Stanciu,Austin,78703,TX,207W00000X,asoprs
+2099,Natalie,Stanciu,West Lake Hills,78746,TX,207W00000X,tepezza
+2100,Victoria,Starks,Boston,02114,MA,207W00000X,asoprs
+2101,Nikolaos,Stathatos,Boston,02114,MA,207RE0101X,endocrinologists
+2102,Eric,Steele,Portland,97239,OR,207W00000X,asoprs
+2103,Mary,Stefanyszyn-Woldin,Philadelphia,19107,PA,207W00000X,asoprs
+2104,Nanette,Steinle,Baltimore,21201,MD,207RE0101X,endocrinologists
+2105,Kenneth,Steinsapir,Beverly Hills,90211,CA,207W00000X,asoprs
+2106,Elias,Stephan,Sugar Land,77496,TX,207RE0101X,endocrinologists
+2107,Matthew,Stephen,Temple,76502,TX,207RE0101X,endocrinologists
+2108,Christopher,Stephenson,San Diego,92130,CA,207W00000X,asoprs
+2109,Elliot,Sternthal,Jamaica Plain,02130,MA,207RE0101X,endocrinologists
+2110,David,Steward,Cincinnati,45267,OH,207RE0101X,endocrinologists
+2111,David,Steward,Cincinnati,45267,OH,207RE0101X,endocrinologists
+2112,William,Stewart,San Francisco,94115,CA,207W00000X,asoprs
+2113,Krista,Stewart,Woodbury,55125,MN,207W00000X,tepezza
+2114,Lisa,Stone,Wenatchee,98801,WA,207RE0101X,endocrinologists
+2115,Daniel,Straka,Bucyrus,44820,OH,207W00000X,tepezza
+2116,Daniel,Straka,Columbus,43215,OH,207W00000X,asoprs
+2117,Dan,Streja,West Hills,91307,CA,207RE0101X,endocrinologists
+2118,Mitchell,Strominger,Reno,89502,NV,207W00000X,tepezza
+2119,Cord,Sturgeon,Chicago,60611,IL,207RE0101X,endocrinologists
+2120,Maya,Styner,Chapel Hill,27599,NC,207RE0101X,endocrinologists
+2121,Grant,Su,Springfield,62794,IL,207W00000X,asoprs
+2122,Maria,Suarez,Des Moines,50314,IA,207RE0101X,endocrinologists
+2123,Prem,Subramanian,Aurora,80045,CO,207W00000X,tepezza
+2124,Masahiro,Sugawara,Los Angeles,90073,CA,207RE0101X,endocrinologists
+2125,Ebru,Sulanc,NOVI,48377,MI,207RE0101X,endocrinologists
+2126,John,Sullivan,San Jose,95126,CA,207W00000X,asoprs
+2127,Scot,Sullivan,Portland,97205,OR,207W00000X,asoprs
+2128,Senan,Sultan,Fleming Island,32003,FL,207RE0101X,tepezza
+2129,Albert,Sun,Old Bridge,08857,NJ,207RE0101X,endocrinologists
+2130,Martin,Surks,Bronx,10467,NY,207RE0101X,endocrinologists
+2131,Francis,Sutula,Cambridge,02138,MA,207W00000X,asoprs
+2132,Adam,Sweeney,Honolulu,96813,HI,207W00000X,tepezza
+2133,Mushtaq,Syed,Indiana,15701,PA,207RE0101X,endocrinologists
+2134,Paula,Szczepanczyk,Kokomo,46902,IN,207RE0101X,tepezza
+2135,Mehryar,Taban,Beverly Hills,90212,CA,207W00000X,asoprs
+2136,Vafa,Tabatabaie,Bronx,10467,NY,207RE0101X,endocrinologists
+2137,Analyn,Talip,West Columbia,29169,SC,207RE0101X,endocrinologists
+2138,Michael,Tamber,Everett,98201,WA,207RE0101X,endocrinologists
+2139,Jeremy,Tan,Oklahoma City,73012,OK,207W00000X,asoprs
+2140,Jeremy,Tan,Oklahoma City,73104,OK,207W00000X,tepezza
+2141,Prabhat,Tandon,Mount Dora,32757,FL,207RE0101X,endocrinologists
+2142,Deepa,Taneja,Orlando,32819,FL,207RE0101X,endocrinologists
+2143,Myron,Tanenbaum,Miami,33173,FL,207W00000X,asoprs
+2144,Rosa,Tang,Houston,77005,TX,207W00000X,tepezza
+2145,Thomas,Tann,Oxford,38655,MS,207W00000X,asoprs
+2146,Damon,Tanton,Orlando,32804,FL,207RE0101X,endocrinologists
+2147,Jeremiah,Tao,Irvine,92697,CA,207W00000X,asoprs
+2148,Kristin,Tarbet,Bellevue,98004,WA,207W00000X,asoprs
+2149,Kristin,Tarbet,Bellevue,98004,WA,207W00000X,tepezza
+2150,Paul,Tejera,Potsdam,13676,NY,207RE0101X,endocrinologists
+2151,Zehra,Tekin,Tyler,75701,TX,207RE0101X,endocrinologists
+2152,Alex,Tessnow,Dallas,75390,TX,207RE0101X,endocrinologists
+2153,Manoj,Thakker,Holmdel,07733,NJ,207W00000X,asoprs
+2154,Leonard,Thaler,Aventura,33180,FL,207RE0101X,endocrinologists
+2155,K,Thampy,Saint Louis,63128,MO,207RE0101X,endocrinologists
+2156,Christopher,Thiagarajah,Denver,80218,CO,207W00000X,tepezza
+2157,Chris,Thiagarajah,Denver,80218,CO,207W00000X,asoprs
+2158,Johnson,Thomas,Springfield,65807,MO,207RE0101X,tepezza
+2159,Dilip,Thomas,Augusta,30909,GA,207W00000X,tepezza
+2160,Tom,Thomas,Pearland,77584,TX,207RE0101X,endocrinologists
+2161,Dilip,Thomas,Augusta,30912,GA,207W00000X,tepezza
+2162,Inas,Thomas,Ann Arbor,48109,MI,207RE0101X,endocrinologists
+2163,Sailatha,Thomas,Tulsa,74136,OK,207RE0101X,endocrinologists
+2164,Dylan,Thomas,Dover,03820,NH,207RE0101X,endocrinologists
+2165,Dilip,Thomas,Augusta,30912,GA,207W00000X,asoprs
+2166,Reena,Thomas,Prince Frederick,20678,MD,207RE0101X,endocrinologists
+2167,Tom,Thomas,Pearland,77584,TX,207RE0101X,endocrinologists
+2168,Johnson,Thomas,Springfield,65807,MO,207RE0101X,endocrinologists
+2169,Bradley,Thuro,Morgantown,26506,WV,207WX0200X,tepezza
+2170,Preeti,Thyparampil,Chicago,60611,IL,207W00000X,asoprs
+2171,Joseph,Tibaldi,Fresh Meadows,11365,NY,207RE0101X,endocrinologists
+2172,Peter,Timoney,Lexington,40508,KY,207W00000X,asoprs
+2173,John,Tloczkowski,Greenlawn,11740,NY,207RE0101X,endocrinologists
+2174,Daniel,Toft,Chicago,60612,IL,207RE0101X,tepezza
+2175,Joseph,Tokaruk,Cookeville,38501,TN,207RE0101X,endocrinologists
+2176,Laurie,Tom,Honolulu,96813,HI,207RE0101X,endocrinologists
+2177,Kevin,Tomasko,Charlotte,28211,NC,207WX0200X,tepezza
+2178,Yaron,Tomer,Bronx,10461,NY,207RE0101X,endocrinologists
+2179,John,Tong,Grapevine,76051,TX,207W00000X,asoprs
+2180,Roberto,Toni,Boston,02111,MA,207RE0101X,endocrinologists
+2181,Andrea,Tooley,Rochester,55905,MN,207W00000X,tepezza
+2182,Gianluca,Toraldo,Burlington,01805,MA,207RE0101X,endocrinologists
+2183,Mira,Torres,Worcester,01655,MA,207RE0101X,endocrinologists
+2184,Robert,Tower,Portland,97209,OR,207W00000X,asoprs
+2185,Daniel,Townsend,Boston,02114,MA,207W00000X,asoprs
+2186,Michael,Tran,Orange,92868,CA,207RE0101X,endocrinologists
+2187,Neil,Tran,Santa Ana,92799,CA,207RE0101X,endocrinologists
+2188,Trung,Tran,Gretna,70056,LA,207RE0101X,endocrinologists
+2189,Alejandro,Trepp Carrasco,Boca Raton,33431,FL,207RE0101X,tepezza
+2190,David,Tridgell,St Louis Park,55416,MN,207RE0101X,endocrinologists
+2191,Jaime,Trujillo,Winston Salem,27103,NC,207RE0101X,tepezza
+2192,Anya,Trumler-Sebring,Ventura,93003,CA,207W00000X,tepezza
+2193,Brian,Tse,Miami,33136,FL,207W00000X,tepezza
+2194,Brian,Tse,Miami,33136,FL,207W00000X,asoprs
+2195,Brian,Tse,Naples,34103,FL,207W00000X,tepezza
+2196,David,Tse,Miami,33136,FL,207W00000X,asoprs
+2197,Brian,Tse,Plantation,33324,FL,207W00000X,tepezza
+2198,Susan,Tucker,Peabody,01960,MA,207W00000X,asoprs
+2199,Traci,Tupper,Dublin,94568,CA,207RE0101X,endocrinologists
+2200,Tracy,Tylee,Seattle,98105,WA,207RE0101X,endocrinologists
+2201,Frank,Tzeng,Concord,94520,CA,207RE0101X,endocrinologists
+2202,Jayalakshmi,Udayasankar,Mountain View,94040,CA,207RE0101X,endocrinologists
+2203,Jagdeesh,Ullal,Pittsburgh,15213,PA,207RE0101X,tepezza
+2204,Randall,Urban,Galveston,77555,TX,207RE0101X,endocrinologists
+2205,Scott,Uretsky,New Hyde Park,11042,NY,207W00000X,tepezza
+2206,Liliana,Uribe-Bruce,Escondido,92025,CA,207RE0101X,endocrinologists
+2207,Richard,Urso,Houston,77025,TX,207W00000X,tepezza
+2208,Richard,Urso,Sugar Land,77478,TX,207W00000X,tepezza
+2209,Stephen,Usala,Amarillo,79121,TX,207RE0101X,endocrinologists
+2210,Christine,Uy,Destin Florida,32541,FL,207RE0101X,endocrinologists
+2211,Harry,Uy,San Antonio,78212,TX,207RE0101X,endocrinologists
+2212,Nicolas,Uzcategui,Scottsdale,85251,AZ,207W00000X,tepezza
+2213,Nicolas,Uzcategui,Scottsdale,85251,AZ,207W00000X,asoprs
+2214,Michael,Uzmann,Las Vegas,89113,NV,207RE0101X,tepezza
+2215,M. Reza,Vagefi,San Francisco,94143,CA,207W00000X,asoprs
+2216,Reza,Vagefi,San Francisco,94143,CA,207W00000X,tepezza
+2217,Rodrigo,Valderrama,Birmingham,35243,AL,207RE0101X,endocrinologists
+2218,Michael,Valitutto,Kalamazoo,49048,MI,207RE0101X,tepezza
+2219,Ageliki,Valsamis,Great Neck,11021,NY,207RE0101X,endocrinologists
+2220,John,Van Gemert,Spokane,00000,WA,207W00000X,asoprs
+2221,Suzanne,Van Landingham,Rockford,61107,IL,207W00000X,tepezza
+2222,Suzanne,van Landingham,Madison,53705,WI,207W00000X,asoprs
+2223,Suzanne,Van Landingham,Madison,53705,WI,207W00000X,tepezza
+2224,Douglas,Van Putten,Michigan City,46360,IN,207W00000X,asoprs
+2225,Chaim,Vanek,Portland,97239,OR,207RE0101X,endocrinologists
+2226,Nisha,Varghese,Louisville,40243,KY,207RE0101X,endocrinologists
+2227,Morgan,Vargo,Midlothian,23112,VA,207RE0101X,endocrinologists
+2228,Swarna,Varma,Pittsburgh,15243,PA,207RE0101X,endocrinologists
+2229,Radhika,Vattikuti,Glendale,85306,AZ,207RE0101X,endocrinologists
+2230,Carlos,Vazquez,El Paso,79907,TX,207W00000X,tepezza
+2231,Damaris,Vega,Houston,77066,TX,207RE0101X,endocrinologists
+2232,Bryan,Vekovius,Shreveport,71106,LA,207W00000X,tepezza
+2233,Angela,Veloudios,Medford,08055,NJ,207W00000X,asoprs
+2234,Swapna,Vemuri,Detroit,48202,MI,207W00000X,tepezza
+2235,Victor,Vergara-Abreu,Yabucoa,00767,PR,207RE0101X,endocrinologists
+2236,Ashish,Verma,Shelby Township,48317,MI,207RE0101X,endocrinologists
+2237,Nicholas,Vernetti,Las Vegas,89128,NV,207RE0101X,tepezza
+2238,Nicholas,Vernetti,Las Vegas,89148,NV,207RE0101X,tepezza
+2239,Irini,Veronikis,Saint Louis,63141,MO,207RE0101X,endocrinologists
+2240,Josef,Vesely,Ocala,34471,FL,207RE0101X,endocrinologists
+2241,Kenneth,Vestal,Laguna Niguel,92677,CA,207W00000X,asoprs
+2242,Michael,Via,New York,10003,NY,207RE0101X,endocrinologists
+2243,Matthew,Vicinanzo,Birmingham,35205,AL,207W00000X,asoprs
+2244,Valerie,Vick,Mobile,36606,AL,207W00000X,asoprs
+2245,William,Vickers,Port Saint Lucie,34986,FL,207W00000X,asoprs
+2246,William,Vickers,Port St Lucie,34986,FL,207W00000X,tepezza
+2247,Ana,Victoria,Miami,33176,FL,207W00000X,tepezza
+2248,Ana Carolina,Victoria,Miami,33176,FL,207W00000X,asoprs
+2249,Ira,Vidor,Colton,92324,CA,207WX0200X,tepezza
+2250,Ira,Vidor,Newport Beach,92660,CA,207WX0200X,tepezza
+2251,Ira,Vidor,Newport Beach,92660,CA,207W00000X,asoprs
+2252,Betty,Villafuerte,Owensboro,42303,KY,207RE0101X,endocrinologists
+2253,Tish,Villanueva,Los Angeles,90027,CA,207RE0101X,endocrinologists
+2254,Ronald,Villanueva,TOMS RIVER,08755,NJ,207RE0101X,endocrinologists
+2255,Bryan,Vinik,Delray Beach,33484,FL,207RE0101X,tepezza
+2256,Bryan,Vinik,Boca Raton,33486,FL,207RE0101X,tepezza
+2257,Ivan,Vrcek,Dallas,75231,TX,207W00000X,asoprs
+2258,Craig,Vroman,Albuquerque,87109,NM,207W00000X,tepezza
+2259,Laurel,Vuong,Boston,02116,MA,207W00000X,tepezza
+2260,Amrita-Amanda,Vuppala,Omaha,68105,NE,2084N0400X,tepezza
+2261,Suneetha,Vysetti,Aurora,60504,IL,207RE0101X,endocrinologists
+2262,Amy,Wachter,Wilmington,19801,DE,207RE0101X,endocrinologists
+2263,Michael,Waddell,Indianapolis,46237,IN,207RE0101X,endocrinologists
+2264,Lilly,Wagner,Rochester,55905,MN,207W00000X,asoprs
+2265,Brynn,Wajda,Portland,04102,ME,207W00000X,tepezza
+2266,Shannon,Wakeley,Lincoln,68506,NE,207RE0101X,endocrinologists
+2267,Tony,Walden,Concord,28025,NC,207RE0101X,endocrinologists
+2268,Joseph,Walrath,Atlanta,30328,GA,207W00000X,tepezza
+2269,Linda,Wang,Los Alamitos,90720,CA,207RE0101X,endocrinologists
+2270,Zhiyu,Wang,Tacoma,98405,WA,207RE0101X,endocrinologists
+2271,Tracy,Wang,Milwaukee,53226,WI,207RE0101X,endocrinologists
+2272,Avantika,Waring,Seattle,98112,WA,207RE0101X,endocrinologists
+2273,Michael,Warner,Clearwater,33764,FL,207W00000X,tepezza
+2274,Michael,Warner,Orlando,32803,FL,207W00000X,tepezza
+2275,Naomie,Warner,Las Vegas,89149,NV,207W00000X,tepezza
+2276,Ronald,Warwar,Dayton,45409,OH,207W00000X,asoprs
+2277,Ronald,Warwar,Dayton,45409,OH,207W00000X,tepezza
+2278,Ari,Wassner,Boston,02115,MA,207RE0101X,endocrinologists
+2279,Alison,Watson,Philadelphia,19107,PA,207W00000X,asoprs
+2280,Ronald,Watts,Stockbridge,30281,GA,207RE0101X,endocrinologists
+2281,Lamont,Weide,Kansas City,64108,MO,207RE0101X,endocrinologists
+2282,David,Weinberg,Concord,03301,NH,207W00000X,asoprs
+2283,David,Weinberg,Concord,03301,NH,207W00000X,tepezza
+2284,Stuart,Weinerman,Great Neck,11021,NY,207RE0101X,endocrinologists
+2285,Roy,Weiss,Miami,33136,FL,207RE0101X,endocrinologists
+2286,Steven,Weitzman,Houston,77030,TX,207RE0101X,endocrinologists
+2287,Timothy,Wells,Milwaukee,53226,WI,207W00000X,tepezza
+2288,Timothy,Wells,Milwaukee,53226,WI,207W00000X,asoprs
+2289,Michael,Welsh,Indianapolis,46290,IN,207W00000X,asoprs
+2290,Sandra,Werbel,Gainesville,32607,FL,207RE0101X,endocrinologists
+2291,Marc,Werner,Garden City,11530,NY,207W00000X,tepezza
+2292,Ralph,Wesley,Nashville,37203,TN,207W00000X,asoprs
+2293,Sara,Wester,Miami,33136,FL,207W00000X,tepezza
+2294,Sara,Wester,Miami,33136,FL,207W00000X,asoprs
+2295,Tricia,Westhoff-Pankratz,Ventura,93003,CA,207RE0101X,tepezza
+2296,Craig,Wexler,Medford,11763,NY,207RE0101X,endocrinologists
+2297,Jason,Wexler,Washington,20010,DC,207RE0101X,endocrinologists
+2298,Katherine,Whipple,Rochester,14564,NY,207W00000X,asoprs
+2299,Daniel,Whipple,Avon,46123,IN,207W00000X,tepezza
+2300,William,White,Kansas City,64114,MO,207WX0200X,tepezza
+2301,William,White,Kansas City,64114,MO,207W00000X,asoprs
+2302,Caitlin,White,Philadelphia,19104,PA,207RE0101X,endocrinologists
+2303,Cory,White,Greenville,29607,SC,207RE0101X,endocrinologists
+2304,Dorota,Whitmer,Lakewood,44107,OH,207RE0101X,endocrinologists
+2305,Thomas,Whittaker,Prairie Village,66208,KS,207W00000X,tepezza
+2306,Mark,Wiesen,Teaneck,07666,NJ,207RE0101X,endocrinologists
+2307,Robert,Wiggins,Asheville,28803,NC,207W00000X,tepezza
+2308,Mark,Wilford,Altoona,16602,PA,207RE0101X,endocrinologists
+2309,Byron,Wilkes,Little Rock,72223,AR,207W00000X,tepezza
+2310,T. David,Wilkes,Little Rock,72205,AR,207W00000X,asoprs
+2311,Robert,Wilkins,Houston,77025,TX,207W00000X,asoprs
+2312,Victoria,Williams,Warren,48088,MI,207W00000X,tepezza
+2313,Kenya,Williams,Chicago,60612,IL,207W00000X,tepezza
+2314,Keith,Williamson,Kingsport,37660,TN,207W00000X,tepezza
+2315,Stephen,Willis,Spokane,99202,WA,207RE0101X,tepezza
+2316,Brian,Willoughby,Denver,80206,CO,207W00000X,asoprs
+2317,Martha,Wilson,San Antonio,00000,TX,207W00000X,asoprs
+2318,Matthew,Wilson,Memphis,38163,TN,207W00000X,asoprs
+2319,Stephen,Winkler,Des Plaines,60016,IL,207W00000X,asoprs
+2320,Kathryn,Winkler,Des Plaines,60016,IL,207WX0200X,tepezza
+2321,Kathryn,Winkler,Des Plaines,60016,IL,207W00000X,asoprs
+2322,Bryan,Winn,San Francisco,94143,CA,207W00000X,asoprs
+2323,Bryan,Winn,San Francisco,94143,CA,207W00000X,tepezza
+2324,David,Wirta,Newport Beach,92663,CA,207W00000X,asoprs
+2325,Elizabeth,Wirthwein,Knoxville,37916,TN,207RE0101X,endocrinologists
+2326,Lisa,Wisniewski,Lynchburg,24502,VA,207RE0101X,endocrinologists
+2327,Edward,Wladis,Albany (Slingerlands),12159,NY,207W00000X,asoprs
+2328,Edward,Wladis,Slingerlands,12159,NY,207WX0200X,tepezza
+2329,Ted,Wojno,Atlanta,30322,GA,207W00000X,tepezza
+2330,Ted,Wojno,Atlanta,30322,GA,207W00000X,asoprs
+2331,Peter,Wong,Rockville Centre,11570,NY,207W00000X,tepezza
+2332,Peter,Wong,Garden City,11530,NY,207W00000X,tepezza
+2333,Peter,Wong,East Setauket,11733,NY,207W00000X,tepezza
+2334,Alan,Wong,Everett,98201,WA,207RE0101X,endocrinologists
+2335,Megan,Wood,Glen Carbon,62034,IL,207RE0101X,endocrinologists
+2336,Troy,Woodman,Tacoma,98405,WA,207W00000X,asoprs
+2337,Troy,Woodman,Tacoma,98405,WA,207W00000X,tepezza
+2338,Whitney,Woodmansee,Gainesville,32610,FL,207RE0101X,endocrinologists
+2339,Julie,Woodward,Durham,27705,NC,207W00000X,asoprs
+2340,John,Woog,Rochester,55905,MN,207W00000X,asoprs
+2341,Michael,Worley,Baton Rouge,70816,LA,207W00000X,tepezza
+2342,Michael,Worley,New Orleans,70115,LA,207W00000X,asoprs
+2343,Patricia,Wu,San Diego,92130,CA,207RE0101X,endocrinologists
+2344,Albert,Wu,Palo Alto,94303,CA,207W00000X,tepezza
+2345,Albert,Wu,Palo Alto,94303,CA,207W00000X,asoprs
+2346,Allan,Wulc,Plymouth Meeting,19462,PA,207W00000X,asoprs
+2347,Alan,Wynne,Topeka,66606,KS,207RE0101X,tepezza
+2348,Pavan,Yadav,Torrance,90502,CA,207RE0101X,endocrinologists
+2349,Liza,Yambay,Normal,61761,IL,207RE0101X,endocrinologists
+2350,Junping,Yang,Saint Joseph,64506,MO,207RE0101X,endocrinologists
+2351,George,Yanik,Phoenix,85012,AZ,207W00000X,tepezza
+2352,Rex,Yannis,Chattanooga,37421,TN,207W00000X,asoprs
+2353,Rex,Yannis,Chattanooga,37421,TN,207W00000X,tepezza
+2354,Charmaine,Yap,N Las Vegas,89086,NV,207RE0101X,endocrinologists
+2355,Nadia,Yaqub,Fairfield,45014,OH,207RE0101X,endocrinologists
+2356,Abid,Yaqub,Cincinnati,45219,OH,207RE0101X,endocrinologists
+2357,Tahira,Yasmeen,Merrionette Park,60803,IL,207RE0101X,endocrinologists
+2358,John,Yassin,Arlington,22205,VA,207W00000X,asoprs
+2359,Rajini Kanth,Yatavelli,Shreveport,71103,LA,207RE0101X,tepezza
+2360,Rajini,Yatavelli,Shreveport,71103,LA,207RE0101X,endocrinologists
+2361,Subhashini,Yaturu,Columbia,29209,SC,207RE0101X,endocrinologists
+2362,R. Patrick,Yeatts,Winston-Salem,27157,NC,207W00000X,asoprs
+2363,Michael,Yeh,Los Angeles,90095,CA,207RE0101X,endocrinologists
+2364,Michael,Yen,Houston,77030,TX,207W00000X,asoprs
+2365,Anthony,Yin,Novato,94945,CA,207RE0101X,endocrinologists
+2366,Ian,Yip,Woodland Hills,91367,CA,207RE0101X,endocrinologists
+2367,Robert,Yohai,Santa Rosa,95404,CA,207W00000X,tepezza
+2368,Marc,Yonkers,Daly City,94015,CA,207W00000X,asoprs
+2369,Michael,Yoon,Boston,02114,MA,207W00000X,tepezza
+2370,Michael,Yoon,Boston,02114,MA,207W00000X,asoprs
+2371,Gerald,Youker,Portland,97213,OR,207RE0101X,endocrinologists
+2372,Lisa,Young,Ocala,34471,FL,207RE0101X,endocrinologists
+2373,Omaya,Youssef,Gaithersburg,20879,MD,207W00000X,asoprs
+2374,Silvana,Yovanof,Monongahela,15063,PA,207RE0101X,endocrinologists
+2375,Jenny,Yu,Pittsburgh,15215,PA,207R00000X,tepezza
+2376,Diana,Yu,Medford,11763,NY,207RE0101X,endocrinologists
+2377,Yi-Hao,Yu,Stamford,06902,CT,207RE0101X,endocrinologists
+2378,Tooraj,Zahedi,Brooklyn,11212,NY,207RE0101X,endocrinologists
+2379,Jennifer,Zaitz,Holmdel,07733,NJ,207RE0101X,endocrinologists
+2380,Renzo,Zaldivar,Greensboro,27410,NC,207W00000X,tepezza
+2381,Renzo,Zaldivar,Cary,27513,NC,207W00000X,asoprs
+2382,Katherine,Zamecki,Danbury,06810,CT,207W00000X,tepezza
+2383,Carlos,Zapata,Tallahassee,32308,FL,207RE0101X,endocrinologists
+2384,Kiarash,Zarbalian,Frederick,21703,MD,207RE0101X,endocrinologists
+2385,Chad,Zatezalo,North Bethesda,20852,MD,207W00000X,asoprs
+2386,Matthew,Zhang,Seattle,98104,WA,207W00000X,tepezza
+2387,Sandy,Zhang-Nunes,San Gabriel,91775,CA,207W00000X,asoprs
+2388,Sandy,Zhang-Nunes,Los Angeles,90033,CA,207W00000X,tepezza
+2389,Ping,Zhou,Brewster,10509,NY,207RE0101X,endocrinologists
+2390,Jeffrey,Zigman,Dallas,75390,TX,207RE0101X,endocrinologists
+2391,Donald,Zimmerman,Chicago,60611,IL,207RE0101X,endocrinologists
+2392,Omar,Zmeili,Akron,44310,OH,207RE0101X,endocrinologists
+2393,Christine,Zolli,Union,07083,NJ,207W00000X,asoprs
+2394,Susan,Zoltan,New York,10028,NY,207W00000X,tepezza
+2395,John,Zora,Sandy Springs,30342,GA,207RE0101X,endocrinologists
+2396,Christopher,Zoumalan,Beverly Hills,90212,CA,207W00000X,asoprs
+2397,Lubna,Zuberi,Philadelphia,19107,PA,207RE0101X,endocrinologists
+2398,Lubna,Zuberi,Philadelphia,19107,PA,207RE0101X,endocrinologists
+2399,Susan,Zweig,New York,10016,NY,207RE0101X,endocrinologists
+2400,Hayward,Zwerling,Dracut,01826,MA,207RE0101X,endocrinologists
+2401,Orin,Zwick,Annapolis,21401,MD,207W00000X,asoprs
