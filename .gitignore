@@ -2,6 +2,9 @@ test*.csv
 test*.json
 __TMP*
 
+data/processed/open_payments.csv
+data/processed/all_transactions.csv
+
 zipcodes.shp
 zipcodes.cpg
 zipcodes.dbf
